@@ -1,0 +1,21 @@
+{
+  "system": "rossler",
+  "seed": 20261105,
+  "dt": 0.05,
+  "method_version": "1.2",
+  "n_train": 2000,
+  "n_forecast": 400,
+  "noise": 0.1,
+  "seconds": 17.392526699986774,
+  "exact": 1.0,
+  "f1": 1.0,
+  "coef_err": 0.0024733854671419994,
+  "fp": 0,
+  "fn": 0,
+  "ambiguous": false,
+  "gap": 8.192416443609545,
+  "nrmse_first100": 0.05997585156361925,
+  "nrmse_all400": 0.09461162345365239,
+  "equations": "dx/dt = -1.0012*y -0.99979*z\ndy/dt = +0.99882*x +0.20093*y\ndz/dt = +0.20482 -5.687*z +0.99468*x*z",
+  "initialization": "states-only fit, final 40 training observations"
+}

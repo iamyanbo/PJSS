@@ -1,0 +1,135 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{Problem and notation}
+We observe one trajectory $y_i = x(t_i) + e_i \in \R^D$ at $t_i = i\,\Delta t$, $i=0,\dots,n-1$, of an autonomous system $\dot x = f(x)$ with $f(x)=C^\top\theta(x)$. Here $\theta:\R^D\to\R^M$ is a fixed library and $C\in\R^{M\times D}$ is sparse. The default library has all monomials of degree $\le 3$ ($M=20$ for $D=3$). Larger libraries have degree 4 or 5 ($M=35, 56$), degree 3 plus $\sin x_j$ and $\cos x_j$ ($M=26$), or degree 2 in $D$ variables for $D>3$. The \emph{support} is $\Sset=\{(m,j): C_{mj}\ne 0\}$, and the goal is to recover $\Sset$ exactly, together with accurate coefficients. Each coordinate is divided by its root-mean-square, without centring, so that supports are preserved. All quantities below are in these scaled units, and the coefficients are mapped back exactly at the end. For the mixed trigonometric library, functions are evaluated in original coordinates and normalised by their observed RMS: with $u_j=x_j/s_j$, a sine feature is $\sin(s_j u_j)$, not $\sin(u_j)$. The inverse coefficient transformation preserves the original functions and support.
+
+\subsection{Overview}
+\label{sec:overview}
+The method alternates between fitting and searching (\cref{fig:overview,alg:pjss}). Given a candidate support, a \emph{joint fit} estimates a denoised trajectory and the active coefficients together. At the best fit so far, a \emph{proposal step} forms a quadratic approximation of the objective over all library coefficients and searches it for better supports. The most promising proposals are joint-fitted and scored, and the best-scoring fit becomes the point of the next proposal step. The search is seeded with the answers of cheaper methods, and the noise level, the penalty and the noise model are estimated from the data along the way.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=11mm, text width=26mm, font=\small},
+  arr/.style={-{Stealth[length=2mm]}, thick},
+  node distance=9mm]
+\node[box] (start) {Starts from\\cheaper methods};
+\node[box, right=of start] (fit) {Joint fit of\\states and coefficients};
+\node[box, right=of fit] (quad) {Profiled quadratic\\in all coefficients};
+\node[box, right=of quad] (subset) {Best-subset search\\for new supports};
+\draw[arr] (start) -- (fit);
+\draw[arr] (fit) -- (quad);
+\draw[arr] (quad) -- (subset);
+\draw[arr] (subset.south) -- ++(0,-6mm) -| node[pos=0.25, below, font=\footnotesize] {refit the best proposals; score them; repeat} (fit.south);
+\end{tikzpicture}
+\caption{Structure of the method. The joint fit is the expensive step and the best-subset search is cheap, so most candidate models are evaluated only on the quadratic.}
+\label{fig:overview}
+\end{figure}
+
+\begin{algorithm}[t]
+\caption{PJSS (white-noise path). Defaults: $\rho=0.03$, $c=2$, $k_{\max}=5$, two candidates per size, ten finalists, two rounds.}
+\label{alg:pjss}
+\begin{algorithmic}[1]
+\Require samples $y_{0:n-1}$, step $\Delta t$, library $\theta$
+\State scale coordinates by RMS; $\hat\sigma\gets$ high-frequency floor; $s\gets$ spectral sub-step rule
+\State $\Tset,\Vset\gets$ train / every-third-sample hold-out; initial states by Savitzky--Golay smoothing
+\State $\mathcal P\gets$ \Call{FitJoint}{$\Sset_0$} for each start support $\Sset_0$ (weak $\chi^2_s$, hybrid, flow)\Comment{banded LM, \cref{sec:objective}}
+\State $\hat a\gets$ lag-1 autocorrelation of best start's residuals; \textbf{if} $\mathrm{mean}(\hat a)>0.6$ \textbf{then} use the AR(1) likelihood
+\State recalibrate $\hat\sigma\gets\max(\hat\sigma,1.4826\,\MAD(r))$ if larger by $>10\%$ (refit starts); $\varphi\gets$ autocorrelation inflation
+\State $F^\star\gets\argmin_{F\in\mathcal P}\mathrm{Score}(F)$\Comment{\cref{eq:score}, prior \cref{eq:prior}}
+\For{round $=1,2$}
+  \State $(A,b)\gets$ profiled quadratic at $F^\star$ over all $MD$ coefficients\Comment{\cref{eq:profile}}
+  \For{$j=1,\dots,D$}
+    \State project the other equations' active columns out of $(A,b)$
+    \State $\mathcal C_j\gets$ top-2 subsets per size $k\le k_{\max}$ (exhaustive; beam if $>2.5\times10^5$)
+  \EndFor
+  \State proposals $\gets$ single-equation replacements $\cup$ $\prod_j\text{top-2}_Q(\mathcal C_j)$; rank unfitted ones by $Q$
+  \State $\mathcal P\gets\mathcal P\,\cup$ \Call{FitJoint}{} on the 10 best, warm-started at $F^\star$'s states
+  \State $F\gets\argmin_{\mathcal P}\mathrm{Score}$; \textbf{if} $F=F^\star$ \textbf{break}; $F^\star\gets F$
+\EndFor
+\State refit $F^\star$ on all samples, then at $\rho=0.001$ (fixed support; states and coefficients updated)
+\State \Return coefficients, ambiguity flag (gap $<2\lambda$), per-term BIC weights over $\mathcal P$
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Joint objective for a fixed support}
+\label{sec:objective}
+The latent states $u_k\in\R^D$ live on a sub-grid with $s$ steps per sample, $k=0,\dots,(n-1)s$, with step $h=\Delta t/s$. Sample $i$ sits at grid index $o(i)=is$. Every third sample ($i\equiv 2 \bmod 3$) is held out of the data term. This gives training samples $\Tset$ and validation samples $\Vset$. For a support $\Sset$ we minimise over $(\bu, C)$ with $C_{mj}=0$ for $(m,j)\notin\Sset$:
+\begin{equation}
+\begin{split}
+J(\bu,C) \;=\;& \sum_{i\in\Tset}\sum_{j=1}^{D} \rho_c\!\left(\frac{u_{o(i),j}-y_{ij}}{\sigma_j}\right)\\
+&+\; \sum_{k}\sum_{j=1}^{D}\left(\frac{u_{k+1,j}-u_{k,j}-h\,\theta(m_k)^\top C_{:,j}}{\rho\,\sigma_j}\right)^{2},
+\qquad m_k=\tfrac12(u_k+u_{k+1}).
+\end{split}
+\label{eq:objective}
+\end{equation}
+The first term pulls the states toward the measurements, and the second pulls them toward a solution of the candidate model, so a support that cannot explain the data leaves a residual in one term or the other. In the first term, $\rho_c(r)=r^2$ for $|r|\le c$ and $2c|r|-c^2$ otherwise, which is twice the Huber loss~\citep{huber1964robust}, with $c=2$. The second term is a soft midpoint-rule dynamics constraint with relative weight $\rho=0.03$. The noise scale $\sigma_j$ is calibrated (\cref{sec:calibration}).
+
+\paragraph{Banded Levenberg--Marquardt solve.}
+We minimise \eqref{eq:objective} by Levenberg--Marquardt~\citep{levenberg1944,marquardt1963} with iteratively reweighted Huber weights. The states are interleaved in time, so each dynamics residual couples only $u_k$ and $u_{k+1}$. The Gauss--Newton matrix therefore has the block form
+\begin{equation}
+\begin{pmatrix} A_{uu} & A_{uc}\\ A_{uc}^\top & A_{cc}\end{pmatrix}
+\begin{pmatrix}\delta\bu\\ \delta\bc\end{pmatrix} = -\begin{pmatrix} g_u\\ g_c\end{pmatrix},
+\label{eq:normal}
+\end{equation}
+where $A_{uu}$ is symmetric banded with upper bandwidth $2D-1$, and $A_{uc}$, $A_{cc}$ form a dense border in the $|\Sset|$ active coefficients. We solve \eqref{eq:normal} by one banded Cholesky factorisation with $|\Sset|+1$ right-hand sides and the Schur complement $A_{cc}-A_{uc}^\top A_{uu}^{-1}A_{uc}$. Each iteration is linear in the number of latent states. The initial states are the samples, smoothed by a Savitzky--Golay filter and interpolated onto the sub-grid.
+
+\subsection{Profiled quadratic and subset proposals}
+\label{sec:proposals}
+Let $(\bu^\star, C^\star)$ be the current best fit. We form \eqref{eq:normal} at that point for \emph{all} $MD$ coefficients, including inactive ones, and eliminate the states:
+\begin{equation}
+H = A_{cc}-A_{uc}^\top A_{uu}^{-1}A_{uc},\qquad g = g_c - A_{uc}^\top A_{uu}^{-1}g_u,\qquad
+\bc^\dagger = \bc^\star - H^{-1}g .
+\label{eq:profile}
+\end{equation}
+With $H=LL^\top$, set $A=L^\top$ and $b=L^\top\bc^\dagger$. Then
+\begin{equation}
+q(\bc) = \lVert A\bc-b\rVert^2
+\end{equation}
+is, up to a constant, the quadratic obtained by eliminating state increments from the local Gauss--Newton model. This is the \emph{profiled quadratic}. The displayed inverse and Cholesky factorisation assume positive definiteness. In the implementation we symmetrise $H$ and add $10^{-10}\operatorname{tr}(H)/(MD)$ to its diagonal before solving, so the computed proposal uses a regularised quadratic. A single banded solve with $MD+1$ right-hand sides gives $H$; scoring a support then requires only a small least-squares solve.
+
+\paragraph{Why profile the states?} A coefficient change can be partly accommodated by changing the estimated trajectory. Fixed-state proposals use $A_{cc}$ and $g_c$ and ignore this adjustment; the Schur terms in \eqref{eq:profile} account for it within the local quadratic. Profiling therefore changes the geometry used to rank supports before any nonlinear refit. It does not solve the nonlinear state-estimation problem for every candidate. Its value is tested separately from subset enumeration in \cref{sec:ablation}, and all retained proposals are checked by joint refitting.
+
+\paragraph{Proposals.} Searching all equations at once would multiply the number of subsets across equations, so proposals are generated per equation. For equation $j$, the columns of the \emph{other} equations' currently active coefficients are projected out of $A$ and $b$ (orthogonal complement of their span, via SVD). We then run exhaustive best-subset regression over the $M$ columns of equation $j$: for every size $k=1,\dots,k_{\max}$ ($k_{\max}=5$) we keep the two subsets with the smallest residual sum of squares, computed with normalised columns and a $10^{-10}$ ridge. The empty per-equation support is also included. For $M=20$ the nonempty search enumerates $\sum_{k=1}^{5}\binom{20}{k}=21{,}699$ subsets per equation. When the count would exceed 250{,}000 (degree 4 and 5 libraries), a beam search of width 60 over the same normalised Gram system replaces enumeration. Two kinds of joint proposal are formed:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+\item \emph{single-equation replacements}: the current support with equation $j$'s terms replaced by each candidate;
+\item \emph{combinations}: each equation's candidates are ranked by the quadratic BIC $Q(\Sset')=\min_{\bc}\lVert A_{\Sset'}\bc-b\rVert^2+|\Sset'|\log(Dn)$ (other equations at their current supports), and the Cartesian product of the top two per equation is added ($2^D$ combinations, capped at 1{,}024 for $D>3$).
+\end{enumerate}
+All proposals not yet fitted are ranked by $Q$. The top ten are refitted with the full nonlinear objective \eqref{eq:objective}, starting from the current states and the quadratic's coefficients. The best-scoring fit becomes the new expansion point, and the procedure repeats for at most two rounds, stopping early if the best fit does not change. Enumeration is exhaustive only within each per-equation size limit; the combined support search and nonlinear fits are not globally certified.
+
+\subsection{Score and complexity prior}
+\label{sec:score}
+A fitted candidate $\Sset$ with states $\bu$ is scored by
+\begin{equation}
+\mathrm{Score}(\Sset) \;=\; \underbrace{\sum_{i\in\Tset}\sum_j\rho_c(r_{ij})}_{\text{train misfit}} + \underbrace{\sum_k\sum_j(\cdot)^2}_{\text{dynamics}} + \underbrace{\sum_{i\in\Vset}\sum_j\rho_c(r_{ij})}_{\text{held-out misfit}} + \varphi\,\kappa(\Sset)\,\log(Dn),
+\qquad r_{ij}=\frac{u_{o(i),j}-y_{ij}}{\sigma_j}.
+\label{eq:score}
+\end{equation}
+The masked samples are excluded from each joint fit's observation-data term. They still inform the starts, scaling, spectral grid, noise calibration and AR(1) routing, so this is a masked-fit selection criterion, not independent out-of-sample validation. This is a practical criterion, not an approximation to a marginal likelihood. Its penalty is inspired by BIC~\citep{schwarz1978bic}, with two modifications:
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item \textbf{Autocorrelation inflation} $\varphi\ge 1$ (\cref{sec:calibration}). It compensates for correlated residuals, which make the effective number of independent observations smaller than $Dn$.
+\item \textbf{Degree-weighted prior.} Instead of counting terms, we use $\kappa(\Sset)=\sum_{(m,j)\in\Sset}w(\deg\theta_m)$ with
+\begin{equation}
+w(d)=\max\bigl(0.1,\;1+0.2\,(d-1.5)\bigr),
+\label{eq:prior}
+\end{equation}
+so a constant costs $0.7$, a linear term $0.9$, a quadratic $1.1$ and a cubic $1.3$ times $\log(Dn)$. The penalty stays close to BIC's level for typical low-degree models, but low-degree terms are preferred, as in the complexity measures of symbolic regression~\citep{schmidt2009distilling,cranmer2023pysr}. Sine and cosine terms get weight 1. The strength 0.2 was chosen from three values on development data.
+\end{itemize}
+The prior enters only the score of fitted candidates; the proposal ranking $Q$ uses the plain term count. After selection, the chosen support is refitted with all samples in the data term, then once more with a stiffer dynamics weight $\rho=0.001$. This last refit removes coefficient shrinkage and does not change the support.
+
+\subsection{Self-calibration}
+\label{sec:calibration}
+PJSS selects sparsity without a user-specified threshold. It still has fixed internal constants, including the dynamics weight, maximum subset size and proposal budget. These were chosen on development data; \cref{tab:sensitivity} reports their sensitivity.
+\paragraph{Noise scale and penalty inflation.}
+The noise scale starts from a high-frequency estimate based on fourth-order differences, which sees white noise but misses slowly correlated noise. After the starts are fitted, it is raised to the robust scale of the sample residuals if that scale is more than 10\% larger, and the starts are refitted. Correlated residuals also carry less information than their number suggests, so the BIC penalty is multiplied by $\varphi\ge1$, an estimate of the integrated autocorrelation of the residuals (\cref{app:impl}).
+
+\paragraph{Correlated noise.}
+For strongly correlated errors we replace the data term with the exact Gaussian likelihood of AR(1) errors per component, $e_{i,j}=a_j e_{i-1,j}+\nu_{i,j}$. Whitening these errors couples only neighbouring observations, so the system stays banded and a fit stays linear in the record length. Spurious terms that bend the latent trajectory toward slow noise can still win under this likelihood, so the penalty in \eqref{eq:score} becomes $\lambda(a)\,\varphi\,\kappa(\Sset)\log(Dn)$, with a heuristic factor $\lambda(a)$ and with $\varphi$ computed from the whitened residuals. The AR(1) model is used if and only if the mean of $\hat a$, estimated from the residuals of the best start, exceeds $0.6$.
+
+\paragraph{Discretisation.} Two further quantities are set from the data (\cref{app:impl}). The number of sub-steps per sample, between 2 and 12, follows the spectrum of the data, and a floor on the noise scale keeps the midpoint rule's truncation error from being fitted as if it were signal on noise-free data.
+
+\subsection{Starts and outputs}
+\label{sec:starts}
+\label{sec:flag}
+The search is seeded with truth-free answers from cheaper methods, chiefly the \emph{weak $\chi^2_s$ selector}, an exhaustive best-subset weak SINDy~\citep{messenger2021wsindy} with a self-calibrated size rule. A score gap below 2 (or $2\lambda$ on the AR(1) path) flags ambiguity within the fitted candidate pool. This threshold is motivated by the evidence scale of \citet{kass1995bayes}, but our heuristic score does not yield a Bayes factor. Exponentiated score weights give per-term inclusion diagnostics, with development-fitted calibration for the default library (\cref{app:impl}). Neither output detects missing library terms reliably.

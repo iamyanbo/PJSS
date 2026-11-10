@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eqdisc"
+version = "1.2.0"
+description = "Sparse ODE discovery from one noisy trajectory by profiled joint subset search"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Yanbo Cheng" }]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "numba>=0.61",
+]
+
+[project.optional-dependencies]
+# benchmark scripts in benchmarks/ (threadpoolctl everywhere; the rest only by the named scripts)
+bench = ["threadpoolctl>=3.2"]
+test = ["pytest>=7", "threadpoolctl>=3.2"]
+pysindy = ["pysindy"]          # benchmarks/bench.py baselines (MIOSR also needs gurobipy)
+gurobi = ["gurobipy"]          # benchmarks/bnb_subset.py exact MIQP check
+dysts = ["dysts", "sympy"]     # benchmarks/dysts_classify.py
+
+[tool.setuptools]
+packages = ["eqdisc"]
+
+[tool.setuptools.package-data]
+eqdisc = ["confidence_isotonic.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,17 @@
+# v1.0.1 = frozen v1.0 (results_final/frozen.md5, commit ac7ab20) + empty-support crash fix; package files at commit e4b4b9c
+8b32795b1b8504a67b7f106d666e7782  eqdisc/__init__.py
+c1eae9e73bd7ada22a8a7a03805c2c18  eqdisc/final_model.py
+e7f563ae2080e3229097f9008acc90cd  eqdisc/joint_discover.py
+24ba0897863aba1a67af92cd2d84df10  eqdisc/joint_colored.py
+6484dd8b00b2dc84fb2069ae320f28b6  eqdisc/joint_biglib.py
+4bc34d937c3b30b4b7f4c499120d760e  eqdisc/joint_nd.py
+4ab5051d0c33bb5d92a66db341694ced  eqdisc/joint_squeeze.py
+83156443d774bde0a0622cef0ae3ccb9  eqdisc/confidence.py
+4bd7dffadb93c6c191ddcddea01d4e59  eqdisc/core.py
+b3b909360a3a6608593634af63347083  eqdisc/select_k.py
+ba3fc1becb766943bb6ab8eb712d20e6  eqdisc/flow_discovery.py
+967e9e50d9a29bf41776608aeedfe768  eqdisc/subset.py
+fd7aace1cb6767d6903dbfac6810b633  eqdisc/heldout_systems.py
+eb55775cbbe5904772df102eb99072eb  eqdisc/gen_trig.py
+3508699a705f78af88b055b43372719f  eqdisc/nd_systems.py
+cfb8ca29a3352dd860940bafd217c08c  eqdisc/confidence_isotonic.json

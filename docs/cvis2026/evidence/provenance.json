@@ -1,0 +1,24 @@
+{
+  "python": "3.13.13",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "source_sha256": {
+    "eqdisc\\__init__.py": "4d6dd0a622202c717219964c7e74b711f6a2984e931c50895878800cffbade8d",
+    "eqdisc\\confidence.py": "566ecf84a1cd1e6d124f6f0ba0e89ce9a90e31e3edd00dff2062de3e6d5b8730",
+    "eqdisc\\core.py": "f3fccb4e2cc02c04556cfdbcb9131e812946a5cbb6a09f2ac188998de2116e1e",
+    "eqdisc\\discrepancy.py": "6604708f195ada3bc2671d18dad60fb065f3da390d34e2a20a57e1a1aef23de3",
+    "eqdisc\\final_model.py": "e1e280b3ff255b4d1ab7718b788431dfb7dcf6f4ccf0ac0f0be9e7a9faaad53f",
+    "eqdisc\\flow_discovery.py": "19b72757f87423e457492bcbf8638cacb16d2b68cb6a8db688bd2a44d4074df2",
+    "eqdisc\\gen_trig.py": "b4f8e6d672ea997bab3682938c14e784bb4fb40ebb55c7baf140425d3dd91f7f",
+    "eqdisc\\heldout_systems.py": "5de70a4c998236bdba401c444b66d84b887a927bc2f35e0d04f8eb38b67096ef",
+    "eqdisc\\joint_biglib.py": "63f866136f6248b5dded12aa0d632ca272455877008a533bc51790c720d690fa",
+    "eqdisc\\joint_colored.py": "93ff2800727675136d5ba3c028dbc0059bc2a581a47d40eb31dd0f1af507d824",
+    "eqdisc\\joint_discover.py": "d227ce0e5f9a2fdfceb53935137c96165169064347bad16404c4230c588b93ce",
+    "eqdisc\\joint_nd.py": "a58dfb0d6673706a17ca3e1ea6fb38d9528149743d1854293e1f46eda23d3659",
+    "eqdisc\\joint_squeeze.py": "71e7cda2b4d3b4f33ca4b237ec9a410494c5f4114dd539393837b5a78b2e5274",
+    "eqdisc\\nd_systems.py": "b711ae9da8dd61318053c12811a3de2bea2b7b651b1deb1d78b0665e8cd33114",
+    "eqdisc\\partial_obs.py": "dc5cc7e18414611c88cfb391d7795ab809790116c81493abbb844c2f34908d23",
+    "eqdisc\\select_k.py": "65ae4579c2408d952a73754db9e9114f7a0b4154b6f387d0789e27424e686636",
+    "eqdisc\\subset.py": "a27955fcaa8db285660f68b09bd629795d4de138f5115f3c560e7674e1619e52"
+  }
+}

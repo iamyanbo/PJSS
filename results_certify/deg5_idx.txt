@@ -1,0 +1,2 @@
+2 26 50 74 98 122 146 170 194 218 242 266 290 314 338 362 386 410 434 458 482 506 530 554 578 602 626 650 674 698
+Counter({'lorenz': 4, 'halvorsen': 4, 'sprottC': 4, 'rossler': 3, 'chen': 3, 'sprottA': 3, 'sprottB': 3, 'sprottD': 3, 'sprottE': 3}) beam exact 26.0

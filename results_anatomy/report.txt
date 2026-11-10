@@ -1,0 +1,41 @@
+## 1. Cost anatomy: 10 head-to-head runs, DEDi full grid (GPU) vs ours
+
+| run | DEDi joint LM solves | DEDi factorisations | DEDi s | elim. rounds/pair (median) | ours LM fits | ours linear solves | ours subsets scored | ours s | solves ratio | factor. ratio | time ratio |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| short_685 (35 pairs) | 1050 | 37434 | 1179 | 15 | 20 | 154 | 260400 | 2.0 | 52x | 243x | 593x |
+| white_374 (35 pairs) | 778 | 308736 | 9694 | 11 | 31 | 189 | 325500 | 4.9 | 25x | 1634x | 1999x |
+| white_175 (35 pairs) | 1050 | 33936 | 1583 | 15 | 20 | 140 | 260400 | 5.5 | 52x | 242x | 286x |
+| t3_271 (35 pairs) | 1050 | 44490 | 1951 | 15 | 20 | 133 | 260400 | 4.4 | 52x | 335x | 444x |
+| short_546 (35 pairs) | 988 | 48615 | 1617 | 15 | 20 | 138 | 260400 | 1.1 | 49x | 352x | 1415x |
+| hard_107 (35 pairs) | 890 | 406612 | 11547 | 13 | 21 | 160 | 260400 | 7.5 | 42x | 2541x | 1534x |
+| coloured_643 (35 pairs) | 538 | 275444 | 8162 | 7 | 29 | 252 | 260400 | 9.8 | 19x | 1093x | 836x |
+| coloured_10 (35 pairs) | 692 | 92083 | 4053 | 9 | 39 | 343 | 325500 | 14.5 | 18x | 268x | 279x |
+| t3_194 (35 pairs) | 1058 | 130416 | 4857 | 15 | 21 | 147 | 260400 | 5.4 | 50x | 887x | 907x |
+| hard_47 (35 pairs) | 1026 | 119658 | 4938 | 15 | 21 | 144 | 260400 | 5.7 | 49x | 831x | 861x |
+
+medians: joint solves 49x, factorisations/linear solves 592x, time 849x
+DEDi per pair (n=350): median 30 joint LM solves, 1817 factorisations
+ours per run (80 runs): median 21 LM fits, 153 linear solves, 260400 subsets scored by the quadratic screen
+
+## 2. Scaling: per DEDi pair (lambda = 1e-3 row, GPU) vs one run of ours (one CPU core)
+
+| case | D | terms/eq | ours s | ours exact | DEDi pairs done | DEDi s/pair (median) | DEDi joint solves/pair | DEDi (1e-3, 1) exact | DEDi any row pair exact | ratio s/pair : ours |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| hyper_rossler (nd_test_245_nd) | 4 | 15 | 32.9 | 1 | 5/5 | 83 | 30 | 0 | 0 | 3x |
+| hyper_rossler (nd_test_253_nd) | 4 | 15 | 36.7 | 1 | 5/5 | 42 | 30 | 0 | 0 | 1x |
+| l96_5 (nd_test_5_nd) | 5 | 21 | 7.6 | 1 | 5/5 | 105 | 42 | 1 | 1 | 14x |
+| l96_5 (nd_test_13_nd) | 5 | 21 | 7.5 | 1 | 5/5 | 239 | 42 | 1 | 1 | 32x |
+| l96_6 (nd_test_85_nd) | 6 | 28 | 28.7 | 1 | 5/5 | 408 | 68 | 0 | 1 | 14x |
+| l96_6 (nd_test_93_nd) | 6 | 28 | 13.0 | 1 | 5/5 | 300 | 70 | 1 | 1 | 23x |
+| coupled_lorenz (nd_test_325_nd) | 6 | 28 | 7.1 | 1 | 5/5 | 708 | 70 | 0 | 1 | 100x |
+| coupled_lorenz (nd_test_333_nd) | 6 | 28 | 11.5 | 1 | 5/5 | 543 | 26 | 0 | 1 | 47x |
+| l96_10 (nd_test_165_nd) | 10 | 66 | 57.5 | 1 | 1/5 | 18156 | 256 | - | 1 | 316x |
+| l96_10 (nd_test_173_nd) | 10 | 66 | 57.9 | 1 | 1/5 | 17904 | 256 | - | 1 | 309x |
+| rabinovich (joint_sealed_374_poly4) | 3 | 35 | 5.7 | 0 | 5/5 | 108 | 28 | 0 | 0 | 19x |
+| sprottA (joint_sealed_175_poly4) | 3 | 35 | 5.7 | 1 | 5/5 | 87 | 48 | 1 | 1 | 15x |
+| sprottA (joint_sealed_186_poly4) | 3 | 35 | 5.8 | 1 | 5/5 | 124 | 48 | 1 | 1 | 21x |
+| sprottB (joint_sealed_203_poly4) | 3 | 35 | 7.8 | 1 | 5/5 | 226 | 48 | 1 | 1 | 29x |
+| sprottE (joint_sealed_342_poly4) | 3 | 35 | 10.0 | 1 | 5/5 | 185 | 48 | 1 | 1 | 19x |
+| rossler (joint_sealed_55_poly4) | 3 | 35 | 15.7 | 1 | 5/5 | 260 | 50 | 1 | 1 | 17x |
+
+Reference, D = 3 with the 20-term library (head-to-head runs): DEDi single pair / ours median 18x

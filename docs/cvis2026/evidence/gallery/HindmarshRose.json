@@ -1,0 +1,14 @@
+{
+  "system": "HindmarshRose",
+  "source": "saved frozen dysts fit",
+  "index": 1286,
+  "noise": 0.1,
+  "n_fit": 2000,
+  "dt": 0.01,
+  "exact": true,
+  "coef_err": 0.007295030793494354,
+  "new_system": true,
+  "integration_complete": true,
+  "integrator_message": "The solver successfully reached the end of the integration interval.",
+  "samples_before_stop": 9000
+}

@@ -1,0 +1,25 @@
+\section{Experimental protocol}
+\label{sec:protocol}
+
+\subsection{Systems, data and metrics}
+\paragraph{Core benchmark.} Ten polynomial chaotic systems of degree $\le3$ in $D=3$: Lorenz~\citep{lorenz1963}, R\"ossler~\citep{rossler1976}, Chen~\citep{chen1999}, Halvorsen, Sprott A--E and Rabinovich--Fabrikant~\citep{rabinovich1979}. Each run starts at a random point on the attractor and has $N\in\{500,2000\}$ samples, with 10 seeds per cell. Noise is added at $\eta\in\{1,5,10,20\}\%$ of each coordinate's standard deviation, so one archive has 800 runs. The variants are AR(1) coloured noise ($a=0.8$), Student-$t_3$ noise and four-times coarser sampling.
+
+\paragraph{Held-out systems.} This set adds eleven further polynomial chaotic systems (880 runs per archive).
+
+\paragraph{External benchmark.} The \texttt{dysts} database (v0.96)~\citep{gilpin2021dysts} has 135 continuous-time chaotic systems, of which 77 lie in our libraries: 61 three-dimensional systems of degree $\le3$, and 16 systems of dimension 4--6 and degree $\le 2$. Forty-nine of the 77 are new to us; the other 28 overlap with our systems or share a support with one of them. The test archive has 6{,}160 runs and was generated before any method was run on it.
+
+\paragraph{Metrics.} The primary metric is \emph{exact support recovery}: the estimated nonzero pattern equals the true one in every equation. We also report term-level F1 and relative coefficient error $\lVert\hat C-C\rVert_F/\lVert C\rVert_F$. Truth is used for scoring, explicitly labelled oracle references and diagnostics, not by PJSS at inference. Comparisons are paired by run; ``W/L'' counts recoveries unique to each method. We report central confidence intervals in the main text and detailed paired tests in the appendix. Runs nest within systems, so system-resampled intervals are used where available to assess transfer across systems; run-level tests describe the sampled runs.
+
+\subsection{Development and test separation}
+\label{sec:freezing}
+``Pre-registered'' below denotes a prospective protocol recorded in the repository before its experiment, not an independently registered study.
+Defaults were chosen on development archives. Each test archive uses new seeds, and each test pass ran a checksummed model with no setting changed during the pass. Test results did inform later work: the Gaussian loss of \cref{sec:noise} and the noise floor each followed a test finding, and each was redeveloped on development data and confirmed on a fresh pre-registered archive. Test archives other than \texttt{dysts} were also evaluated more than once (\cref{sec:limitations}). The test archives are the \emph{sealed} and \emph{confirmation} white-noise archives, held-out systems, the coloured, $t_3$ and coarse variants, the large-library and $D>3$ archives, and \texttt{dysts}. The \emph{hard 40} are the Lorenz, Chen, R\"ossler and Rabinovich--Fabrikant runs of the confirmation archive at 20\% noise and $N=2000$. They were chosen \emph{because} they are hard for our methods, so they serve only as a stress test. The head-to-head, cost study and sensitivity sweep use the final method; the other test tables predate small refinements that change the \texttt{dysts} rate by 0.001 (\cref{app:tables}).
+
+\subsection{Baselines}
+\label{sec:baseline-config}
+We compare with the SINDy variants in pysindy~\citep{desilva2020pysindy,kaptanoglu2022pysindy}, including E-SINDy and MIOSR; with WSINDy~\citep{messenger2021wsindy} and ARGOS~\citep{egan2024argos}; with the symbolic regressors PySR~\citep{cranmer2023pysr} and ODEFormer~\citep{dascoli2024odeformer}; and with the joint-state methods DEDi~\citep{meissner2024dedi}, using the authors' code and full grid, and ODR-BINDy~\citep{fung2025odrbindy}, using our Python port. Threshold-based methods get two truth-free rules, 5-fold regression-row cross-validation (CV) and AICc~\citep{mangan2017model}, and two that use the truth: one threshold \emph{tuned} per evaluation set, and the per-run \emph{oracle}. Costly baselines ran on subsamples of \texttt{dysts}. Configurations are in \cref{app:baselines}.
+
+
+CV partitions precomputed regression rows. SFD rows follow time order but use full-record preprocessing; weak rows are randomly located, potentially overlapping temporal domains. Neither is a fully isolated temporal holdout. Historical weak-feature baselines also constructed random domains before setting the run seed. We preserve those recorded results, disclose this reproducibility limitation, and distinguish the corrected implementation and targeted check in \cref{app:baseline-audit}.
+
+\paragraph{Method versions.} \Cref{sec:method} describes v1.2. The frozen v1.0 tables retain their original results; v1.0.1 fixes empty-support handling, v1.1 changes AR(1) residual loss to Gaussian, and v1.2 adds the discretisation floor. The DEDi comparisons and timing study use v1.2. \Cref{app:tables} maps versions to results; values from different versions are not pooled as one experiment.

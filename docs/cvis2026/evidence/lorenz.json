@@ -1,0 +1,21 @@
+{
+  "system": "lorenz",
+  "seed": 20261105,
+  "dt": 0.01,
+  "method_version": "1.2",
+  "n_train": 2000,
+  "n_forecast": 400,
+  "noise": 0.1,
+  "seconds": 15.456928500032518,
+  "exact": 1.0,
+  "f1": 1.0,
+  "coef_err": 0.00661674023447422,
+  "fp": 0,
+  "fn": 0,
+  "ambiguous": false,
+  "gap": 6.131894113123963,
+  "nrmse_first100": 0.03785000625708125,
+  "nrmse_all400": 0.5998562523882107,
+  "equations": "dx/dt = -10.084*x +10.11*y\ndy/dt = +27.844*x -0.98892*y -0.99446*x*z\ndz/dt = -2.6676*z +1.0028*x*y",
+  "initialization": "states-only fit, final 40 training observations"
+}

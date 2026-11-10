@@ -1,0 +1,8 @@
+\section{Limitations}
+\label{sec:limitations}
+
+PJSS is evaluated primarily on uniformly sampled, fully observed trajectories whose true equations lie in the library. The positive results do not establish robustness to process noise, irregular sampling, inputs or library misspecification. The measured-pendulum tests fail, and the ambiguity flag can remain silent on inaccurate models (\cref{sec:realdata}). The confidence weights are calibrated diagnostics for the evaluated setting, not guarantees of correctness.
+
+The search is local in its quadratic approximation and restricted in its supports: exhaustive proposals use at most five terms per equation, larger libraries use approximate beam search, and only two proposal rounds are used by default. Fixed constants were selected during development; the one-at-a-time sensitivity sweep does not test their interactions. The degree prior favours the low-degree systems in the benchmarks. Coloured-noise handling is implemented only for $D=3$, and higher-dimensional tests use degree-2 libraries. The partial-observation extension recovers 146/240 runs on three systems but only 7/60 with two latent components (\cref{app:partial}).
+
+Several test archives were reused during development, and runs within a system are dependent. We distinguish fresh confirmations and system-resampled intervals from run-level analyses. Comparisons using an unvalidated ODR-BINDy port, reduced-budget DAHSI-style baseline, or published ODEBench figure values have narrower interpretations than the official-code paired comparisons. The three timing cases do not establish a universal speedup. Full qualifications are retained in \cref{app:limitations-detail}.

@@ -1,0 +1,70 @@
+Analysis set: first 17 of 114 runs in the pre-registered order (616 pair results on disk). Strata in set: {'A': 11, 'D': 2, 'C': 4}.
+Runs with an errored pair: 0 (0 pairs).
+Reproduction check: reduced-grid choice and exactness reproduced on 14/17 runs.
+
+## Primary: full grid, selection by validation error (FindBestModel default)
+
+| Subset | n | Final | DEDi reduced | DEDi full | Final vs full W/L | p | Final vs reduced W/L | p | Full vs reduced W/L | p |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lorenz | 3 | 2 | 0 | 2 | 1/1 | 1 | 2/0 | 0.5 | 2/0 | 0.5 |
+| Chen | 6 | 6 | 4 | 4 | 2/0 | 0.5 | 2/0 | 0.5 | 0/0 | 1 |
+| Rössler | 8 | 7 | 0 | 8 | 0/1 | 1 | 7/0 | 0.016 | 8/0 | 0.0078 |
+| stratum A (final only) | 11 | 11 | 0 | 8 | 3/0 | 0.25 | 11/0 | 0.00098 | 8/0 | 0.0078 |
+| stratum C (both exact) | 4 | 4 | 4 | 4 | 0/0 | 1 | 0/0 | 1 | 0/0 | 1 |
+| stratum D (neither) | 2 | 0 | 0 | 2 | 0/2 | 0.5 | 0/0 | 1 | 2/0 | 0.5 |
+| **All** | 17 | 15 | 4 | 14 | 3/2 | 1 | 11/0 | 0.00098 | 10/0 | 0.002 |
+
+Stratum-weighted projection to all 114 runs (sampled strata only: {'A': '11/26', 'B': '0/5', 'C': '4/80', 'D': '2/3'}): final vs full-grid DEDi about 7.1 wins / 3.0 losses (reduced grid: 26/5).
+Post hoc variant, unsampled strata ['B'] kept at their reduced-grid outcome: about 7.1 wins / 8.0 losses.
+
+Post hoc: reduced grid recomputed in this run: 6/17 exact (stored reduced-grid run: 4/17). Full vs recomputed reduced W/L 8/0 (p = 0.0078); final vs recomputed reduced 10/1 (p = 0.012).
+
+  not reproduced: run 82 (rossler): stored choice [0.01, 0.0001] exact 0; recomputed choice [0.01, 0.01] exact 0
+  not reproduced: run 0 (lorenz): stored choice [0.01, 0.0001] exact 0; recomputed choice [0.01, 0.01] exact 1
+  not reproduced: run 106 (rossler): stored choice [0.01, 0.01] exact 0; recomputed choice [0.01, 0.0001] exact 1
+
+## Secondary: full grid, selection by validation BIC
+
+| Subset | n | Final | DEDi reduced | DEDi full | Final vs full W/L | p | Final vs reduced W/L | p | Full vs reduced W/L | p |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lorenz | 3 | 2 | 0 | 3 | 0/1 | 1 | 2/0 | 0.5 | 3/0 | 0.25 |
+| Chen | 6 | 6 | 4 | 6 | 0/0 | 1 | 2/0 | 0.5 | 2/0 | 0.5 |
+| Rössler | 8 | 7 | 0 | 8 | 0/1 | 1 | 7/0 | 0.016 | 8/0 | 0.0078 |
+| stratum A (final only) | 11 | 11 | 0 | 11 | 0/0 | 1 | 11/0 | 0.00098 | 11/0 | 0.00098 |
+| stratum C (both exact) | 4 | 4 | 4 | 4 | 0/0 | 1 | 0/0 | 1 | 0/0 | 1 |
+| stratum D (neither) | 2 | 0 | 0 | 2 | 0/2 | 0.5 | 0/0 | 1 | 2/0 | 0.5 |
+| **All** | 17 | 15 | 4 | 17 | 0/2 | 0.5 | 11/0 | 0.00098 | 13/0 | 0.00024 |
+
+## Secondary: oracle DEDi (exact if any of the 35 pairs is exact; uses the truth, not a method)
+
+| Subset | n | Final | DEDi reduced | DEDi full | Final vs full W/L | p | Final vs reduced W/L | p | Full vs reduced W/L | p |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lorenz | 3 | 2 | 0 | 3 | 0/1 | 1 | 2/0 | 0.5 | 3/0 | 0.25 |
+| Chen | 6 | 6 | 4 | 6 | 0/0 | 1 | 2/0 | 0.5 | 2/0 | 0.5 |
+| Rössler | 8 | 7 | 0 | 8 | 0/1 | 1 | 7/0 | 0.016 | 8/0 | 0.0078 |
+| stratum A (final only) | 11 | 11 | 0 | 11 | 0/0 | 1 | 11/0 | 0.00098 | 11/0 | 0.00098 |
+| stratum C (both exact) | 4 | 4 | 4 | 4 | 0/0 | 1 | 0/0 | 1 | 0/0 | 1 |
+| stratum D (neither) | 2 | 0 | 0 | 2 | 0/2 | 0.5 | 0/0 | 1 | 2/0 | 0.5 |
+| **All** | 17 | 15 | 4 | 17 | 0/2 | 0.5 | 11/0 | 0.00098 | 13/0 | 0.00024 |
+
+## Chosen hyperparameters (full grid, validation error)
+
+λ=0.001, R=1: 6, λ=0.001, R=0.01: 4, λ=0.001, R=0.0001: 2, λ=0.001, R=0.1: 2, λ=0.001, R=0.001: 1, λ=0.01, R=0.01: 1, λ=0.01, R=1: 1
+λ marginal: 0.001: 15, 0.01: 2, 0.1: 0, 1: 0, 10: 0, 100: 0, 1000: 0
+
+False positives / negatives on the set: final 4/2, DEDi reduced 61/8, DEDi full 4/0.
+Median relative coefficient error where both exact (n = 12): final 0.78%, full-grid DEDi 0.74%.
+
+Exact pairs per (λ, R) over the set (how often each grid point alone would recover the truth):
+| λ \ R | 0.0001 | 0.001 | 0.01 | 0.1 | 1 |
+| --- | --- | --- | --- | --- | --- |
+| 0.001 | 6 | 6 | 7 | 7 | 13 |
+| 0.01 | 5 | 4 | 5 | 5 | 10 |
+| 0.1 | 5 | 5 | 5 | 5 | 4 |
+| 1 | 3 | 3 | 3 | 3 | 3 |
+| 10 | 3 | 3 | 3 | 3 | 3 |
+| 100 | 2 | 2 | 2 | 2 | 2 |
+| 1000 | 2 | 2 | 2 | 2 | 2 |
+
+Cost: median 14.9 min per pair (max 1.40 h); median 13.4 core-hours per run (range 6.5–16.8).
+Median minutes per pair by λ: 0.001: 14, 0.01: 17, 0.1: 17, 1: 15, 10: 27, 100: 28, 1000: 5

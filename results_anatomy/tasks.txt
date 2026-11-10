@@ -1,0 +1,26 @@
+--run hard_47 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run hard_107 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run white_374 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run white_175 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run coloured_10 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run coloured_643 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run t3_194 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run t3_271 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run short_685 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--run short_546 --pairs full --out results_anatomy/dedi_anatomy.jsonl
+--data data/nd_test.npz --index 245 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 253 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 5 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 13 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 85 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 93 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 325 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 333 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 165 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+--data data/nd_test.npz --index 173 --lib nd --pairs row --out results_anatomy/dedi_nd.jsonl
+EQ_DEG=4 --data data/joint_sealed.npz --index 374 --lib poly4 --pairs row --out results_anatomy/dedi_poly4.jsonl
+EQ_DEG=4 --data data/joint_sealed.npz --index 175 --lib poly4 --pairs row --out results_anatomy/dedi_poly4.jsonl
+EQ_DEG=4 --data data/joint_sealed.npz --index 186 --lib poly4 --pairs row --out results_anatomy/dedi_poly4.jsonl
+EQ_DEG=4 --data data/joint_sealed.npz --index 203 --lib poly4 --pairs row --out results_anatomy/dedi_poly4.jsonl
+EQ_DEG=4 --data data/joint_sealed.npz --index 342 --lib poly4 --pairs row --out results_anatomy/dedi_poly4.jsonl
+EQ_DEG=4 --data data/joint_sealed.npz --index 55 --lib poly4 --pairs row --out results_anatomy/dedi_poly4.jsonl

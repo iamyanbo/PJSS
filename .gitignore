@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.pytest_cache/
+*.npz
+*.npy
+*.mat
+*.aux
+*.log
+*.blg
+*.out
+.env*
+
+data/real/
+docs/paper/main.pdf

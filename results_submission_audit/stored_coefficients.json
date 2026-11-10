@@ -1,0 +1,764 @@
+{
+  "created_utc": "2026-11-03T04:58:29.355383+00:00",
+  "audit_script": {
+    "sha256": "095be70a08691fb9ed56e884b96af6b6695051983828490383654402767ff12e",
+    "bytes": 10807
+  },
+  "inputs": {
+    "data/dysts_test.json": {
+      "sha256": "7901e54ea4ae0ab19464d1ac7b5e826f73fcbcd3ec3bbfd8db26bbdcc60783da",
+      "bytes": 168546
+    },
+    "data/dysts_test.npz": {
+      "sha256": "fd92b588e2ff8d80060e7f52116983c7c5c7231217ce129fb6524e8ddb03f3cf",
+      "bytes": 200060125
+    },
+    "results_dysts/test_final.json": {
+      "sha256": "4fc6ae8f8196108eefa557441fd7dbb53d6a73c2f7af7b50b34cf75db12a75b6",
+      "bytes": 4590307
+    },
+    "results_dysts/test_c.json": {
+      "sha256": "a81d4953183c932dc2371f274211f30d41d0203cf97867ae97e4d160512572d0",
+      "bytes": 4657420
+    },
+    "results_dysts/test_weak.json": {
+      "sha256": "f63deff6f7f76f0fc214f6e2d7689bd33d99a94d16c2fa3288779c63b6ebdcb9",
+      "bytes": 4390728
+    },
+    "results_v12refresh/dysts_v12.json": {
+      "sha256": "295a8c837dfb39cf8cdef4e9712dea65fc9334af49bd071aea221144a4b76188",
+      "bytes": 4589734
+    },
+    "results_baselines/dysts21_fd_esindy_raw_w11.json": {
+      "sha256": "6e308d9e7d76b11b85778ce692f1a087b4408c968716ad6b6f4838080c4acd6a",
+      "bytes": 837312
+    },
+    "results_baselines/dysts21_odeformer.json": {
+      "sha256": "ff576ddf22c5edf73b46af595a3177b3abf92c0d15fde90db96936c8077954f7",
+      "bytes": 250241
+    },
+    "results_baselines/dysts21_weak_esindy_h10.json": {
+      "sha256": "7be85f8cef6882a24b75ea51b611045443df8c05048909265d9d63051a48e6ff",
+      "bytes": 832942
+    },
+    "results_baselines/dysts21_weak_esindy_raw_h20.json": {
+      "sha256": "0cacd80b92ba6986ff11803cf0673c3362c2cc83496adf5f152c0df49fbef325",
+      "bytes": 965784
+    },
+    "results_baselines/dysts49_pysr.json": {
+      "sha256": "a6202dab9097567e7f0efb275d83db00a3690553a16c70882d92174be53e0928",
+      "bytes": 115079
+    },
+    "results_baselines/dysts7_fd_sr3_w11.json": {
+      "sha256": "7b071c612ef419b2bd9515497fef9cbd796248f6a170615ddf3543217c42a43e",
+      "bytes": 2490748
+    },
+    "results_baselines/dysts7_fd_sr3_w21.json": {
+      "sha256": "467a2e920046c60d978e20f6e13679f260eb7c56cbcb7bc999c00ee87a8cf49b",
+      "bytes": 2696710
+    },
+    "results_baselines/dysts7_fd_sr3_w5.json": {
+      "sha256": "52a34abed930961d4f8c93503b95edf96c7dea74e3adbb2651c9502a53ec647f",
+      "bytes": 2404465
+    },
+    "results_baselines/dysts7_fd_stlsq_raw_w11.json": {
+      "sha256": "193078b209ca3406afcf26b48bc5c8f2883d898d52bdbe87b79d2cba4498bb95",
+      "bytes": 2517528
+    },
+    "results_baselines/dysts7_fd_stlsq_raw_w5.json": {
+      "sha256": "093ac37ceaf4f4d01e350af86798ae08d14091aed04706f13faf7e4f1e790f2c",
+      "bytes": 2395556
+    },
+    "results_baselines/dysts7_weak_miosr_h10.json": {
+      "sha256": "61c03e353ece8c5db272578a283695a1ec317f8aa4bab199b9dd33846d6c3584",
+      "bytes": 1496767
+    },
+    "results_baselines/dysts7_weak_sr3_h10.json": {
+      "sha256": "d16b2bb0df1458217911dee3114d6e6def3bf7ae694e0855a561cf9d3afb15df",
+      "bytes": 2653696
+    },
+    "results_baselines/dysts7_weak_sr3_h20.json": {
+      "sha256": "a2c1e480d6b4055da25c911dcf145d66d5f0f625d1c759efea1845ab591f96b9",
+      "bytes": 2776256
+    },
+    "results_baselines/dysts7_weak_stlsq_h10.json": {
+      "sha256": "8be7c8af5aa07aa3bb8f79c957c3be29b3f8b27dd4e2e6890a08f6901a895096",
+      "bytes": 2487017
+    },
+    "results_baselines/dysts7_weak_stlsq_raw_h20.json": {
+      "sha256": "04b49fde5855f7d94f2afc0c4b6d626ee0bbd8af9e596e15e3ec97ac4f64afb0",
+      "bytes": 2898373
+    }
+  },
+  "files": [
+    {
+      "file": "results_dysts/test_final.json",
+      "records": 6160,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 6160
+      },
+      "checked": {
+        "coefficient_arrays": 6160,
+        "metric_values": 30800
+      },
+      "exact_counts": {
+        "final": 5481
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": [],
+      "groups": {
+        "all": {
+          "runs": 6160,
+          "exact_from_coefficients": 5481,
+          "systems": 77
+        },
+        "new": {
+          "runs": 3920,
+          "exact_from_coefficients": 3345,
+          "systems": 49
+        },
+        "D3": {
+          "runs": 4880,
+          "exact_from_coefficients": 4384,
+          "systems": 61
+        },
+        "D4plus": {
+          "runs": 1280,
+          "exact_from_coefficients": 1097,
+          "systems": 16
+        }
+      },
+      "runs_per_system_distribution": {
+        "80": 77
+      },
+      "cells": {
+        "noise=0.01,n=500": 770,
+        "noise=0.01,n=2000": 770,
+        "noise=0.05,n=500": 770,
+        "noise=0.05,n=2000": 770,
+        "noise=0.1,n=500": 770,
+        "noise=0.1,n=2000": 770,
+        "noise=0.2,n=500": 770,
+        "noise=0.2,n=2000": 770
+      }
+    },
+    {
+      "file": "results_dysts/test_c.json",
+      "records": 6160,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 6160
+      },
+      "checked": {
+        "coefficient_arrays": 6160,
+        "metric_values": 30800
+      },
+      "exact_counts": {
+        "final": 5413
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": [],
+      "groups": {
+        "all": {
+          "runs": 6160,
+          "exact_from_coefficients": 5413,
+          "systems": 77
+        },
+        "new": {
+          "runs": 3920,
+          "exact_from_coefficients": 3294,
+          "systems": 49
+        },
+        "D3": {
+          "runs": 4880,
+          "exact_from_coefficients": 4333,
+          "systems": 61
+        },
+        "D4plus": {
+          "runs": 1280,
+          "exact_from_coefficients": 1080,
+          "systems": 16
+        }
+      },
+      "runs_per_system_distribution": {
+        "80": 77
+      },
+      "cells": {
+        "noise=0.01,n=500": 770,
+        "noise=0.01,n=2000": 770,
+        "noise=0.05,n=500": 770,
+        "noise=0.05,n=2000": 770,
+        "noise=0.1,n=500": 770,
+        "noise=0.1,n=2000": 770,
+        "noise=0.2,n=500": 770,
+        "noise=0.2,n=2000": 770
+      }
+    },
+    {
+      "file": "results_dysts/test_weak.json",
+      "records": 6160,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 6160
+      },
+      "checked": {
+        "coefficient_arrays": 6160,
+        "metric_values": 30800
+      },
+      "exact_counts": {
+        "final": 4161
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": [],
+      "groups": {
+        "all": {
+          "runs": 6160,
+          "exact_from_coefficients": 4161,
+          "systems": 77
+        },
+        "new": {
+          "runs": 3920,
+          "exact_from_coefficients": 2316,
+          "systems": 49
+        },
+        "D3": {
+          "runs": 4880,
+          "exact_from_coefficients": 3979,
+          "systems": 61
+        },
+        "D4plus": {
+          "runs": 1280,
+          "exact_from_coefficients": 182,
+          "systems": 16
+        }
+      },
+      "runs_per_system_distribution": {
+        "80": 77
+      },
+      "cells": {
+        "noise=0.01,n=500": 770,
+        "noise=0.01,n=2000": 770,
+        "noise=0.05,n=500": 770,
+        "noise=0.05,n=2000": 770,
+        "noise=0.1,n=500": 770,
+        "noise=0.1,n=2000": 770,
+        "noise=0.2,n=500": 770,
+        "noise=0.2,n=2000": 770
+      }
+    },
+    {
+      "file": "results_v12refresh/dysts_v12.json",
+      "records": 6160,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 6160
+      },
+      "checked": {
+        "coefficient_arrays": 6160,
+        "metric_values": 30800
+      },
+      "exact_counts": {
+        "final": 5486
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": [],
+      "groups": {
+        "all": {
+          "runs": 6160,
+          "exact_from_coefficients": 5486,
+          "systems": 77
+        },
+        "new": {
+          "runs": 3920,
+          "exact_from_coefficients": 3348,
+          "systems": 49
+        },
+        "D3": {
+          "runs": 4880,
+          "exact_from_coefficients": 4387,
+          "systems": 61
+        },
+        "D4plus": {
+          "runs": 1280,
+          "exact_from_coefficients": 1099,
+          "systems": 16
+        }
+      },
+      "runs_per_system_distribution": {
+        "80": 77
+      },
+      "cells": {
+        "noise=0.01,n=500": 770,
+        "noise=0.01,n=2000": 770,
+        "noise=0.05,n=500": 770,
+        "noise=0.05,n=2000": 770,
+        "noise=0.1,n=500": 770,
+        "noise=0.1,n=2000": 770,
+        "noise=0.2,n=500": 770,
+        "noise=0.2,n=2000": 770
+      }
+    },
+    {
+      "file": "results_baselines/dysts21_fd_esindy_raw_w11.json",
+      "records": 294,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 294
+      },
+      "checked": {
+        "coefficient_arrays": 588,
+        "metric_values": 2940,
+        "threshold_paths": 294
+      },
+      "exact_counts": {
+        "aic": 68,
+        "cv": 86
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts21_odeformer.json",
+      "records": 294,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 294
+      },
+      "checked": {
+        "coefficient_arrays": 294,
+        "metric_values": 1470
+      },
+      "exact_counts": {
+        "best": 2
+      },
+      "out_of_library_selected_arrays": 209,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts21_weak_esindy_h10.json",
+      "records": 294,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 294
+      },
+      "checked": {
+        "coefficient_arrays": 588,
+        "metric_values": 2940,
+        "threshold_paths": 294
+      },
+      "exact_counts": {
+        "aic": 17,
+        "cv": 48
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts21_weak_esindy_raw_h20.json",
+      "records": 294,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 294
+      },
+      "checked": {
+        "coefficient_arrays": 588,
+        "metric_values": 2940,
+        "threshold_paths": 294
+      },
+      "exact_counts": {
+        "aic": 5,
+        "cv": 32
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts49_pysr.json",
+      "records": 126,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 126
+      },
+      "checked": {
+        "coefficient_arrays": 126,
+        "metric_values": 630
+      },
+      "exact_counts": {
+        "best": 56
+      },
+      "out_of_library_selected_arrays": 14,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_fd_sr3_w11.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 127,
+        "cv": 153
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_fd_sr3_w21.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 24,
+        "cv": 133
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_fd_sr3_w5.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 170,
+        "cv": 134
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_fd_stlsq_raw_w11.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 170,
+        "cv": 269
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_fd_stlsq_raw_w5.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 265,
+        "cv": 213
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_weak_miosr_h10.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "miosr_paths": 880
+      },
+      "exact_counts": {
+        "aic": 18,
+        "cv": 64,
+        "miosr_true_k": 668
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_weak_sr3_h10.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 51,
+        "cv": 153
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_weak_sr3_h20.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 11,
+        "cv": 134
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_weak_stlsq_h10.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 50,
+        "cv": 165
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    },
+    {
+      "file": "results_baselines/dysts7_weak_stlsq_raw_h20.json",
+      "records": 880,
+      "duplicate_indices": [],
+      "missing_indices": [],
+      "unexpected_indices": [],
+      "statuses": {
+        "ok": 880
+      },
+      "checked": {
+        "coefficient_arrays": 1760,
+        "metric_values": 8800,
+        "threshold_paths": 880
+      },
+      "exact_counts": {
+        "aic": 22,
+        "cv": 89
+      },
+      "out_of_library_selected_arrays": 0,
+      "issues": [],
+      "metric_mismatches": []
+    }
+  ],
+  "paired_headlines": [
+    {
+      "file": "dysts7_fd_stlsq_raw_w11",
+      "rule": "cv",
+      "runs": 880,
+      "ours_exact": 784,
+      "baseline_exact": 269,
+      "ours_only": 515,
+      "baseline_only": 0
+    },
+    {
+      "file": "dysts7_fd_sr3_w11",
+      "rule": "cv",
+      "runs": 880,
+      "ours_exact": 784,
+      "baseline_exact": 153,
+      "ours_only": 631,
+      "baseline_only": 0
+    },
+    {
+      "file": "dysts7_weak_stlsq_h10",
+      "rule": "cv",
+      "runs": 880,
+      "ours_exact": 784,
+      "baseline_exact": 165,
+      "ours_only": 621,
+      "baseline_only": 2
+    },
+    {
+      "file": "dysts7_weak_sr3_h10",
+      "rule": "cv",
+      "runs": 880,
+      "ours_exact": 784,
+      "baseline_exact": 153,
+      "ours_only": 632,
+      "baseline_only": 1
+    },
+    {
+      "file": "dysts7_weak_miosr_h10",
+      "rule": "cv",
+      "runs": 880,
+      "ours_exact": 784,
+      "baseline_exact": 64,
+      "ours_only": 720,
+      "baseline_only": 0
+    },
+    {
+      "file": "dysts7_weak_miosr_h10",
+      "rule": "oracle",
+      "runs": 880,
+      "ours_exact": 784,
+      "baseline_exact": 668,
+      "ours_only": 123,
+      "baseline_only": 7
+    },
+    {
+      "file": "dysts21_fd_esindy_raw_w11",
+      "rule": "cv",
+      "runs": 294,
+      "ours_exact": 257,
+      "baseline_exact": 86,
+      "ours_only": 171,
+      "baseline_only": 0
+    },
+    {
+      "file": "dysts21_weak_esindy_h10",
+      "rule": "cv",
+      "runs": 294,
+      "ours_exact": 257,
+      "baseline_exact": 48,
+      "ours_only": 209,
+      "baseline_only": 0
+    },
+    {
+      "file": "dysts49_pysr",
+      "rule": "best",
+      "runs": 126,
+      "ours_exact": 117,
+      "baseline_exact": 56,
+      "ours_only": 61,
+      "baseline_only": 0
+    },
+    {
+      "file": "dysts21_odeformer",
+      "rule": "best",
+      "runs": 294,
+      "ours_exact": 257,
+      "baseline_exact": 2,
+      "ours_only": 255,
+      "baseline_only": 0
+    }
+  ],
+  "v12_vs_original": {
+    "v12_only_exact": [
+      496,
+      534,
+      546,
+      558,
+      1420,
+      1908,
+      4580,
+      4988,
+      6112
+    ],
+    "original_only_exact": [
+      490,
+      497,
+      553,
+      2328
+    ]
+  },
+  "coefficient_arrays_checked": 44424,
+  "metric_mismatches": 0,
+  "issues": 0,
+  "evidence_boundaries": [
+    "No numerical method was rerun. This audits saved coefficients, metadata and derived scores.",
+    "Truth is the archived dysts generator sidecar; its ODE derivation and original package behavior are not independently rederived here.",
+    "Threshold-path and oracle coefficients were not saved; their flags are checked for internal consistency only.",
+    "For symbolic regressors, the saved in-library coefficient matrix is checked; the saved out_of_library classification is trusted, not independently parsed from the expressions.",
+    "The new-system grouping uses archived overlap labels, not an independent audit of literature or system-family independence.",
+    "Input hashes identify files inspected now; they do not establish historical freeze dates or preregistration provenance."
+  ]
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 374,
+  "system": "rabinovich",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 175,
+  "system": "sprottA",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 186,
+  "system": "sprottA",
+  "noise": 0.1,
+  "n": 2000
+ }
+]

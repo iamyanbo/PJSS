@@ -1,0 +1,19 @@
+# v1.1 = v1.0.1 + Gaussian loss inside the AR(1) likelihood (DEFAULTS['huber_ar1'] = inf); frozen before the test (commit 9b88c9d), unchanged since
+203dd5eb6ba6ed79876253abeff934cc  eqdisc/__init__.py
+83156443d774bde0a0622cef0ae3ccb9  eqdisc/confidence.py
+4bd7dffadb93c6c191ddcddea01d4e59  eqdisc/core.py
+09295bbb76fb549ccead23d528f21374  eqdisc/final_model.py
+ba3fc1becb766943bb6ab8eb712d20e6  eqdisc/flow_discovery.py
+eb55775cbbe5904772df102eb99072eb  eqdisc/gen_trig.py
+fd7aace1cb6767d6903dbfac6810b633  eqdisc/heldout_systems.py
+6484dd8b00b2dc84fb2069ae320f28b6  eqdisc/joint_biglib.py
+24ba0897863aba1a67af92cd2d84df10  eqdisc/joint_colored.py
+e7f563ae2080e3229097f9008acc90cd  eqdisc/joint_discover.py
+4bc34d937c3b30b4b7f4c499120d760e  eqdisc/joint_nd.py
+4ab5051d0c33bb5d92a66db341694ced  eqdisc/joint_squeeze.py
+3508699a705f78af88b055b43372719f  eqdisc/nd_systems.py
+b3b909360a3a6608593634af63347083  eqdisc/select_k.py
+967e9e50d9a29bf41776608aeedfe768  eqdisc/subset.py
+cfb8ca29a3352dd860940bafd217c08c  eqdisc/confidence_isotonic.json
+631ca07a77c90fe83f8e38d895f1df99  benchmarks/final_bench.py
+9dc794c551b8ce2fab33b45fa461cfa7  benchmarks/v11_report.py

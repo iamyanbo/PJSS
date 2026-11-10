@@ -1,0 +1,9 @@
+{
+  "n": 576,
+  "counts": {
+    "PJSS": 490.0,
+    "Fixed-state proposals": 480.0,
+    "Forward stepwise": 462.0,
+    "No proposals": 458.0
+  }
+}

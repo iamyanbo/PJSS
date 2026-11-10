@@ -1,0 +1,642 @@
+[
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 47,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 374,
+  "system": "rabinovich",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 10,
+  "system": "lorenz",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 194,
+  "system": "chen",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 685,
+  "system": "sprottD",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 107,
+  "system": "rossler",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 175,
+  "system": "sprottA",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 643,
+  "system": "sprottE",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 271,
+  "system": "halvorsen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 546,
+  "system": "halvorsen",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 21,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 186,
+  "system": "sprottA",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 30,
+  "system": "lorenz",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 334,
+  "system": "sprottA",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 509,
+  "system": "chen",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 66,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 203,
+  "system": "sprottB",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 339,
+  "system": "sprottA",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 23,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 458,
+  "system": "rossler",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 10,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 342,
+  "system": "sprottE",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 258,
+  "system": "halvorsen",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 98,
+  "system": "rossler",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 561,
+  "system": "sprottA",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 45,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 55,
+  "system": "rossler",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 355,
+  "system": "sprottA",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 351,
+  "system": "sprottA",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 514,
+  "system": "chen",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 85,
+  "system": "rossler",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 290,
+  "system": "sprottD",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 730,
+  "system": "rabinovich",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 722,
+  "system": "rabinovich",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 789,
+  "system": "rabinovich",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 31,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 123,
+  "system": "halvorsen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 279,
+  "system": "halvorsen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 723,
+  "system": "rabinovich",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 746,
+  "system": "sprottE",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 34,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 270,
+  "system": "sprottC",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 106,
+  "system": "rossler",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 422,
+  "system": "sprottB",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 769,
+  "system": "rabinovich",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 41,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 35,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 563,
+  "system": "sprottD",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 171,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 434,
+  "system": "lorenz",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 116,
+  "system": "rossler",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 98,
+  "system": "chen",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 178,
+  "system": "chen",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 6,
+  "system": "lorenz",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 533,
+  "system": "halvorsen",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 16,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 39,
+  "system": "lorenz",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 515,
+  "system": "sprottC",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 567,
+  "system": "sprottD",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 570,
+  "system": "sprottA",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 112,
+  "system": "rossler",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 66,
+  "system": "rossler",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 722,
+  "system": "rabinovich",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 102,
+  "system": "rossler",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 601,
+  "system": "sprottB",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 62,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 387,
+  "system": "rabinovich",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 95,
+  "system": "rossler",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 263,
+  "system": "halvorsen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 478,
+  "system": "rossler",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 46,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 114,
+  "system": "chen",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 418,
+  "system": "sprottB",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 674,
+  "system": "sprottE",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 405,
+  "system": "lorenz",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "hard",
+  "data": "data/hard120.npz",
+  "index": 100,
+  "system": "rossler",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "white",
+  "data": "data/joint_sealed.npz",
+  "index": 135,
+  "system": "halvorsen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "coloured",
+  "data": "data/sealed_colored2.npz",
+  "index": 199,
+  "system": "chen",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "t3",
+  "data": "data/sealed_student.npz",
+  "index": 495,
+  "system": "sprottC",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "short",
+  "data": "data/joint_sealed.npz",
+  "index": 646,
+  "system": "sprottC",
+  "noise": 0.1,
+  "n": 500
+ }
+]

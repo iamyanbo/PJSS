@@ -1,0 +1,1941 @@
+[
+ {
+  "id": 1,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "0.303030303030303 - 0.360750360750361*x_0"
+  ],
+  "description": "RC-circuit (charging capacitor)",
+  "xi_true": [
+   [
+    0.303030303030303
+   ],
+   [
+    -0.360750360750361
+   ],
+   [
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 2,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "0.23*x_0"
+  ],
+  "description": "Population growth (naive)",
+  "xi_true": [
+   [
+    0.0
+   ],
+   [
+    0.23
+   ],
+   [
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 3,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "0.79*x_0*(1 - 0.0134589502018843*x_0)"
+  ],
+  "description": "Population growth with carrying capacity",
+  "xi_true": [
+   [
+    0.0
+   ],
+   [
+    0.79
+   ],
+   [
+    -0.010632570659488598
+   ]
+  ]
+ },
+ {
+  "id": 4,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-0.5 + 1/(1 + 1.64872127070013*exp(-1.04166666666667*x_0))"
+  ],
+  "description": "RC-circuit with non-linear resistor (charging capacitor)",
+  "xi_true": null
+ },
+ {
+  "id": 5,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "9.81 - 0.0021175*x_0**2"
+  ],
+  "description": "Velocity of a falling object with air resistance",
+  "xi_true": [
+   [
+    9.81
+   ],
+   [
+    0.0
+   ],
+   [
+    -0.0021175
+   ]
+  ]
+ },
+ {
+  "id": 6,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "-0.5*x_0**2 + 2.1*x_0"
+  ],
+  "description": "Autocatalysis with one fixed abundant chemical",
+  "xi_true": [
+   [
+    0.0
+   ],
+   [
+    2.1
+   ],
+   [
+    -0.5
+   ]
+  ]
+ },
+ {
+  "id": 7,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "0.032*x_0*log(2.29*x_0)"
+  ],
+  "description": "Gompertz law for tumor growth",
+  "xi_true": null
+ },
+ {
+  "id": 8,
+  "dim": 1,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "0.14*x_0*(1 - 0.00769230769230769*x_0)*(0.227272727272727*x_0 - 1)"
+  ],
+  "description": "Logistic equation with Allee effect",
+  "xi_true": null
+ },
+ {
+  "id": 9,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "0.32 - 0.6*x_0"
+  ],
+  "description": "Language death model for two languages",
+  "xi_true": [
+   [
+    0.32
+   ],
+   [
+    -0.6
+   ],
+   [
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 10,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-0.8*x_0*(1 - x_0)**1.2 + 0.2*x_0**1.2*(1 - x_0)"
+  ],
+  "description": "Refined language death model for two languages",
+  "xi_true": null
+ },
+ {
+  "id": 11,
+  "dim": 1,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "-x_0**3"
+  ],
+  "description": "Naive critical slowing down (statistical mechanics)",
+  "xi_true": null
+ },
+ {
+  "id": 12,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "-0.1107*x_0**2 + 1.8*x_0"
+  ],
+  "description": "Photons in a laser (simple)",
+  "xi_true": [
+   [
+    0.0
+   ],
+   [
+    1.8
+   ],
+   [
+    -0.1107
+   ]
+  ]
+ },
+ {
+  "id": 13,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "0.0981*(9.7*cos(x_0) - 1)*sin(x_0)"
+  ],
+  "description": "Overdamped bead on a rotating hoop",
+  "xi_true": null
+ },
+ {
+  "id": 14,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-0.9*x_0**2/(x_0**2 + 449.44) + 0.78*x_0*(1 - 0.0123456790123457*x_0)"
+  ],
+  "description": "Budworm outbreak model with predation",
+  "xi_true": null
+ },
+ {
+  "id": 15,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-x_0**2/(x_0**2 + 1) + 0.4*x_0*(1 - 0.0105263157894737*x_0)"
+  ],
+  "description": "Budworm outbreak with predation (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 16,
+  "dim": 1,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 5,
+  "eq": [
+   "-0.001*x_0**5 + 0.04*x_0**3 + 0.1*x_0"
+  ],
+  "description": "Landau equation (typical time scale tau = 1)",
+  "xi_true": null
+ },
+ {
+  "id": 17,
+  "dim": 1,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "0.4*x_0*(1 - 0.01*x_0) - 0.3"
+  ],
+  "description": "Logistic equation with harvesting/fishing",
+  "xi_true": [
+   [
+    -0.3
+   ],
+   [
+    0.4
+   ],
+   [
+    -0.004
+   ]
+  ]
+ },
+ {
+  "id": 18,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "0.4*x_0*(1 - 0.01*x_0) - 0.24*x_0/(x_0 + 50.0)"
+  ],
+  "description": "Improved logistic equation with harvesting/fishing",
+  "xi_true": null
+ },
+ {
+  "id": 19,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "x_0*(1 - x_0) - 0.08*x_0/(x_0 + 0.8)"
+  ],
+  "description": "Improved logistic equation with harvesting/fishing (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 20,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "x_0**2/(x_0**2 + 1) - 0.55*x_0 + 0.1"
+  ],
+  "description": "Autocatalytic gene switching (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 21,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-0.2*x_0 + 1.2 - exp(-x_0)"
+  ],
+  "description": "Dimensionally reduced SIR infection model for dead people (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 22,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "0.4*x_0**5/(x_0**5 + 123.0) - 0.89*x_0 + 1.4"
+  ],
+  "description": "Hysteretic activation of a protein expression (positive feedback, basal promoter expression)",
+  "xi_true": null
+ },
+ {
+  "id": 23,
+  "dim": 1,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "0.21 - sin(x_0)"
+  ],
+  "description": "Overdamped pendulum with constant driving torque/fireflies/Josephson junction (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 24,
+  "dim": 2,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "x_1",
+   "-2.1*x_0"
+  ],
+  "description": "Harmonic oscillator without damping",
+  "xi_true": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    -2.1
+   ],
+   [
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 25,
+  "dim": 2,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "x_1",
+   "-4.5*x_0 - 0.43*x_1"
+  ],
+  "description": "Harmonic oscillator with damping",
+  "xi_true": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    -4.5
+   ],
+   [
+    1.0,
+    -0.43
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 26,
+  "dim": 2,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "x_0*(-x_0 - 2.0*x_1 + 3.0)",
+   "x_1*(-x_0 - x_1 + 2.0)"
+  ],
+  "description": "Lotka-Volterra competition model (Strogatz version with sheeps and rabbits)",
+  "xi_true": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    3.0,
+    0.0
+   ],
+   [
+    0.0,
+    2.0
+   ],
+   [
+    -1.0,
+    0.0
+   ],
+   [
+    -2.0,
+    -1.0
+   ],
+   [
+    0.0,
+    -1.0
+   ]
+  ]
+ },
+ {
+  "id": 27,
+  "dim": 2,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "x_0*(1.84 - 1.45*x_1)",
+   "-x_1*(3.0 - 1.62*x_0)"
+  ],
+  "description": "Lotka-Volterra simple (as on Wikipedia)",
+  "xi_true": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    1.84,
+    0.0
+   ],
+   [
+    0.0,
+    -3.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    -1.45,
+    1.62
+   ],
+   [
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 28,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "x_1",
+   "-0.9*sin(x_0)"
+  ],
+  "description": "Pendulum without friction",
+  "xi_true": null
+ },
+ {
+  "id": 29,
+  "dim": 2,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "0.65*x_0*x_1",
+   "-x_0**2 + x_1**2"
+  ],
+  "description": "Dipole fixed point",
+  "xi_true": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    -1.0
+   ],
+   [
+    0.65,
+    0.0
+   ],
+   [
+    0.0,
+    1.0
+   ]
+  ]
+ },
+ {
+  "id": 30,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "x_0*(-1.61*x_0*x_1 + x_1)",
+   "x_1*(-1.61*x_0*x_1 + x_0)"
+  ],
+  "description": "RNA molecules catalyzing each others replication",
+  "xi_true": null
+ },
+ {
+  "id": 31,
+  "dim": 2,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "-0.4*x_0*x_1",
+   "0.4*x_0*x_1 - 0.314*x_1"
+  ],
+  "description": "SIR infection model only for healthy and sick",
+  "xi_true": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    -0.314
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    -0.4,
+    0.4
+   ],
+   [
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 32,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "x_1",
+   "-x_0**3 + x_0 - 0.18*x_1"
+  ],
+  "description": "Damped double well oscillator",
+  "xi_true": null
+ },
+ {
+  "id": 33,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-0.08*x_0**2 - sin(x_1)",
+   "x_0 - cos(x_1)/x_0"
+  ],
+  "description": "Glider (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 34,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "x_1",
+   "(cos(x_0) - 0.93)*sin(x_0)"
+  ],
+  "description": "Frictionless bead on a rotating hoop (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 35,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "cos(x_0)*cot(x_1)",
+   "(4.2*sin(x_1)**2 + cos(x_1)**2)*sin(x_0)"
+  ],
+  "description": "Rotational dynamics of an object in a shear flow",
+  "xi_true": null
+ },
+ {
+  "id": 36,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "x_1",
+   "-0.07*x_1*cos(x_0) - x_1 - sin(x_0)"
+  ],
+  "description": "Pendulum with non-linear damping, no driving (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 37,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "x_1",
+   "-x_0 - 0.43*x_1*(x_0**2 - 1)"
+  ],
+  "description": "Van der Pol oscillator (standard form)",
+  "xi_true": null
+ },
+ {
+  "id": 38,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "-1.12333333333333*x_0**3 + 3.37*x_0 + 3.37*x_1",
+   "-0.29673590504451*x_0"
+  ],
+  "description": "Van der Pol oscillator (simplified form from Strogatz)",
+  "xi_true": null
+ },
+ {
+  "id": 39,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "x_0**2*x_1 - x_0 + 2.4*x_1",
+   "-x_0**2*x_1 - 2.4*x_0 + 0.07"
+  ],
+  "description": "Glycolytic oscillator, e.g., ADP and F6P in yeast (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 40,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "x_1",
+   "-x_0 + 0.886*x_1*(1 - x_0**2)"
+  ],
+  "description": "Duffing equation (weakly non-linear oscillation)",
+  "xi_true": null
+ },
+ {
+  "id": 41,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "-x_0 + 15.3*(-x_0 + x_1)*(x_0**2 + 0.001)",
+   "0.3 - x_0"
+  ],
+  "description": "Cell cycle model by Tyson for interaction between protein cdc2 and cyclin (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 42,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-4.0*x_0*x_1/(x_0**2 + 1) - x_0 + 8.9",
+   "1.4*x_0*(-x_1/(x_0**2 + 1) + 1)"
+  ],
+  "description": "Reduced model for chlorine dioxide-iodine-malonic acid rection (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 43,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "x_1",
+   "-0.64*x_1 - sin(x_0) + 1.67"
+  ],
+  "description": "Driven pendulum with linear damping / Josephson junction (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 44,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "x_1",
+   "-0.64*x_1*Abs(x_1) - sin(x_0) + 1.67"
+  ],
+  "description": "Driven pendulum with quadratic damping (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 45,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "-x_0*x_1**2 - 0.5*x_0 + 0.5",
+   "x_0*x_1**2 - 0.02*x_1"
+  ],
+  "description": "Isothermal autocatalytic reaction model by Gray and Scott 1985 (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 46,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-sin(x_0) + 0.33*sin(x_0 - x_1)",
+   "-sin(x_1) - 0.33*sin(x_0 - x_1)"
+  ],
+  "description": "Interacting bar magnets",
+  "xi_true": null
+ },
+ {
+  "id": 47,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-x_0 + 1/(0.246596963941606*exp(4.89*x_1) + 1)",
+   "-x_1 + 1/(0.246596963941606*exp(4.89*x_0) + 1)"
+  ],
+  "description": "Binocular rivalry model (no oscillations)",
+  "xi_true": null
+ },
+ {
+  "id": 48,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "-x_0*x_1/(0.48*x_0**2 + 1) - x_0 + 18.3",
+   "-x_0*x_1/(0.48*x_0**2 + 1) + 11.23"
+  ],
+  "description": "Bacterial respiration model for nutrients and oxygen levels",
+  "xi_true": null
+ },
+ {
+  "id": 49,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "3.1*x_0**2*x_1 - 4.03*x_0 + 1",
+   "-3.1*x_0**2*x_1 + 3.03*x_0"
+  ],
+  "description": "Brusselator: hypothetical chemical oscillation model (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 50,
+  "dim": 2,
+  "class": "poly_high_degree",
+  "lib_degree": 2,
+  "max_degree": 3,
+  "eq": [
+   "x_0**2*x_1 - x_0 + 0.24",
+   "-x_0**2*x_1 + 1.43"
+  ],
+  "description": "Chemical oscillator model by Schnackenberg 1979 (dimensionless)",
+  "xi_true": null
+ },
+ {
+  "id": 51,
+  "dim": 2,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 0,
+  "eq": [
+   "sin(x_1)*cos(x_0) + 1.432",
+   "sin(x_1)*cos(x_0) + 0.972"
+  ],
+  "description": "Oscillator death model by Ermentrout and Kopell 1990",
+  "xi_true": null
+ },
+ {
+  "id": 52,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "-0.1*x_0 + 0.1*x_1",
+   "0.21*x_0*x_2 - 0.21*x_1",
+   "-1.054*x_0*x_1 - 0.34*x_2 + 1.394"
+  ],
+  "description": "Maxwell-Bloch equations (laser dynamics)",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    1.394
+   ],
+   [
+    -0.1,
+    0.0,
+    0.0
+   ],
+   [
+    0.1,
+    -0.21,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    -0.34
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    -1.054
+   ],
+   [
+    0.0,
+    0.21,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 53,
+  "dim": 3,
+  "class": "non_polynomial",
+  "lib_degree": 3,
+  "max_degree": 0,
+  "eq": [
+   "-0.4*x_0*x_1/(x_0 + 0.1) - 0.05*x_0 + 0.1",
+   "-7.95*x_0*x_1/(x_1 + 2.0) - 0.2*x_1/(x_1 + 0.1) + 0.6*x_2*(x_1 + 0.1)",
+   "7.95*x_0*x_1/(x_1 + 2.0) + 0.2*x_1/(x_1 + 0.1) - 0.6*x_2*(x_1 + 0.1)"
+  ],
+  "description": "Model for apoptosis (cell death)",
+  "xi_true": null
+ },
+ {
+  "id": 54,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "-5.1*x_0 + 5.1*x_1",
+   "-x_0*x_2 + 12.0*x_0 - x_1",
+   "x_0*x_1 - 1.67*x_2"
+  ],
+  "description": "Lorenz equations in well-behaved periodic regime",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    -5.1,
+    12.0,
+    0.0
+   ],
+   [
+    5.1,
+    -1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    -1.67
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 55,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "-10.0*x_0 + 10.0*x_1",
+   "-x_0*x_2 + 99.96*x_0 - x_1",
+   "x_0*x_1 - 2.66666666666667*x_2"
+  ],
+  "description": "Lorenz equations in complex periodic regime",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    -10.0,
+    99.96,
+    0.0
+   ],
+   [
+    10.0,
+    -1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    -2.66666666666667
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 56,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "-10.0*x_0 + 10.0*x_1",
+   "-x_0*x_2 + 28.0*x_0 - x_1",
+   "x_0*x_1 - 2.66666666666667*x_2"
+  ],
+  "description": "Lorenz equations standard parameters (chaotic)",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    -10.0,
+    28.0,
+    0.0
+   ],
+   [
+    10.0,
+    -1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    -2.66666666666667
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 57,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "-5.0*x_1 - 5.0*x_2",
+   "5.0*x_0 - 1.0*x_1",
+   "5.0*x_2*(x_0 - 5.7) + 1.0"
+  ],
+  "description": "R\u00f6ssler attractor (stable fixed point)",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    5.0,
+    0.0
+   ],
+   [
+    -5.0,
+    -1.0,
+    0.0
+   ],
+   [
+    -5.0,
+    0.0,
+    -28.5
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    5.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 58,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "-5.0*x_1 - 5.0*x_2",
+   "5.0*x_0 + 0.5*x_1",
+   "5.0*x_2*(x_0 - 5.7) + 1.0"
+  ],
+  "description": "R\u00f6ssler attractor (periodic)",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    5.0,
+    0.0
+   ],
+   [
+    -5.0,
+    0.5,
+    0.0
+   ],
+   [
+    -5.0,
+    0.0,
+    -28.5
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    5.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 59,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "-5.0*x_1 - 5.0*x_2",
+   "5.0*x_0 + 1.0*x_1",
+   "5.0*x_2*(x_0 - 5.7) + 1.0"
+  ],
+  "description": "R\u00f6ssler attractor (chaotic)",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    5.0,
+    0.0
+   ],
+   [
+    -5.0,
+    1.0,
+    0.0
+   ],
+   [
+    -5.0,
+    0.0,
+    -28.5
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    5.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 60,
+  "dim": 3,
+  "class": "poly_high_degree",
+  "lib_degree": 3,
+  "max_degree": 4,
+  "eq": [
+   "x_0*(x_2 - 0.7) - 3.5*x_1",
+   "3.5*x_0 + x_1*(x_2 - 0.7)",
+   "0.1*x_0**3*x_2 - 0.333333333333333*x_2**3 + 0.95*x_2 - (x_0**2 + x_1**2)*(0.25*x_2 + 1) + 0.65"
+  ],
+  "description": "Aizawa attractor (chaotic)",
+  "xi_true": null
+ },
+ {
+  "id": 61,
+  "dim": 3,
+  "class": "in_library",
+  "lib_degree": 3,
+  "max_degree": 2,
+  "eq": [
+   "5.0*x_0 - x_1*x_2",
+   "x_0*x_2 - 10.0*x_1",
+   "0.333333333333333*x_0*x_1 - 3.8*x_2"
+  ],
+  "description": "Chen-Lee attractor; system for gyro motion with feedback control of rigid body (chaotic)",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    5.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    -10.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    -3.8
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.333333333333333
+   ],
+   [
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "id": 62,
+  "dim": 4,
+  "class": "non_polynomial",
+  "lib_degree": 2,
+  "max_degree": 1,
+  "eq": [
+   "-x_0 + 1/(0.246596963941606*exp(0.4*x_1 + 0.89*x_2) + 1)",
+   "1.0*x_0 - 1.0*x_1",
+   "-x_2 + 1/(0.246596963941606*exp(0.89*x_0 + 0.4*x_3) + 1)",
+   "1.0*x_2 - 1.0*x_3"
+  ],
+  "description": "Binocular rivalry model with adaptation (oscillations)",
+  "xi_true": null
+ },
+ {
+  "id": 63,
+  "dim": 4,
+  "class": "in_library",
+  "lib_degree": 2,
+  "max_degree": 2,
+  "eq": [
+   "-0.28*x_0*x_2",
+   "0.28*x_0*x_2 - 0.47*x_1",
+   "0.47*x_1 - 0.3*x_2",
+   "0.3*x_2"
+  ],
+  "description": "SEIR infection model (proportions)",
+  "xi_true": [
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    -0.47,
+    0.47,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    -0.3,
+    0.3
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    -0.28,
+    0.28,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  ]
+ }
+]

@@ -1,0 +1,2158 @@
+{
+"data": "data/dysts_test.npz",
+"seed": 20261027,
+"n_runs": 300,
+"systems": [
+"Arneodo",
+"AtmosphericRegime",
+"Bouali",
+"Bouali2",
+"Coullet",
+"DequanLi",
+"Finance",
+"GuckenheimerHolmes",
+"HenonHeiles",
+"HindmarshRose",
+"HyperBao",
+"HyperCai",
+"HyperJha",
+"HyperLorenz",
+"HyperLu",
+"HyperPang",
+"HyperQi",
+"HyperWang",
+"HyperXu",
+"HyperYan",
+"HyperYangChen",
+"IsothermalChemical",
+"KawczynskiStrizhak",
+"Laser",
+"LorenzCoupled",
+"LorenzStenflo",
+"LuChenCheng",
+"MooreSpiegel",
+"NewtonLiepnik",
+"PehlivanWei",
+"QiChen",
+"Sakarya",
+"SprottI",
+"SprottJ",
+"SprottJerk",
+"SprottK",
+"SprottL",
+"SprottM",
+"SprottN",
+"SprottO",
+"SprottP",
+"SprottQ",
+"SprottR",
+"SprottS",
+"SprottTorus",
+"Tsucs2",
+"VallisElNino",
+"WangSun",
+"ZhouChen"
+],
+"runs": [
+{
+"index": 5831,
+"system": "SprottTorus",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5258,
+"system": "SprottM",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5624,
+"system": "SprottR",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 1729,
+"system": "HyperLu",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 1877,
+"system": "HyperQi",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2389,
+"system": "IsothermalChemical",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1673,
+"system": "HyperLorenz",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 1546,
+"system": "HyperJha",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 3592,
+"system": "QiChen",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 3010,
+"system": "LorenzStenflo",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 5207,
+"system": "SprottM",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1519,
+"system": "HyperCai",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2242,
+"system": "HyperYangChen",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 5884,
+"system": "Tsucs2",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5538,
+"system": "SprottQ",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 3121,
+"system": "LuChenCheng",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 2099,
+"system": "HyperXu",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 4837,
+"system": "SprottI",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 269,
+"system": "Bouali2",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2332,
+"system": "IsothermalChemical",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 80,
+"system": "AtmosphericRegime",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 4027,
+"system": "Sakarya",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 232,
+"system": "Bouali",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 6124,
+"system": "ZhouChen",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1258,
+"system": "HenonHeiles",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 5511,
+"system": "SprottP",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1895,
+"system": "HyperQi",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 990,
+"system": "GuckenheimerHolmes",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 813,
+"system": "Finance",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1549,
+"system": "HyperJha",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5149,
+"system": "SprottL",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2481,
+"system": "Laser",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 5606,
+"system": "SprottR",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1416,
+"system": "HyperBao",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 1631,
+"system": "HyperLorenz",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5679,
+"system": "SprottR",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 4836,
+"system": "SprottI",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1682,
+"system": "HyperLu",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 1027,
+"system": "GuckenheimerHolmes",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 3149,
+"system": "LuChenCheng",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 271,
+"system": "Bouali2",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1430,
+"system": "HyperBao",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5299,
+"system": "SprottN",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 1704,
+"system": "HyperLu",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 4840,
+"system": "SprottI",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5874,
+"system": "Tsucs2",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5042,
+"system": "SprottK",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 4884,
+"system": "SprottJ",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5886,
+"system": "Tsucs2",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 581,
+"system": "Coullet",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1235,
+"system": "HenonHeiles",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 2477,
+"system": "KawczynskiStrizhak",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2456,
+"system": "KawczynskiStrizhak",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 2162,
+"system": "HyperYan",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 5976,
+"system": "VallisElNino",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 1676,
+"system": "HyperLorenz",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1336,
+"system": "HindmarshRose",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 4943,
+"system": "SprottJ",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5473,
+"system": "SprottP",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 1432,
+"system": "HyperBao",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 2404,
+"system": "KawczynskiStrizhak",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1766,
+"system": "HyperPang",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 4902,
+"system": "SprottJ",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 6094,
+"system": "ZhouChen",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5601,
+"system": "SprottR",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 5411,
+"system": "SprottO",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 6102,
+"system": "ZhouChen",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 6128,
+"system": "ZhouChen",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 772,
+"system": "DequanLi",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5417,
+"system": "SprottO",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 4807,
+"system": "SprottI",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5826,
+"system": "SprottTorus",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 6127,
+"system": "ZhouChen",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 618,
+"system": "Coullet",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 1559,
+"system": "HyperJha",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5969,
+"system": "VallisElNino",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 2902,
+"system": "LorenzCoupled",
+"noise": 0.1,
+"n": 2000,
+"D": 6
+},
+{
+"index": 5051,
+"system": "SprottK",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 4968,
+"system": "SprottJerk",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 4921,
+"system": "SprottJ",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 2069,
+"system": "HyperWang",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 579,
+"system": "Coullet",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 3124,
+"system": "LuChenCheng",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3593,
+"system": "QiChen",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 1225,
+"system": "HenonHeiles",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 2122,
+"system": "HyperXu",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 2985,
+"system": "LorenzStenflo",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 3271,
+"system": "MooreSpiegel",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3506,
+"system": "PehlivanWei",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5617,
+"system": "SprottR",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 5786,
+"system": "SprottTorus",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 2994,
+"system": "LorenzStenflo",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 1788,
+"system": "HyperPang",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2123,
+"system": "HyperXu",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 5446,
+"system": "SprottP",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1391,
+"system": "HyperBao",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1662,
+"system": "HyperLorenz",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2395,
+"system": "IsothermalChemical",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 4040,
+"system": "Sakarya",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 808,
+"system": "Finance",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 3307,
+"system": "NewtonLiepnik",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 5360,
+"system": "SprottO",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 6029,
+"system": "WangSun",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1385,
+"system": "HyperBao",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 128,
+"system": "AtmosphericRegime",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 2949,
+"system": "LorenzCoupled",
+"noise": 0.05,
+"n": 2000,
+"D": 6
+},
+{
+"index": 2465,
+"system": "KawczynskiStrizhak",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 142,
+"system": "AtmosphericRegime",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 4925,
+"system": "SprottJ",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 115,
+"system": "AtmosphericRegime",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 3460,
+"system": "PehlivanWei",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3578,
+"system": "QiChen",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5068,
+"system": "SprottK",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1830,
+"system": "HyperPang",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 3008,
+"system": "LorenzStenflo",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 2079,
+"system": "HyperWang",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2060,
+"system": "HyperWang",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5236,
+"system": "SprottM",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5732,
+"system": "SprottS",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2244,
+"system": "HyperYangChen",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2502,
+"system": "Laser",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1337,
+"system": "HindmarshRose",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 2057,
+"system": "HyperWang",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 2959,
+"system": "LorenzCoupled",
+"noise": 0.2,
+"n": 2000,
+"D": 6
+},
+{
+"index": 4891,
+"system": "SprottJ",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 5318,
+"system": "SprottN",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3308,
+"system": "NewtonLiepnik",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1449,
+"system": "HyperCai",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 741,
+"system": "DequanLi",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5374,
+"system": "SprottO",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3497,
+"system": "PehlivanWei",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 2026,
+"system": "HyperWang",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 5269,
+"system": "SprottM",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5523,
+"system": "SprottQ",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 1545,
+"system": "HyperJha",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 257,
+"system": "Bouali2",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 2411,
+"system": "KawczynskiStrizhak",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 2965,
+"system": "LorenzStenflo",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 56,
+"system": "Arneodo",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5280,
+"system": "SprottN",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 2290,
+"system": "HyperYangChen",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 1029,
+"system": "GuckenheimerHolmes",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5689,
+"system": "SprottS",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 5027,
+"system": "SprottJerk",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 5120,
+"system": "SprottL",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5001,
+"system": "SprottJerk",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 1523,
+"system": "HyperJha",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 5626,
+"system": "SprottR",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 608,
+"system": "Coullet",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 2519,
+"system": "Laser",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3457,
+"system": "PehlivanWei",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 6119,
+"system": "ZhouChen",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 4064,
+"system": "Sakarya",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5168,
+"system": "SprottL",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5576,
+"system": "SprottQ",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5334,
+"system": "SprottN",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1500,
+"system": "HyperCai",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1290,
+"system": "HindmarshRose",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 2081,
+"system": "HyperXu",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 3325,
+"system": "NewtonLiepnik",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3551,
+"system": "QiChen",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 4065,
+"system": "Sakarya",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 5047,
+"system": "SprottK",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5500,
+"system": "SprottP",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 4833,
+"system": "SprottI",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 4001,
+"system": "Sakarya",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 5949,
+"system": "VallisElNino",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2067,
+"system": "HyperWang",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 3518,
+"system": "PehlivanWei",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 81,
+"system": "AtmosphericRegime",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 1741,
+"system": "HyperLu",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 757,
+"system": "DequanLi",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2048,
+"system": "HyperWang",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 2205,
+"system": "HyperYan",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 4862,
+"system": "SprottI",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1648,
+"system": "HyperLorenz",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 2394,
+"system": "IsothermalChemical",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 1819,
+"system": "HyperPang",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 1209,
+"system": "HenonHeiles",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 3007,
+"system": "LorenzStenflo",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1327,
+"system": "HindmarshRose",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 861,
+"system": "Finance",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2419,
+"system": "KawczynskiStrizhak",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 770,
+"system": "DequanLi",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 583,
+"system": "Coullet",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1688,
+"system": "HyperLu",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 2912,
+"system": "LorenzCoupled",
+"noise": 0.01,
+"n": 500,
+"D": 6
+},
+{
+"index": 5078,
+"system": "SprottK",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2157,
+"system": "HyperXu",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1494,
+"system": "HyperCai",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5232,
+"system": "SprottM",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 739,
+"system": "DequanLi",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 6059,
+"system": "WangSun",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 3201,
+"system": "MooreSpiegel",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 3224,
+"system": "MooreSpiegel",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 3027,
+"system": "LorenzStenflo",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 3199,
+"system": "LuChenCheng",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1723,
+"system": "HyperLu",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 2968,
+"system": "LorenzStenflo",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 798,
+"system": "DequanLi",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3496,
+"system": "PehlivanWei",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5186,
+"system": "SprottL",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5006,
+"system": "SprottJerk",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 171,
+"system": "Bouali",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 3235,
+"system": "MooreSpiegel",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 6157,
+"system": "ZhouChen",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1295,
+"system": "HindmarshRose",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2402,
+"system": "KawczynskiStrizhak",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 3552,
+"system": "QiChen",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 6028,
+"system": "WangSun",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 260,
+"system": "Bouali2",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 4058,
+"system": "Sakarya",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 1914,
+"system": "HyperQi",
+"noise": 0.1,
+"n": 500,
+"D": 4
+},
+{
+"index": 5591,
+"system": "SprottQ",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5727,
+"system": "SprottS",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1405,
+"system": "HyperBao",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1236,
+"system": "HenonHeiles",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5010,
+"system": "SprottJerk",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5457,
+"system": "SprottP",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 3158,
+"system": "LuChenCheng",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3268,
+"system": "MooreSpiegel",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1246,
+"system": "HenonHeiles",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1382,
+"system": "HyperBao",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2509,
+"system": "Laser",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 867,
+"system": "Finance",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 5569,
+"system": "SprottQ",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 2283,
+"system": "HyperYangChen",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 5345,
+"system": "SprottN",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 3443,
+"system": "PehlivanWei",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 298,
+"system": "Bouali2",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 3550,
+"system": "QiChen",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5875,
+"system": "Tsucs2",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 5788,
+"system": "SprottTorus",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2542,
+"system": "Laser",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 6062,
+"system": "WangSun",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1203,
+"system": "HenonHeiles",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 189,
+"system": "Bouali",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3591,
+"system": "QiChen",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 830,
+"system": "Finance",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5195,
+"system": "SprottL",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 5692,
+"system": "SprottS",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3196,
+"system": "LuChenCheng",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1515,
+"system": "HyperCai",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 3213,
+"system": "MooreSpiegel",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2438,
+"system": "KawczynskiStrizhak",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5522,
+"system": "SprottQ",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5206,
+"system": "SprottM",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3597,
+"system": "QiChen",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 288,
+"system": "Bouali2",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 2160,
+"system": "HyperYan",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 194,
+"system": "Bouali",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 1904,
+"system": "HyperQi",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 5995,
+"system": "VallisElNino",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 1812,
+"system": "HyperPang",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 3342,
+"system": "NewtonLiepnik",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5928,
+"system": "VallisElNino",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 862,
+"system": "Finance",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5247,
+"system": "SprottM",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 960,
+"system": "GuckenheimerHolmes",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5927,
+"system": "VallisElNino",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5853,
+"system": "Tsucs2",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 736,
+"system": "DequanLi",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 5357,
+"system": "SprottN",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1651,
+"system": "HyperLorenz",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 2112,
+"system": "HyperXu",
+"noise": 0.01,
+"n": 500,
+"D": 4
+},
+{
+"index": 79,
+"system": "Arneodo",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 1485,
+"system": "HyperCai",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2293,
+"system": "HyperYangChen",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 1564,
+"system": "HyperJha",
+"noise": 0.01,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2317,
+"system": "HyperYangChen",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 5319,
+"system": "SprottN",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 6129,
+"system": "ZhouChen",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 5785,
+"system": "SprottTorus",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 174,
+"system": "Bouali",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2193,
+"system": "HyperYan",
+"noise": 0.05,
+"n": 500,
+"D": 4
+},
+{
+"index": 3352,
+"system": "NewtonLiepnik",
+"noise": 0.01,
+"n": 500,
+"D": 3
+},
+{
+"index": 1654,
+"system": "HyperLorenz",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2198,
+"system": "HyperYan",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 3341,
+"system": "NewtonLiepnik",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5475,
+"system": "SprottP",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 1827,
+"system": "HyperPang",
+"noise": 0.2,
+"n": 500,
+"D": 4
+},
+{
+"index": 5938,
+"system": "VallisElNino",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5758,
+"system": "SprottS",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5659,
+"system": "SprottR",
+"noise": 0.2,
+"n": 500,
+"D": 3
+},
+{
+"index": 5413,
+"system": "SprottO",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 262,
+"system": "Bouali2",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5900,
+"system": "Tsucs2",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 3250,
+"system": "MooreSpiegel",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 2038,
+"system": "HyperWang",
+"noise": 0.1,
+"n": 2000,
+"D": 4
+},
+{
+"index": 77,
+"system": "Arneodo",
+"noise": 0.05,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2500,
+"system": "Laser",
+"noise": 0.01,
+"n": 2000,
+"D": 3
+},
+{
+"index": 6070,
+"system": "WangSun",
+"noise": 0.1,
+"n": 2000,
+"D": 3
+},
+{
+"index": 5049,
+"system": "SprottK",
+"noise": 0.05,
+"n": 500,
+"D": 3
+},
+{
+"index": 82,
+"system": "AtmosphericRegime",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 2215,
+"system": "HyperYan",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+},
+{
+"index": 2346,
+"system": "IsothermalChemical",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 1781,
+"system": "HyperPang",
+"noise": 0.05,
+"n": 2000,
+"D": 4
+},
+{
+"index": 18,
+"system": "Arneodo",
+"noise": 0.1,
+"n": 500,
+"D": 3
+},
+{
+"index": 5375,
+"system": "SprottO",
+"noise": 0.2,
+"n": 2000,
+"D": 3
+},
+{
+"index": 2191,
+"system": "HyperYan",
+"noise": 0.2,
+"n": 2000,
+"D": 4
+}
+]
+}

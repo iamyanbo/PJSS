@@ -1,0 +1,117 @@
+{
+ "ref": "HEAD",
+ "explicit": {
+  "degw": 0.2,
+  "centre": 1.5,
+  "ar_threshold": 0.6,
+  "pen_exp": 0.3333333333333333,
+  "huber_white": 2.0,
+  "rho": 0.03,
+  "kmax": 5,
+  "finalists": 10,
+  "sg_window": 21
+ },
+ "all_identical": true,
+ "runs": [
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 6115,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 7
+  },
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 6051,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 6
+  },
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 5394,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 6
+  },
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 1008,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 11
+  },
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 2960,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 10
+  },
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 1737,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 9
+  },
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 3334,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 8
+  },
+  {
+   "archive": "data/dysts_test.npz",
+   "index": 638,
+   "noise_model": "white",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 6
+  },
+  {
+   "archive": "data/sealed_colored.npz",
+   "index": 587,
+   "noise_model": "ar1",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 5
+  },
+  {
+   "archive": "data/sealed_colored.npz",
+   "index": 182,
+   "noise_model": "ar1",
+   "identical": {
+    "new": true,
+    "explicit": true
+   },
+   "support_size": 7
+  }
+ ]
+}

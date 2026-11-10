@@ -1,0 +1,14 @@
+{
+ "written": "2026-10-25, before any method was run on data/hard120.npz",
+ "archive": "data/hard120.npz",
+ "sha256": "0152457f1a0e002c5709fa940d2519b8c129dd4309331bdaf1ca4aa335958096",
+ "generator": "PYTHONPATH=. python benchmarks/flow_generate.py --seed 20261025 --seeds 40 --length 2000 --systems lorenz chen rossler --noise 0.2 --output data/hard120.npz",
+ "index_map": "lorenz 0-39, chen 40-79, rossler 80-119 (k-th draw per system = index s*40+k)",
+ "dedi_order": "results_hard120/dedi_order.json: interleaved lorenz k, chen k, rossler k for k = 0..39 (draw order; no selection)",
+ "dedi_settings": "benchmarks/dedi_bench.py --grid small (lambda in {1e-2,1}, R in {1e-4,1e-2}), unmodified DEDi, every-third-sample validation mask, same as the hard-40 run; no retuning",
+ "budget": "~14 h wall on the DGX Spark, <=12 cores; job killed at the deadline",
+ "analysis_set": "the longest prefix of dedi_order in which every run has finished, truncated to whole (lorenz, chen, rossler) triples. Runs finished outside that prefix are reported separately and not in the headline.",
+ "our_methods": "final model = eqdisc.discover frozen DEFAULTS (final_bench.py arm 'final'); context: config C (arm 'C') and weak best-subset chi2 (starts[0]); all 120 runs",
+ "tests": "exact recovery; paired wins/losses vs DEDi on the analysis set, two-sided exact sign test; pooled with the Lorenz/Chen/Rossler 30 runs of the earlier hard-40",
+ "excluded": "Rabinovich-Fabrikant: 0/10 for every method on the hard-40 (data/identifiability limit); not regenerated"
+}

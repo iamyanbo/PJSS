@@ -1,0 +1,42 @@
+CVIS 2026: published requirements and this extended abstract's structure
+Checked November 4, 2026.
+
+OFFICIAL REQUIREMENTS VERIFIED ON THE CURRENT PUBLIC PAGES
+https://cvis-conference.com/author-guidelines
+- At most four pages of content, including figures and tables.
+- Additional pages containing only cited references are allowed.
+- Use the CVIS template and anonymize the submission.
+- Every author needs an activated, updated OpenReview profile by the full deadline.
+
+https://cvis-conference.com/reviewer-guidelines
+- Primary criteria: technical correctness, clarity, and sound experiments/evaluation.
+- State reasonable assumptions and interpret results correctly.
+- Make the main ideas understandable to readers outside the exact topic.
+- Preliminary results can be sufficient if they support the conclusions.
+- Novelty and impact are developmental feedback areas, not rejection criteria by themselves.
+
+WHAT IS NOT VERIFIED
+The accessible current pages do not specify a mandatory list of abstract headings
+or a word limit for the opening abstract paragraph. The current linked Overleaf
+project failed to load, so additional template instructions remain unverified.
+Do not substitute the older CVIS 2024 template's rules for the 2026 requirements.
+Four pages is a maximum, not a mandatory length; this draft uses four content pages plus one page containing only cited
+references, following the later request for fuller methods and a bibliography.
+
+EDITORIAL STRUCTURE CHOSEN TO MATCH THE PROVIDED UAV REFERENCE
+These are writing choices, not an invented official CVIS checklist:
+The revised reference supplied November 5 guides the presentation: architecture
+beneath the title, a column-width abstract, conventional numbered sections,
+captions above tables and two-column cited references.
+1. Introduction: problem, related approaches and the computational bottleneck.
+2. Method: system overview, joint fitting, profiling, search and implementation.
+3. Experimental setup: inputs, metrics, paired samples and baseline settings.
+4. Results and discussion: recovery, time, ablations, forecasts, attractors, limits.
+5. Conclusion: computational benefit, conditional accuracy and open measured-data use.
+The architecture includes an actual recorded input and discovered Lorenz equations.
+The short opening abstract states the task, method, main results and scope.
+The narrative explains each component's purpose before its technical details.
+The paper retains the core objective, profiled-score definition, search budget,
+selection criterion and paired evaluation design. REPRODUCE.txt supplies the
+full matrix formulas, numerical calibration, baseline grids and seeds, alongside
+the source code and historical-replay limitations.

@@ -1,0 +1,12242 @@
+{
+ "dysts_version": "0.96",
+ "seed": 20261400,
+ "smoke": true,
+ "noise": [
+  0.01,
+  0.05,
+  0.1,
+  0.2
+ ],
+ "lengths": [
+  500,
+  2000
+ ],
+ "seeds": 1,
+ "protocol": "see dysts_generate.py docstring",
+ "systems": {
+  "Arneodo": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    1,
+    1,
+    4
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     5.5
+    ],
+    [
+     1.0,
+     0.0,
+     -4.5
+    ],
+    [
+     0.0,
+     1.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 3.1641,
+   "dysts_recommended_dt": 0.031641,
+   "dysts_params": {
+    "a": -5.5,
+    "b": 4.5,
+    "c": 1.0,
+    "d": -1.0
+   },
+   "citation": "Arneodo, A., Coullet, P. & Tresser, C. Occurence of strange attractors in three-dimensional Volterra equations. Physics Letters A 79, 259--263 (1980)",
+   "lyap_max_dysts": 0.23737468667051287,
+   "source": "dysts 0.96 flows.Arneodo (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    5.5
+   ],
+   "min_rel_contrib": 0.41591521970513323,
+   "stiff_eig_dt_at_our_dt": 0.06121129388276564,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.201384714554057,
+   "lyap_per_period_ours": 0.6372013753204917,
+   "verify_relerr": 2.836550725895722e-16
+  },
+  "AtmosphericRegime": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    5,
+    4
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.05,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -0.01,
+     -3.0
+    ],
+    [
+     0.0,
+     3.0,
+     -0.01
+    ],
+    [
+     0.0,
+     -1.1,
+     0.0
+    ],
+    [
+     1.1,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     2.0
+    ],
+    [
+     0.0,
+     -2.0,
+     5.0
+    ],
+    [
+     0.0,
+     -5.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.5,
+   "dysts_period": 89.59496756697331,
+   "dysts_recommended_dt": 0.895949675669733,
+   "dysts_params": {
+    "alpha": -2.0,
+    "beta": -5.0,
+    "mu1": 0.05,
+    "mu2": -0.01,
+    "omega": 3.0,
+    "sigma": 1.1
+   },
+   "citation": "Tuwankotta (2006). Chaos in a coupled oscillators system with widely spaced frequencies and energy-preserving non-linearity",
+   "lyap_max_dysts": 0.010543274932274862,
+   "source": "dysts 0.96 flows.AtmosphericRegime (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.01,
+    5.0
+   ],
+   "min_rel_contrib": 0.005979352492721234,
+   "stiff_eig_dt_at_our_dt": 3.4972264057903133,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.010774912784183882,
+   "lyap_per_period_ours": 0.965377961435921,
+   "verify_relerr": 4.218700498278554e-16
+  },
+  "Bouali": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    3,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     4.0,
+     0.0,
+     -1.5
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.3,
+     0.0,
+     -0.05
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 3.0411,
+   "dysts_recommended_dt": 0.030411,
+   "dysts_params": {
+    "a": 1.0,
+    "b": -0.3,
+    "bb": 1.0,
+    "c": 0.05,
+    "g": 1.0,
+    "m": 1,
+    "y0": 4.0
+   },
+   "citation": "Bouali (1999). Feedback loop in extended Van der Pols equation applied to an economic model of cycles. International Journal of Bifurkation and Chaos, Vol. 9, No. 4",
+   "lyap_max_dysts": 0.06012563518102038,
+   "source": "dysts 0.96 flows.Bouali (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.05,
+    4.0
+   ],
+   "min_rel_contrib": 0.042746337705141094,
+   "stiff_eig_dt_at_our_dt": 0.12685739003084737,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.029662932461815887,
+   "lyap_per_period_ours": 0.0902079439096283,
+   "verify_relerr": 3.3621353300744665e-17
+  },
+  "Bouali2": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    3,
+    2,
+    1
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     3.0,
+     0.0,
+     0.00400005
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     -2.2,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -3.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 7.6779,
+   "dysts_recommended_dt": 0.076779,
+   "dysts_params": {
+    "a": 3.0,
+    "b": 2.2,
+    "bb": 0,
+    "c": 0,
+    "g": 1.0,
+    "m": -0.0026667,
+    "y0": 1.0
+   },
+   "citation": "Bouali (1999). Feedback loop in extended Van der Pols equation applied to an economic model of cycles. International Journal of Bifurkation and Chaos, Vol. 9, No. 4",
+   "lyap_max_dysts": 0.07681730213975516,
+   "source": "dysts 0.96 flows.Bouali2 (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.00400005,
+    3.0
+   ],
+   "min_rel_contrib": 0.03854442696210697,
+   "stiff_eig_dt_at_our_dt": 0.12189559454502076,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.013947800309223466,
+   "lyap_per_period_ours": 0.10708981599418685,
+   "verify_relerr": 1.2864533757027815e-16
+  },
+  "BurkeShaw": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     13.0
+    ],
+    [
+     -10.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     10.0
+    ],
+    [
+     0.0,
+     -10.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.78333,
+   "dysts_recommended_dt": 0.0078333,
+   "dysts_params": {
+    "e": 13,
+    "n": 10
+   },
+   "citation": "Shaw (1981). Zeitschrift fur Naturforschung.",
+   "lyap_max_dysts": 2.324596351534631,
+   "source": "dysts 0.96 flows.BurkeShaw (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    13.0
+   ],
+   "min_rel_contrib": 0.0716648869935011,
+   "stiff_eig_dt_at_our_dt": 0.1650783095545957,
+   "overlap": "same_system_other_params",
+   "overlap_with": "burkeshaw",
+   "same_support_as": [
+    "burkeshaw"
+   ],
+   "discarded": 0,
+   "lyap_ours": 2.3264487068646447,
+   "lyap_per_period_ours": 1.822377065548282,
+   "verify_relerr": 1.0873342033766913e-16
+  },
+  "Chen": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -35.0,
+     -7.0,
+     0.0
+    ],
+    [
+     35.0,
+     28.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -3.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.58689,
+   "dysts_recommended_dt": 0.0058689,
+   "dysts_params": {
+    "a": 35,
+    "b": 3,
+    "c": 28
+   },
+   "citation": "Chen (1997). Proc. First Int. Conf. Control of Oscillations and Chaos.",
+   "lyap_max_dysts": 2.005961349488129,
+   "source": "dysts 0.96 flows.Chen (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    35.0
+   ],
+   "min_rel_contrib": 0.4353970589620385,
+   "stiff_eig_dt_at_our_dt": 0.18893270137843027,
+   "overlap": "identical",
+   "overlap_with": "chen",
+   "same_support_as": [
+    "lorenz",
+    "chen"
+   ],
+   "discarded": 0,
+   "lyap_ours": 2.010764891354633,
+   "lyap_per_period_ours": 1.1800978070871206,
+   "verify_relerr": 1.5843632351265745e-16
+  },
+  "ChenLee": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     5.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -10.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -0.38
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.3333333333333333
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 2.8043,
+   "dysts_recommended_dt": 0.028043,
+   "dysts_params": {
+    "a": 5,
+    "b": -10,
+    "c": -0.38
+   },
+   "citation": "Chen HK, Lee CI (2004). Anti-control of chaos in rigid body motion. Chaos, Solitons & Fractals",
+   "lyap_max_dysts": 0.16363115430160305,
+   "source": "dysts 0.96 flows.ChenLee (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.3333333333333333,
+    10.0
+   ],
+   "min_rel_contrib": 0.37739698888034656,
+   "stiff_eig_dt_at_our_dt": 0.6976282219936132,
+   "overlap": "identical",
+   "overlap_with": "chenlee",
+   "same_support_as": [
+    "chenlee"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.12234146407524893,
+   "lyap_per_period_ours": 0.3430821677062206,
+   "verify_relerr": 1.1199360269124376e-16
+  },
+  "Coullet": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    1,
+    1,
+    4
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.8
+    ],
+    [
+     1.0,
+     0.0,
+     -1.1
+    ],
+    [
+     0.0,
+     1.0,
+     -0.45
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 5.7663,
+   "dysts_recommended_dt": 0.057663,
+   "dysts_params": {
+    "a": -0.8,
+    "b": 1.1,
+    "c": 0.45,
+    "d": -1.0
+   },
+   "citation": "Arneodo, A., Coullet, P. & Tresser, C. Occurence of strange attractors in three-dimensional volterra equations. Physics Letters A 79, 259--263 (1980)",
+   "lyap_max_dysts": 0.13718762024831516,
+   "source": "dysts 0.96 flows.Coullet (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.45,
+    1.1
+   ],
+   "min_rel_contrib": 0.3762603290596187,
+   "stiff_eig_dt_at_our_dt": 0.0853621697242714,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.018992443290883426,
+   "lyap_per_period_ours": 0.1095161257482211,
+   "verify_relerr": 2.5668798908688887e-16
+  },
+  "Dadras": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -3.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.7,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     -9.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     2.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     2.7,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 3.2886,
+   "dysts_recommended_dt": 0.032886,
+   "dysts_params": {
+    "c": 2.0,
+    "e": 9.0,
+    "o": 2.7,
+    "p": 3.0,
+    "r": 1.7
+   },
+   "citation": "S Dadras, HR Momeni (2009). A novel three-dimensional autonomous chaotic system generating two, three and four-scroll attractors. Physics Letters A.",
+   "lyap_max_dysts": 0.40591521049520063,
+   "source": "dysts 0.96 flows.Dadras (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    9.0
+   ],
+   "min_rel_contrib": 0.16218251281001855,
+   "stiff_eig_dt_at_our_dt": 0.4502734737541421,
+   "overlap": "identical",
+   "overlap_with": "dadras",
+   "same_support_as": [
+    "dadras"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.39499353488425076,
+   "lyap_per_period_ours": 1.2989757388203471,
+   "verify_relerr": 2.0637596311288078e-16
+  },
+  "DequanLi": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -40.0,
+     55.0,
+     0.0
+    ],
+    [
+     40.0,
+     20.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.833
+    ],
+    [
+     0.0,
+     0.0,
+     -0.65
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.16,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.0005,
+   "dysts_period": 0.083806,
+   "dysts_recommended_dt": 0.0008380600000000001,
+   "dysts_params": {
+    "a": 40,
+    "c": 1.833,
+    "d": 0.16,
+    "eps": 0.65,
+    "f": 20,
+    "k": 55
+   },
+   "citation": "Li, Phys Lett A. 2008: 387-393.",
+   "lyap_max_dysts": 0.739747976641268,
+   "source": "dysts 0.96 flows.DequanLi (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.16,
+    55.0
+   ],
+   "min_rel_contrib": 0.06943401509733459,
+   "stiff_eig_dt_at_our_dt": 0.07301619746103827,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 3.5273547524140447,
+   "lyap_per_period_ours": 0.29561349238081147,
+   "verify_relerr": 1.0840304249108813e-16
+  },
+  "Finance": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     4.999,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     -0.2,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     -1.1
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 9.8932,
+   "dysts_recommended_dt": 0.098932,
+   "dysts_params": {
+    "a": 0.001,
+    "b": 0.2,
+    "c": 1.1
+   },
+   "citation": "Guoliang Cai, Juanjuan Huang. International Journal of Nonlinear Science, Vol. 3 (2007)",
+   "lyap_max_dysts": 0.09354106442670211,
+   "source": "dysts 0.96 flows.Finance (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.2,
+    4.999
+   ],
+   "min_rel_contrib": 0.7431193486601063,
+   "stiff_eig_dt_at_our_dt": 0.18741415297946162,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.08707935406278909,
+   "lyap_per_period_ours": 0.8614934656139851,
+   "verify_relerr": 2.991998067641192e-17
+  },
+  "GenesioTesi": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    1,
+    4
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     1.0,
+     0.0,
+     -1.1
+    ],
+    [
+     0.0,
+     1.0,
+     -0.44
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 5.9431,
+   "dysts_recommended_dt": 0.059431000000000005,
+   "dysts_params": {
+    "a": 0.44,
+    "b": 1.1,
+    "c": 1
+   },
+   "citation": "Genesio, Tesi (1992). Harmonic balance methods for the analysis of chaotic dynamics in nonlinear systems. Automatica 28.3 (1992): 531-548.",
+   "lyap_max_dysts": 0.10509061137519304,
+   "source": "dysts 0.96 flows.GenesioTesi (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.44,
+    1.1
+   ],
+   "min_rel_contrib": 0.38775929092700356,
+   "stiff_eig_dt_at_our_dt": 0.06933347868742815,
+   "overlap": "identical",
+   "overlap_with": "genesio",
+   "same_support_as": [
+    "genesio"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.11121037281563455,
+   "lyap_per_period_ours": 0.6609343666805977,
+   "verify_relerr": 3.6089764605935267e-16
+  },
+  "GuckenheimerHolmes": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    5,
+    3,
+    5
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.7
+    ],
+    [
+     0.4,
+     20.25,
+     0.0
+    ],
+    [
+     -20.25,
+     0.4,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -0.44
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     3.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -0.44
+    ],
+    [
+     0.0,
+     3.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.6,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.6,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -0.4
+    ]
+   ],
+   "dt": 0.002,
+   "dysts_period": 0.3076923076923077,
+   "dysts_recommended_dt": 0.003076923076923077,
+   "dysts_params": {
+    "a": 0.4,
+    "b": 20.25,
+    "c": 3,
+    "d": 1.6,
+    "e": 1.7,
+    "f": 0.44
+   },
+   "citation": "Guckenheimer, John, and Philip Holmes (1983).  Nonlinear oscillations, dynamical systems, and bifurcations of vector fields. Vol. 42. Springer Science & Business Media.",
+   "lyap_max_dysts": 0.7885729042404602,
+   "source": "dysts 0.96 flows.GuckenheimerHolmes (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.4,
+    20.25
+   ],
+   "min_rel_contrib": 0.020184127596932392,
+   "stiff_eig_dt_at_our_dt": 0.047221735868852824,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.4461329577165741,
+   "lyap_per_period_ours": 0.1372716792974074,
+   "verify_relerr": 1.862151274259356e-16
+  },
+  "Hadley": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    4,
+    4,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     1.8,
+     1.0,
+     0.0
+    ],
+    [
+     -0.2,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     4.0
+    ],
+    [
+     0.0,
+     -4.0,
+     1.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 1.4541,
+   "dysts_recommended_dt": 0.014541,
+   "dysts_params": {
+    "a": 0.2,
+    "b": 4,
+    "f": 9,
+    "g": 1
+   },
+   "citation": "G. Hadley (1735). On the cause of the general trade winds. Philosophical Transactions of the Royal Society, vol. 34, pp. 58--62.",
+   "lyap_max_dysts": 0.2386587703845738,
+   "source": "dysts 0.96 flows.Hadley (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.2,
+    4.0
+   ],
+   "min_rel_contrib": 0.22752423554205622,
+   "stiff_eig_dt_at_our_dt": 0.09449713864930397,
+   "overlap": "same_system_other_params",
+   "overlap_with": "hadley",
+   "same_support_as": [
+    "hadley"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.20250578089493254,
+   "lyap_per_period_ours": 0.2944636559993214,
+   "verify_relerr": 1.4822442306778206e-16
+  },
+  "Halvorsen": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    4,
+    4,
+    4
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.4,
+     -4.0,
+     -4.0
+    ],
+    [
+     -4.0,
+     -1.4,
+     -4.0
+    ],
+    [
+     -4.0,
+     -4.0,
+     -1.4
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 1.4889,
+   "dysts_recommended_dt": 0.014889,
+   "dysts_params": {
+    "a": 1.4,
+    "b": 4
+   },
+   "citation": "Sprott, Julien C (2010). Elegant chaos: algebraically simple chaotic flows. World Scientific, 2010.",
+   "lyap_max_dysts": 0.6963711539102683,
+   "source": "dysts 0.96 flows.Halvorsen (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    4.0
+   ],
+   "min_rel_contrib": 0.300097217701847,
+   "stiff_eig_dt_at_our_dt": 0.1587343012039602,
+   "overlap": "identical",
+   "overlap_with": "halvorsen",
+   "same_support_as": [
+    "halvorsen"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.7159974339507856,
+   "lyap_per_period_ours": 1.0660485794093246,
+   "verify_relerr": 1.4751054655346836e-16
+  },
+  "HenonHeiles": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    1,
+    1,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 6.37,
+   "dysts_recommended_dt": 0.0637,
+   "dysts_params": {
+    "lam": 1
+   },
+   "citation": "Henon, M.; Heiles, C. (1964). The applicability of the third integral of motion: Some numerical experiments. The Astronomical Journal. 69: 73.",
+   "lyap_max_dysts": 0.03551120315239528,
+   "source": "dysts 0.96 flows.HenonHeiles (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.0
+   ],
+   "min_rel_contrib": 0.40672657417776387,
+   "stiff_eig_dt_at_our_dt": 0.07334702078523403,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.00796526756004936,
+   "lyap_per_period_ours": 0.05073875435751442,
+   "verify_relerr": 0.0
+  },
+  "HindmarshRose": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    5,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.040249999999999994
+    ],
+    [
+     -1.0,
+     0.0,
+     -1.25
+    ],
+    [
+     33.333333333333336,
+     0.0,
+     0.0
+    ],
+    [
+     33.333333333333336,
+     1.0,
+     -1.25
+    ],
+    [
+     33.333333333333336,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -16.333333333333332,
+     -0.49,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 1.752,
+   "dysts_recommended_dt": 0.01752,
+   "dysts_params": {
+    "a": 0.49,
+    "b": 1.0,
+    "c": 0.0322,
+    "d": 1.0,
+    "s": 1.0,
+    "tx": 0.03,
+    "tz": 0.8
+   },
+   "citation": "Marhl, Perc. Chaos, Solitons, Fractals 2005.",
+   "lyap_max_dysts": 0.6535393283242747,
+   "source": "dysts 0.96 flows.HindmarshRose (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.040249999999999994,
+    33.333333333333336
+   ],
+   "min_rel_contrib": 0.11211984288508597,
+   "stiff_eig_dt_at_our_dt": 0.7854269011807483,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.19703791745733293,
+   "lyap_per_period_ours": 0.3452104313852473,
+   "verify_relerr": 6.996981756137676e-16
+  },
+  "HyperBao": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    3,
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -36.0,
+     0.0,
+     0.0,
+     21.0
+    ],
+    [
+     36.0,
+     20.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -3.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.1
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.5831505997603473,
+   "dysts_recommended_dt": 0.005831505997603474,
+   "dysts_params": {
+    "a": 36,
+    "b": 3,
+    "c": 20,
+    "d": 0.1,
+    "e": 21
+   },
+   "citation": "Bao, Liu  (2008). A hyperchaotic attractor coined from the chaotic Lu system. Chin. Physics Letters, Vol. 25, pp 2396-2399.",
+   "lyap_max_dysts": 0.7941925747845208,
+   "source": "dysts 0.96 flows.HyperBao (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.1,
+    36.0
+   ],
+   "min_rel_contrib": 0.1050275387199731,
+   "stiff_eig_dt_at_our_dt": 0.17294293019790122,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.9213364564629746,
+   "lyap_per_period_ours": 0.5372779071674567,
+   "verify_relerr": 1.0781033788221355e-16
+  },
+  "HyperCai": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    2,
+    4,
+    2,
+    1
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -27.5,
+     3.0,
+     0.0,
+     -3.3
+    ],
+    [
+     27.5,
+     19.3,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.9,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.6113936187028436,
+   "dysts_recommended_dt": 0.006113936187028436,
+   "dysts_params": {
+    "a": 27.5,
+    "b": 3,
+    "c": 19.3,
+    "d": 2.9,
+    "e": 3.3
+   },
+   "citation": "Guoliang, Huang (2007). A New Finance Chaotic Attractor. International Journal of Nonlinear Science.",
+   "lyap_max_dysts": 1.6777584899044127,
+   "source": "dysts 0.96 flows.HyperCai (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    27.5
+   ],
+   "min_rel_contrib": 0.12067885077592708,
+   "stiff_eig_dt_at_our_dt": 0.16457949768216806,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 1.7186081831309545,
+   "lyap_per_period_ours": 1.0507460762167535,
+   "verify_relerr": 2.690941913027306e-16
+  },
+  "HyperJha": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     28.0,
+     0.0,
+     0.0
+    ],
+    [
+     10.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.667,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     1.3
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.8564467295817622,
+   "dysts_recommended_dt": 0.008564467295817621,
+   "dysts_params": {
+    "a": 10,
+    "b": 28,
+    "c": 2.667,
+    "d": 1.3
+   },
+   "citation": "J\u00fcrgen Meier (2003). Presentation of Attractors with Cinema.",
+   "lyap_max_dysts": 0.38695361636760767,
+   "source": "dysts 0.96 flows.HyperJha (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    28.0
+   ],
+   "min_rel_contrib": 0.10957546337568361,
+   "stiff_eig_dt_at_our_dt": 0.13271706480263307,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.41657797323537693,
+   "lyap_per_period_ours": 0.3567768427932374,
+   "verify_relerr": 7.956008389628961e-17
+  },
+  "HyperLorenz": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     28.0,
+     0.0,
+     0.0
+    ],
+    [
+     10.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.667,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     1.1
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 1.277546730110058,
+   "dysts_recommended_dt": 0.01277546730110058,
+   "dysts_params": {
+    "a": 10,
+    "b": 2.667,
+    "c": 28,
+    "d": 1.1
+   },
+   "citation": "J\u00fcrgen Meier (2003). Presentation of Attractors with Cinema.",
+   "lyap_max_dysts": 0.3288809596909799,
+   "source": "dysts 0.96 flows.HyperLorenz (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    28.0
+   ],
+   "min_rel_contrib": 0.11424972592271322,
+   "stiff_eig_dt_at_our_dt": 0.12539972840870214,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.42948683777592417,
+   "lyap_per_period_ours": 0.5486895052259408,
+   "verify_relerr": 6.605327763431502e-17
+  },
+  "HyperLu": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    3,
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -36.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     36.0,
+     20.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -3.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     1.3
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.7162856981996777,
+   "dysts_recommended_dt": 0.007162856981996777,
+   "dysts_params": {
+    "a": 36,
+    "b": 3,
+    "c": 20,
+    "d": 1.3
+   },
+   "citation": "Chen, A., Lu, J., L\u00fc, J., & Yu, S. (2006). Generating hyperchaotic L\u00fc attractor via state feedback control. Physica A: Statistical Mechanics and its Applications, 364, 103-110.",
+   "lyap_max_dysts": 1.042961263138283,
+   "source": "dysts 0.96 flows.HyperLu (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    36.0
+   ],
+   "min_rel_contrib": 0.3285380113747753,
+   "stiff_eig_dt_at_our_dt": 0.18189714275434654,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.9789554984074907,
+   "lyap_per_period_ours": 0.701211822683223,
+   "verify_relerr": 8.417153504005776e-17
+  },
+  "HyperPang": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -36.0,
+     0.0,
+     0.0,
+     -2.0
+    ],
+    [
+     36.0,
+     20.0,
+     0.0,
+     -2.0
+    ],
+    [
+     0.0,
+     0.0,
+     -3.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.8439374360017028,
+   "dysts_recommended_dt": 0.008439374360017028,
+   "dysts_params": {
+    "a": 36,
+    "b": 3,
+    "c": 20,
+    "d": 2
+   },
+   "citation": "Pang, S., & Liu, Y. (2011). A new hyperchaotic system from the L\u00fc system and its control. Journal of Computational and Applied Mathematics, 235(8), 2775-2789.",
+   "lyap_max_dysts": 1.4465315511406867,
+   "source": "dysts 0.96 flows.HyperPang (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    36.0
+   ],
+   "min_rel_contrib": 0.1086638081680975,
+   "stiff_eig_dt_at_our_dt": 0.17280308071733744,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 1.4042024939046471,
+   "lyap_per_period_ours": 1.1850590523330846,
+   "verify_relerr": 2.0332018637304912e-16
+  },
+  "HyperQi": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -50.0,
+     24.0,
+     0.0,
+     0.0
+    ],
+    [
+     50.0,
+     24.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -13.0,
+     30.0
+    ],
+    [
+     0.0,
+     0.0,
+     -33.0,
+     -8.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.002,
+   "dysts_period": 0.06186038560173437,
+   "dysts_recommended_dt": 0.0006186038560173437,
+   "dysts_params": {
+    "a": 50,
+    "b": 24,
+    "c": 13,
+    "d": 8,
+    "e": 33,
+    "f": 30
+   },
+   "citation": "G. Qi, M. A. van Wyk, B. J. van Wyk, and G. Chen, (2008). On a new hyperchaotic system. Physics Letters A.",
+   "lyap_max_dysts": 12.787249321134263,
+   "source": "dysts 0.96 flows.HyperQi (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    50.0
+   ],
+   "min_rel_contrib": 0.0925127773689426,
+   "stiff_eig_dt_at_our_dt": 1.1955425478852333,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 16.502508342640617,
+   "lyap_per_period_ours": 1.020851529471587,
+   "verify_relerr": 1.0378549640968239e-16
+  },
+  "HyperRossler": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     3.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.25,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0,
+     -0.5
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.05
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 1.1157476694793766,
+   "dysts_recommended_dt": 0.011157476694793767,
+   "dysts_params": {
+    "a": 0.25,
+    "b": 3.0,
+    "c": 0.5,
+    "d": 0.05
+   },
+   "citation": "Rossler, O. E. (1979). An equation for hyperchaos.",
+   "lyap_max_dysts": 0.1718849632568779,
+   "source": "dysts 0.96 flows.HyperRossler (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.05,
+    3.0
+   ],
+   "min_rel_contrib": 0.04597717262439239,
+   "stiff_eig_dt_at_our_dt": 1.6807804932093806,
+   "overlap": "identical",
+   "overlap_with": "hyper_rossler",
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.13303906321092057,
+   "lyap_per_period_ours": 0.1484380247273041,
+   "verify_relerr": 8.543522296592805e-19
+  },
+  "HyperWang": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2,
+    1
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     40.0,
+     0.0,
+     -10.6
+    ],
+    [
+     10.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.5,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     4.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.6481520567576332,
+   "dysts_recommended_dt": 0.0064815205675763325,
+   "dysts_params": {
+    "a": 10,
+    "b": 40,
+    "c": 2.5,
+    "d": 10.6,
+    "e": 4
+   },
+   "citation": "Wang, Z., Sun, Y., van Wyk, B. J., Qi, G. & van Wyk, M. A (2009). A 3-D four-wing attractor and its analysis. Brazilian J. Phys. 39.",
+   "lyap_max_dysts": 1.2930140887300063,
+   "source": "dysts 0.96 flows.HyperWang (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    40.0
+   ],
+   "min_rel_contrib": 0.15005077320338445,
+   "stiff_eig_dt_at_our_dt": 0.1392040545407697,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.9469054494327541,
+   "lyap_per_period_ours": 0.6137387146048506,
+   "verify_relerr": 1.4127428211469442e-16
+  },
+  "HyperXu": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    3,
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     40.0,
+     0.0,
+     0.0
+    ],
+    [
+     10.0,
+     0.0,
+     0.0,
+     -2.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.5,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     16.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 1.1328151255687646,
+   "dysts_recommended_dt": 0.011328151255687646,
+   "dysts_params": {
+    "a": 10,
+    "b": 40,
+    "c": 2.5,
+    "d": 2,
+    "e": 16
+   },
+   "citation": "Letellier & Rossler (2007). Hyperchaos. Scholarpedia 2.8 (2007): 1936.",
+   "lyap_max_dysts": 0.9819830018599975,
+   "source": "dysts 0.96 flows.HyperXu (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    40.0
+   ],
+   "min_rel_contrib": 0.49942221537503273,
+   "stiff_eig_dt_at_our_dt": 0.1377431171390814,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.9921003088909502,
+   "lyap_per_period_ours": 1.123866235993112,
+   "verify_relerr": 8.863776215224158e-17
+  },
+  "HyperYan": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    5,
+    3
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -37.0,
+     -11.0,
+     0.0,
+     0.0
+    ],
+    [
+     37.0,
+     26.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -3.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0,
+     -38.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     1.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.002,
+   "dysts_period": 0.9127028626966961,
+   "dysts_recommended_dt": 0.009127028626966962,
+   "dysts_params": {
+    "a": 37,
+    "b": 3,
+    "c": 26,
+    "d": 38
+   },
+   "citation": "J\u00fcrgen Meier (2003). Presentation of Attractors with Cinema.",
+   "lyap_max_dysts": 1.3945968455812914,
+   "source": "dysts 0.96 flows.HyperYan (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    38.0
+   ],
+   "min_rel_contrib": 0.017236759487046914,
+   "stiff_eig_dt_at_our_dt": 0.07654117237728655,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 1.547008048156391,
+   "lyap_per_period_ours": 1.4119586741671664,
+   "verify_relerr": 1.8762054371980702e-16
+  },
+  "HyperYangChen": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2,
+    1
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -30.0,
+     35.0,
+     0.0,
+     -8.0
+    ],
+    [
+     30.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -3.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.9127028626966961,
+   "dysts_recommended_dt": 0.009127028626966962,
+   "dysts_params": {
+    "a": 30,
+    "b": 3,
+    "c": 35,
+    "d": 8
+   },
+   "citation": "J\u00fcrgen Meier (2003). Presentation of Attractors with Cinema.",
+   "lyap_max_dysts": 0.42042732521941667,
+   "source": "dysts 0.96 flows.HyperYangChen (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    35.0
+   ],
+   "min_rel_contrib": 0.1970727709726244,
+   "stiff_eig_dt_at_our_dt": 0.22403611293933046,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.5428781592339758,
+   "lyap_per_period_ours": 0.4954864500283625,
+   "verify_relerr": 1.0223833657793315e-16
+  },
+  "IsothermalChemical": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    4,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.74465,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     76.92307692307692,
+     0.0
+    ],
+    [
+     0.0,
+     -76.92307692307692,
+     1.0
+    ],
+    [
+     0.29786,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     76.92307692307692,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.7302799999999999,
+   "dysts_recommended_dt": 0.007302799999999999,
+   "dysts_params": {
+    "delta": 1.0,
+    "kappa": 2.5,
+    "mu": 0.29786,
+    "sigma": 0.013
+   },
+   "citation": "Petrov, Scott, Showalter. Mixed-mode oscillations in chemical systems. J Chem Phys 1992",
+   "lyap_max_dysts": 0.450090505359164,
+   "source": "dysts 0.96 flows.IsothermalChemical (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.29786,
+    76.92307692307692
+   ],
+   "min_rel_contrib": 0.6128960673234167,
+   "stiff_eig_dt_at_our_dt": 0.27483967413916005,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.3055335289082642,
+   "lyap_per_period_ours": 0.22312502549112714,
+   "verify_relerr": 7.082331636855671e-16
+  },
+  "KawczynskiStrizhak": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    3,
+    4,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     -0.4,
+     0.0
+    ],
+    [
+     3.087,
+     -4.2,
+     0.2
+    ],
+    [
+     0.49,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     -0.2
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -0.49,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.2,
+   "dysts_period": 10.991666666666667,
+   "dysts_recommended_dt": 0.10991666666666668,
+   "dysts_params": {
+    "beta": -0.4,
+    "gamma": 0.49,
+    "kappa": 0.2,
+    "mu": 2.1
+   },
+   "citation": "P. E. Strizhak and A. L. Kawczynski, J. Phys. Chem. 99, 10830 (1995).",
+   "lyap_max_dysts": 0.0757060839542753,
+   "source": "dysts 0.96 flows.KawczynskiStrizhak (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.2,
+    4.2
+   ],
+   "min_rel_contrib": 0.3122331917666121,
+   "stiff_eig_dt_at_our_dt": 0.7465941265904454,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.007134478987069315,
+   "lyap_per_period_ours": 0.07841981486620356,
+   "verify_relerr": 2.1895373515174014e-16
+  },
+  "Laser": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     5.0,
+     0.0
+    ],
+    [
+     10.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -5.0
+    ],
+    [
+     0.0,
+     0.0,
+     -6.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 0.94667,
+   "dysts_recommended_dt": 0.0094667,
+   "dysts_params": {
+    "a": 10.0,
+    "b": 1.0,
+    "c": 5.0,
+    "d": -1.0,
+    "h": -5.0,
+    "k": -6.0
+   },
+   "citation": "Abooee, Yaghini-Bonabi, Jahed-Motlagh (2013). Analysis and circuitry realization of a novel three-dimensional chaotic system. Comm Nonline Sci 2013",
+   "lyap_max_dysts": 0.6080602180196161,
+   "source": "dysts 0.96 flows.Laser (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    10.0
+   ],
+   "min_rel_contrib": 0.5297601311786904,
+   "stiff_eig_dt_at_our_dt": 0.18294038383695152,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.6747446557119501,
+   "lyap_per_period_ours": 0.6387605232228318,
+   "verify_relerr": 1.0913784405069477e-16
+  },
+  "LiuChen": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.4,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -12.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -5.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 8.0164,
+   "dysts_recommended_dt": 0.08016400000000001,
+   "dysts_params": {
+    "a": 0.4,
+    "b": 12.0,
+    "c": -5.0,
+    "h": 0.0,
+    "p": 0.0,
+    "q": -1.0,
+    "r": 1.0,
+    "s": 1.0
+   },
+   "citation": "Liu, Chen. Int J Bifurcat Chaos. 2004: 1395-1403.",
+   "lyap_max_dysts": 0.2457084451352168,
+   "source": "dysts 0.96 flows.LiuChen (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.4,
+    12.0
+   ],
+   "min_rel_contrib": 0.13668587698392257,
+   "stiff_eig_dt_at_our_dt": 0.8067074121371569,
+   "overlap": "support_twin",
+   "overlap_with": "chenlee",
+   "same_support_as": [
+    "chenlee"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.3944755029153025,
+   "lyap_per_period_ours": 3.162273421570231,
+   "verify_relerr": 0.0
+  },
+  "Lorenz": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     28.0,
+     0.0
+    ],
+    [
+     10.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.667
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 1.5008,
+   "dysts_recommended_dt": 0.015007999999999999,
+   "dysts_params": {
+    "beta": 2.667,
+    "rho": 28,
+    "sigma": 10
+   },
+   "citation": "Lorenz, Edward N (1963). Deterministic nonperiodic flow. Journal of the atmospheric sciences 20.2 (1963): 130-141.",
+   "lyap_max_dysts": 0.8917098035724058,
+   "source": "dysts 0.96 flows.Lorenz (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    28.0
+   ],
+   "min_rel_contrib": 0.14181200417374445,
+   "stiff_eig_dt_at_our_dt": 0.1122217517474107,
+   "overlap": "identical",
+   "overlap_with": "lorenz",
+   "same_support_as": [
+    "lorenz",
+    "chen"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.9085570226594264,
+   "lyap_per_period_ours": 1.3635623796072671,
+   "verify_relerr": 1.566711317076849e-16
+  },
+  "Lorenz84": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    4,
+    4,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     6.3756,
+     4.194,
+     0.0
+    ],
+    [
+     -1.32,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     7.91
+    ],
+    [
+     0.0,
+     -7.91,
+     1.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 6.2586,
+   "dysts_recommended_dt": 0.062586,
+   "dysts_params": {
+    "a": 1.32,
+    "b": 7.91,
+    "f": 4.83,
+    "g": 4.194
+   },
+   "citation": "E. Lorenz (1984). Irregularity: a fundamental property of the atmosphere. Tellus A, vol. 36, no. 2, pp. 98--110, 1984.",
+   "lyap_max_dysts": 0.46146683857936616,
+   "source": "dysts 0.96 flows.Lorenz84 (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    7.91
+   ],
+   "min_rel_contrib": 0.12415290554280055,
+   "stiff_eig_dt_at_our_dt": 0.18134210680047338,
+   "overlap": "support_twin",
+   "overlap_with": "hadley",
+   "same_support_as": [
+    "hadley"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.47762360764382766,
+   "lyap_per_period_ours": 2.98925511079966,
+   "verify_relerr": 3.802686698451946e-16
+  },
+  "Lorenz96": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     20.0,
+     20.0,
+     20.0,
+     20.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     1.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 2.1969,
+   "dysts_recommended_dt": 0.021969,
+   "dysts_params": {
+    "f": 20.0
+   },
+   "citation": "Lorenz, Edward (1996). Predictability: A problem partly solved. Seminar on Predictability, Vol. I, ECMWF.",
+   "lyap_max_dysts": 1.3361667787286362,
+   "source": "dysts 0.96 flows.Lorenz96 (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    20.0
+   ],
+   "min_rel_contrib": 0.1554460610361033,
+   "stiff_eig_dt_at_our_dt": 0.522305642093414,
+   "overlap": "same_family_other_D",
+   "overlap_with": "l96_5/6/10",
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 1.2773467781428534,
+   "lyap_per_period_ours": 2.806203136902034,
+   "verify_relerr": 1.427996658515278e-16
+  },
+  "LorenzCoupled": {
+   "class": "innd",
+   "D": 6,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2,
+    3,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x0*x4",
+    "x0*x5",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x1*x4",
+    "x1*x5",
+    "x2^2",
+    "x2*x3",
+    "x2*x4",
+    "x2*x5",
+    "x3^2",
+    "x3*x4",
+    "x3*x5",
+    "x4^2",
+    "x4*x5",
+    "x5^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -10.0,
+     35.0,
+     0.0,
+     2.85,
+     0.0,
+     0.0
+    ],
+    [
+     10.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.667,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     -12.85,
+     1.15,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     -2.667
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 1.6207,
+   "dysts_recommended_dt": 0.016207,
+   "dysts_params": {
+    "beta": 2.667,
+    "eps": 2.85,
+    "rho": 28,
+    "rho1": 35,
+    "rho2": 1.15,
+    "sigma": 10
+   },
+   "citation": "Lorenz, Edward N. Deterministic nonperiodic flow. Journal of the atmospheric sciences 20.2 (1963): 130-141.",
+   "lyap_max_dysts": 1.0284398414904556,
+   "source": "dysts 0.96 flows.LorenzCoupled (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    35.0
+   ],
+   "min_rel_contrib": 0.12334804892990132,
+   "stiff_eig_dt_at_our_dt": 0.12409238036886015,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 1.0065052207526248,
+   "lyap_per_period_ours": 1.631243011273779,
+   "verify_relerr": 1.5176309030314414e-16
+  },
+  "LorenzStenflo": {
+   "class": "innd",
+   "D": 4,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x0^2",
+    "x0*x1",
+    "x0*x2",
+    "x0*x3",
+    "x1^2",
+    "x1*x2",
+    "x1*x3",
+    "x2^2",
+    "x2*x3",
+    "x3^2"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -2.0,
+     26.0,
+     0.0,
+     -1.0
+    ],
+    [
+     2.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -0.7,
+     0.0
+    ],
+    [
+     1.5,
+     0.0,
+     0.0,
+     -2.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 3.8877142857142855,
+   "dysts_recommended_dt": 0.03887714285714285,
+   "dysts_params": {
+    "a": 2,
+    "b": 0.7,
+    "c": 26,
+    "d": 1.5
+   },
+   "citation": "Letellier & Rossler (2007). Hyperchaos. Scholarpedia 2.8 (2007): 1936.",
+   "lyap_max_dysts": 0.3807742646421621,
+   "source": "dysts 0.96 flows.LorenzStenflo (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.7,
+    26.0
+   ],
+   "min_rel_contrib": 0.26939707310180244,
+   "stiff_eig_dt_at_our_dt": 0.10291835739616816,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.3787505503328644,
+   "lyap_per_period_ours": 1.4724739252512244,
+   "verify_relerr": 1.396496877479293e-16
+  },
+  "LuChen": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -36.0,
+     0.0,
+     0.0
+    ],
+    [
+     36.0,
+     18.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -3.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.005,
+   "dysts_period": 2.3385,
+   "dysts_recommended_dt": 0.023385,
+   "dysts_params": {
+    "a": 36,
+    "b": 3,
+    "c": 18
+   },
+   "citation": "Lu, Chen. Int J Bifurcat Chaos. 2002: 659-661.",
+   "lyap_max_dysts": 0.3266868574498627,
+   "source": "dysts 0.96 flows.LuChen (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    36.0
+   ],
+   "min_rel_contrib": 0.8667526396247787,
+   "stiff_eig_dt_at_our_dt": 0.1552855750161325,
+   "overlap": "same_system_other_params",
+   "overlap_with": "lu",
+   "same_support_as": [
+    "lu"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.5434608847055713,
+   "lyap_per_period_ours": 1.2708832788839783,
+   "verify_relerr": 2.3496446189333363e-16
+  },
+  "LuChenCheng": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     18.1,
+     0.0,
+     0.0
+    ],
+    [
+     2.857142857142857,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -10.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -4.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 0.92333,
+   "dysts_recommended_dt": 0.0092333,
+   "dysts_params": {
+    "a": -10,
+    "b": -4,
+    "c": 18.1
+   },
+   "citation": "Lu, Chen, Cheng. Int J Bifurcat Chaos. 2004: 1507--1537.",
+   "lyap_max_dysts": 0.2612775880231121,
+   "source": "dysts 0.96 flows.LuChenCheng (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    18.1
+   ],
+   "min_rel_contrib": 0.23828832998183677,
+   "stiff_eig_dt_at_our_dt": 0.28554401578476774,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.2912074893537462,
+   "lyap_per_period_ours": 0.26888061114499445,
+   "verify_relerr": 1.5349338868888015e-16
+  },
+  "MooreSpiegel": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    1,
+    1,
+    4
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -4.0
+    ],
+    [
+     1.0,
+     0.0,
+     9.0
+    ],
+    [
+     0.0,
+     10.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.002,
+   "dysts_period": 1.2887,
+   "dysts_recommended_dt": 0.012887,
+   "dysts_params": {
+    "a": 10,
+    "b": 4,
+    "eps": 9
+   },
+   "citation": "Moore, Spiegel. A Thermally Excited Nonlinear Oscillator, Ap. J., 143, 871 (1966)",
+   "lyap_max_dysts": 0.6976623003008144,
+   "source": "dysts 0.96 flows.MooreSpiegel (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    10.0
+   ],
+   "min_rel_contrib": 0.02760970294493128,
+   "stiff_eig_dt_at_our_dt": 0.05127974044011075,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 1.638695574527887,
+   "lyap_per_period_ours": 2.111786986894088,
+   "verify_relerr": 1.841587525525944e-16
+  },
+  "NewtonLiepnik": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -0.4,
+     -1.0,
+     0.0
+    ],
+    [
+     1.0,
+     -0.4,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.175
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -5.0
+    ],
+    [
+     0.0,
+     5.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     10.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 8.5095,
+   "dysts_recommended_dt": 0.08509499999999999,
+   "dysts_params": {
+    "a": 0.4,
+    "b": 0.175
+   },
+   "citation": "Leipnik, R. B., and T. A. Newton (1981). Double strange attractors in rigid body motion with linear feedback control. Physics Letters A 86.2 (1981): 63-67.",
+   "lyap_max_dysts": 0.14945341784639976,
+   "source": "dysts 0.96 flows.NewtonLiepnik (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.175,
+    10.0
+   ],
+   "min_rel_contrib": 0.22213007710650148,
+   "stiff_eig_dt_at_our_dt": 0.2202566630310736,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.155386370837508,
+   "lyap_per_period_ours": 1.3222603226417742,
+   "verify_relerr": 2.1118084381908162e-16
+  },
+  "NoseHoover": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.5
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 5.8673,
+   "dysts_recommended_dt": 0.058673,
+   "dysts_params": {
+    "a": 1.5
+   },
+   "citation": "Nose, S (1985). A unified formulation of the constant temperature molecular-dynamics methods. Journal of Chemical Physics (1984). Hoover, William G. Canonical dynamics: Equilibrium phase-space distributions. Phys. Rev. A. Hoover, William G., Anthony JC Ladd, and Bill Moran (1982). High-strain-rate plastic flow studied via nonequilibrium molecular dynamics. Physical Review Letters.",
+   "lyap_max_dysts": 0.010464383779400952,
+   "source": "dysts 0.96 flows.NoseHoover (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    1.5
+   ],
+   "min_rel_contrib": 0.5536629948569312,
+   "stiff_eig_dt_at_our_dt": 0.2771393733508168,
+   "overlap": "support_twin",
+   "overlap_with": "sprottA",
+   "same_support_as": [
+    "sprottA"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.006718552397369721,
+   "lyap_per_period_ours": 0.03941976248108737,
+   "verify_relerr": 0.0
+  },
+  "PehlivanWei": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     2.0
+    ],
+    [
+     0.0,
+     -2.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     -1.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 3.7487330316742087,
+   "dysts_recommended_dt": 0.03748733031674209,
+   "dysts_params": {},
+   "citation": "Pehlivan, Ihsan, and Wei Zhouchao (2012). Analysis, nonlinear control, and chaos generator circuit of another strange chaotic system.",
+   "lyap_max_dysts": 0.10415076085878888,
+   "source": "dysts 0.96 flows.PehlivanWei (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.0
+   ],
+   "min_rel_contrib": 0.32609079543303826,
+   "stiff_eig_dt_at_our_dt": 0.12706661072160047,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.08302051606417463,
+   "lyap_per_period_ours": 0.3112217508764107,
+   "verify_relerr": 1.3843624034878055e-16
+  },
+  "QiChen": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -38.0,
+     80.0,
+     0.0
+    ],
+    [
+     38.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.666
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.002,
+   "dysts_period": 0.39179,
+   "dysts_recommended_dt": 0.0039179,
+   "dysts_params": {
+    "a": 38,
+    "b": 2.666,
+    "c": 80
+   },
+   "citation": "Qi et al. Chaos, Solitons & Fractals 2008.",
+   "lyap_max_dysts": 4.0275703123027435,
+   "source": "dysts 0.96 flows.QiChen (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    80.0
+   ],
+   "min_rel_contrib": 0.03196088417750486,
+   "stiff_eig_dt_at_our_dt": 0.21007012116226176,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 4.420007290573402,
+   "lyap_per_period_ours": 1.731714656373753,
+   "verify_relerr": 8.61061359307283e-17
+  },
+  "RabinovichFabrikant": {
+   "class": "in3",
+   "D": 3,
+   "degree": 3,
+   "n_terms": [
+    4,
+    4,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.87,
+     1.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.87,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.2
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     3.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 2.3356,
+   "dysts_recommended_dt": 0.023356,
+   "dysts_params": {
+    "a": 1.1,
+    "g": 0.87
+   },
+   "citation": "Rabinovich, Mikhail I.; Fabrikant, A. L. (1979). Stochastic Self-Modulation of Waves in Nonequilibrium Media. Sov. Phys. JETP.",
+   "lyap_max_dysts": 0.2541443669572464,
+   "source": "dysts 0.96 flows.RabinovichFabrikant (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.87,
+    3.0
+   ],
+   "min_rel_contrib": 0.6206457678548231,
+   "stiff_eig_dt_at_our_dt": 0.0983741201593449,
+   "overlap": "same_system_other_params",
+   "overlap_with": "rabinovich",
+   "same_support_as": [
+    "rabinovich"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.1481875109802105,
+   "lyap_per_period_ours": 0.3461067506453796,
+   "verify_relerr": 1.9244874507986983e-16
+  },
+  "RayleighBenard": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -30.0,
+     0.0,
+     0.0
+    ],
+    [
+     30.0,
+     18.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -5.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.002,
+   "dysts_period": 0.91967,
+   "dysts_recommended_dt": 0.0091967,
+   "dysts_params": {
+    "a": 30,
+    "b": 5,
+    "r": 18
+   },
+   "citation": "Yanagita, Kaneko (1995). Rayleigh-B\u00e9nard convection patterns, chaos, spatiotemporal chaos and turbulence. Physica D: Nonlinear Phenomena 82.3 (1995): 288-313.",
+   "lyap_max_dysts": 1.8138795790741327,
+   "source": "dysts 0.96 flows.RayleighBenard (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    30.0
+   ],
+   "min_rel_contrib": 1.0696484461215807,
+   "stiff_eig_dt_at_our_dt": 0.0655144438691303,
+   "overlap": "support_twin",
+   "overlap_with": "lu",
+   "same_support_as": [
+    "lu"
+   ],
+   "discarded": 0,
+   "lyap_ours": 1.8113422442896352,
+   "lyap_per_period_ours": 1.6658371218058488,
+   "verify_relerr": 1.130070277062443e-16
+  },
+  "RikitakeDynamo": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     -1.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 5.8975,
+   "dysts_recommended_dt": 0.058975,
+   "dysts_params": {
+    "a": 1.0,
+    "mu": 1.0
+   },
+   "citation": "Rikitake, T., Oscillations of a system of disk dynamos, Mathematical Proceedings of the Cambridge Philosophical Society, 1958.",
+   "lyap_max_dysts": 0.1318127385277225,
+   "source": "dysts 0.96 flows.RikitakeDynamo (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    1.0
+   ],
+   "min_rel_contrib": 0.49636265678605973,
+   "stiff_eig_dt_at_our_dt": 0.2547865420956491,
+   "overlap": "same_system_other_params",
+   "overlap_with": "rikitake",
+   "same_support_as": [
+    "rikitake"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.1331632131518363,
+   "lyap_per_period_ours": 0.7853300495629546,
+   "verify_relerr": 0.0
+  },
+  "Rossler": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.2
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.2,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     -5.7
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 5.9086,
+   "dysts_recommended_dt": 0.059086,
+   "dysts_params": {
+    "a": 0.2,
+    "b": 0.2,
+    "c": 5.7
+   },
+   "citation": "Rossler, O. E. (1976), An Equation for Continuous Chaos, Physics Letters, 57A (5): 3972013398,",
+   "lyap_max_dysts": 0.15059688939547888,
+   "source": "dysts 0.96 flows.Rossler (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.2,
+    5.7
+   ],
+   "min_rel_contrib": 0.022206191208210463,
+   "stiff_eig_dt_at_our_dt": 0.7312457204304361,
+   "overlap": "identical",
+   "overlap_with": "rossler",
+   "same_support_as": [
+    "rossler"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.06577384595624851,
+   "lyap_per_period_ours": 0.38863134621708995,
+   "verify_relerr": 2.6469000209173013e-16
+  },
+  "Rucklidge": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    1,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -2.0,
+     1.0,
+     0.0
+    ],
+    [
+     6.7,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 6.0721,
+   "dysts_recommended_dt": 0.060721,
+   "dysts_params": {
+    "a": 2.0,
+    "b": 6.7
+   },
+   "citation": "Rucklidge, A.M. (1992). Chaos in models of double convection. Journal of Fluid Mechanics.",
+   "lyap_max_dysts": 0.1936356650629198,
+   "source": "dysts 0.96 flows.Rucklidge (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    6.7
+   ],
+   "min_rel_contrib": 0.9297603605301096,
+   "stiff_eig_dt_at_our_dt": 0.093407463705675,
+   "overlap": "identical",
+   "overlap_with": "rucklidge",
+   "same_support_as": [
+    "rucklidge"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.1836770658255102,
+   "lyap_per_period_ours": 1.1153055113990804,
+   "verify_relerr": 2.58411814016789e-16
+  },
+  "Sakarya": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     -1.0,
+     0.0
+    ],
+    [
+     1.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -0.3
+    ],
+    [
+     0.0,
+     0.4,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 4.9844,
+   "dysts_recommended_dt": 0.049844,
+   "dysts_params": {
+    "a": -1.0,
+    "b": 1.0,
+    "c": 1.0,
+    "h": 1.0,
+    "p": 1.0,
+    "q": 0.4,
+    "r": 0.3,
+    "s": 1.0
+   },
+   "citation": "Li, Chunbiao, et al (2015). A novel four-wing strange attractor born in bistability. IEICE Electronics Express 12.4.",
+   "lyap_max_dysts": 0.26501036485491514,
+   "source": "dysts 0.96 flows.Sakarya (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.3,
+    1.0
+   ],
+   "min_rel_contrib": 0.2349640399427446,
+   "stiff_eig_dt_at_our_dt": 0.15986095501482306,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.27400751048107413,
+   "lyap_per_period_ours": 1.365763035241866,
+   "verify_relerr": 1.4500176828127388e-16
+  },
+  "ShimizuMorioka": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     -0.85,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -0.5
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.1,
+   "dysts_period": 12.038,
+   "dysts_recommended_dt": 0.12038,
+   "dysts_params": {
+    "a": 0.85,
+    "b": 0.5
+   },
+   "citation": "Shimizu, Morioka. Phys Lett A. 1980: 201-204",
+   "lyap_max_dysts": 0.03577425334463406,
+   "source": "dysts 0.96 flows.ShimizuMorioka (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.5,
+    1.0
+   ],
+   "min_rel_contrib": 0.9978400914968171,
+   "stiff_eig_dt_at_our_dt": 0.18956881838233058,
+   "overlap": "same_system_other_params",
+   "overlap_with": "shimizu",
+   "same_support_as": [
+    "shimizu"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.03384280993737271,
+   "lyap_per_period_ours": 0.4073997460260927,
+   "verify_relerr": 2.1400461030212775e-16
+  },
+  "SprottA": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 6.3728461538461545,
+   "dysts_recommended_dt": 0.06372846153846154,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.012993052652429771,
+   "source": "dysts 0.96 flows.SprottA (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    1.0
+   ],
+   "min_rel_contrib": 0.6519219378812232,
+   "stiff_eig_dt_at_our_dt": 0.2123750105252692,
+   "overlap": "identical",
+   "overlap_with": "sprottA",
+   "same_support_as": [
+    "sprottA"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.006355454713482741,
+   "lyap_per_period_ours": 0.0405023351267619,
+   "verify_relerr": 0.0
+  },
+  "SprottB": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 11.050142857142857,
+   "dysts_recommended_dt": 0.11050142857142857,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.20674275256006883,
+   "source": "dysts 0.96 flows.SprottB (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    1.0
+   ],
+   "min_rel_contrib": 0.5734130778863664,
+   "stiff_eig_dt_at_our_dt": 0.15152774616138248,
+   "overlap": "identical",
+   "overlap_with": "sprottB",
+   "same_support_as": [
+    "sprottB"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.2133503604135888,
+   "lyap_per_period_ours": 2.357551961193072,
+   "verify_relerr": 0.0
+  },
+  "SprottC": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 8.8852,
+   "dysts_recommended_dt": 0.08885199999999999,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.15806924766944033,
+   "source": "dysts 0.96 flows.SprottC (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    1.0
+   ],
+   "min_rel_contrib": 0.775326745838131,
+   "stiff_eig_dt_at_our_dt": 0.15529510566746452,
+   "overlap": "identical",
+   "overlap_with": "sprottC",
+   "same_support_as": [
+    "sprottC"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.1472584734212152,
+   "lyap_per_period_ours": 1.3084209880421813,
+   "verify_relerr": 0.0
+  },
+  "SprottD": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     3.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 4.8333,
+   "dysts_recommended_dt": 0.048333,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.10170941886932346,
+   "source": "dysts 0.96 flows.SprottD (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    3.0
+   ],
+   "min_rel_contrib": 1.0,
+   "stiff_eig_dt_at_our_dt": 0.26679509267966756,
+   "overlap": "identical",
+   "overlap_with": "sprottD",
+   "same_support_as": [
+    "sprottD"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.10121432968306907,
+   "lyap_per_period_ours": 0.4891992196571778,
+   "verify_relerr": 1.4176649308314065e-16
+  },
+  "SprottE": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     -4.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 7.6275,
+   "dysts_recommended_dt": 0.07627500000000001,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.09016067590084897,
+   "source": "dysts 0.96 flows.SprottE (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    4.0
+   ],
+   "min_rel_contrib": 0.44515794239076756,
+   "stiff_eig_dt_at_our_dt": 0.06776062264692172,
+   "overlap": "identical",
+   "overlap_with": "sprottE",
+   "same_support_as": [
+    "sprottE"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.0848106573619165,
+   "lyap_per_period_ours": 0.6468932890280181,
+   "verify_relerr": 0.0
+  },
+  "SprottF": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.5,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.2,
+   "dysts_period": 19.244,
+   "dysts_recommended_dt": 0.19244,
+   "dysts_params": {
+    "a": 0.5
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.1183090101484132,
+   "source": "dysts 0.96 flows.SprottF (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.5,
+    1.0
+   ],
+   "min_rel_contrib": 1.1090295561781742,
+   "stiff_eig_dt_at_our_dt": 0.49494896785304276,
+   "overlap": "identical",
+   "overlap_with": "sprottF",
+   "same_support_as": [
+    "sprottF"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.11499846247735472,
+   "lyap_per_period_ours": 2.213030411914214,
+   "verify_relerr": 0.0
+  },
+  "SprottG": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.4,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     1.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 8.7097,
+   "dysts_recommended_dt": 0.087097,
+   "dysts_params": {
+    "a": 0.4
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.09067832253388744,
+   "source": "dysts 0.96 flows.SprottG (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.4,
+    1.0
+   ],
+   "min_rel_contrib": 0.459658086644155,
+   "stiff_eig_dt_at_our_dt": 0.09423369291521555,
+   "overlap": "identical",
+   "overlap_with": "sprottG",
+   "same_support_as": [
+    "sprottG"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.033999697803693406,
+   "lyap_per_period_ours": 0.29612716796082844,
+   "verify_relerr": 0.0
+  },
+  "SprottH": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     -1.0,
+     0.5,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 20.229,
+   "dysts_recommended_dt": 0.20229,
+   "dysts_params": {
+    "a": 0.5
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.13100182470690253,
+   "source": "dysts 0.96 flows.SprottH (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.5,
+    1.0
+   ],
+   "min_rel_contrib": 0.8144042518917965,
+   "stiff_eig_dt_at_our_dt": 0.12318567595342392,
+   "overlap": "identical",
+   "overlap_with": "sprottH",
+   "same_support_as": [
+    "sprottH"
+   ],
+   "discarded": 0,
+   "lyap_ours": 0.12238200986561396,
+   "lyap_per_period_ours": 2.4756656775715045,
+   "verify_relerr": 0.0
+  },
+  "SprottI": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     -0.2,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 10.93,
+   "dysts_recommended_dt": 0.1093,
+   "dysts_params": {
+    "a": 0.2
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.023218704376506836,
+   "source": "dysts 0.96 flows.SprottI (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.2,
+    1.0
+   ],
+   "min_rel_contrib": 0.6850633684783853,
+   "stiff_eig_dt_at_our_dt": 0.09071224260662196,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.01058583553152578,
+   "lyap_per_period_ours": 0.11570318235957677,
+   "verify_relerr": 1.3912279481613237e-16
+  },
+  "SprottJ": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     -2.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 4.836,
+   "dysts_recommended_dt": 0.04836,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.12290789099642041,
+   "source": "dysts 0.96 flows.SprottJ (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.0
+   ],
+   "min_rel_contrib": 0.2642267202521143,
+   "stiff_eig_dt_at_our_dt": 0.19421132012346323,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.06936693534864856,
+   "lyap_per_period_ours": 0.3354584993460645,
+   "verify_relerr": 0.0
+  },
+  "SprottJerk": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    1,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     -2.017
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.1,
+   "dysts_period": 11.921,
+   "dysts_recommended_dt": 0.11921,
+   "dysts_params": {
+    "mu": 2.017
+   },
+   "citation": "Sprott, J. C. Simplest dissipative chaotic flow. Physics Letters A (1997).",
+   "lyap_max_dysts": 0.08785190282162628,
+   "source": "dysts 0.96 flows.SprottJerk (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.017
+   ],
+   "min_rel_contrib": 1.0,
+   "stiff_eig_dt_at_our_dt": 0.3373876675630925,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.05714635262331226,
+   "lyap_per_period_ours": 0.6812416696225054,
+   "verify_relerr": 1.8379430162777665e-16
+  },
+  "SprottK": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.3
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 7.006,
+   "dysts_recommended_dt": 0.07006,
+   "dysts_params": {
+    "a": 0.3
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.05962593786799159,
+   "source": "dysts 0.96 flows.SprottK (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.3,
+    1.0
+   ],
+   "min_rel_contrib": 0.37752668709805143,
+   "stiff_eig_dt_at_our_dt": 0.10528675312591756,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.04572764226468962,
+   "lyap_per_period_ours": 0.3203678617064155,
+   "verify_relerr": 1.0347607983629701e-16
+  },
+  "SprottL": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     1.0,
+     -1.0,
+     0.0
+    ],
+    [
+     3.9,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.9,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 6.7262,
+   "dysts_recommended_dt": 0.067262,
+   "dysts_params": {
+    "a": 0.9,
+    "b": 3.9
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.09216197583296963,
+   "source": "dysts 0.96 flows.SprottL (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.9,
+    3.9
+   ],
+   "min_rel_contrib": 0.2282028705740268,
+   "stiff_eig_dt_at_our_dt": 0.08798945116619165,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.06948203316096598,
+   "lyap_per_period_ours": 0.46735005144728936,
+   "verify_relerr": 1.7689474907796203e-16
+  },
+  "SprottM": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.7
+    ],
+    [
+     0.0,
+     0.0,
+     1.7
+    ],
+    [
+     0.0,
+     -1.0,
+     1.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 5.3644,
+   "dysts_recommended_dt": 0.053644,
+   "dysts_params": {
+    "a": 1.7
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.08422043130700084,
+   "source": "dysts 0.96 flows.SprottM (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    1.7
+   ],
+   "min_rel_contrib": 0.8666815926659374,
+   "stiff_eig_dt_at_our_dt": 0.09668487801101813,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.04267218271901711,
+   "lyap_per_period_ours": 0.2289106569778954,
+   "verify_relerr": 2.0017077991781099e-16
+  },
+  "SprottN": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     -2.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 4.8135,
+   "dysts_recommended_dt": 0.048135000000000004,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.11869612209728901,
+   "source": "dysts 0.96 flows.SprottN (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.0
+   ],
+   "min_rel_contrib": 0.3160848091029576,
+   "stiff_eig_dt_at_our_dt": 0.19420582919225743,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.07324158146938278,
+   "lyap_per_period_ours": 0.352548352402874,
+   "verify_relerr": 0.0
+  },
+  "SprottO": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     0.0,
+     2.7
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 9.755,
+   "dysts_recommended_dt": 0.09755000000000001,
+   "dysts_params": {
+    "a": 2.7
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.09141077854590315,
+   "source": "dysts 0.96 flows.SprottO (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.7
+   ],
+   "min_rel_contrib": 0.42978804224504363,
+   "stiff_eig_dt_at_our_dt": 0.08011550470325222,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.04836678133231201,
+   "lyap_per_period_ours": 0.47181795189670367,
+   "verify_relerr": 2.1426969373299594e-16
+  },
+  "SprottP": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     1.0
+    ],
+    [
+     2.7,
+     0.0,
+     1.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 5.3414,
+   "dysts_recommended_dt": 0.053414,
+   "dysts_params": {
+    "a": 2.7
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.1064676723437159,
+   "source": "dysts 0.96 flows.SprottP (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.7
+   ],
+   "min_rel_contrib": 0.7265139255380625,
+   "stiff_eig_dt_at_our_dt": 0.08897840748071636,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.10117443656149049,
+   "lyap_per_period_ours": 0.5404131354495453,
+   "verify_relerr": 0.0
+  },
+  "SprottQ": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    1,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     3.1
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.5
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 4.8443,
+   "dysts_recommended_dt": 0.04844299999999999,
+   "dysts_params": {
+    "a": 3.1,
+    "b": 0.5
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.17169784338063596,
+   "source": "dysts 0.96 flows.SprottQ (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.5,
+    3.1
+   ],
+   "min_rel_contrib": 0.29059288559280294,
+   "stiff_eig_dt_at_our_dt": 0.041868624819796973,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.09011031567020594,
+   "lyap_per_period_ours": 0.43652140220117863,
+   "verify_relerr": 2.33488334141267e-16
+  },
+  "SprottR": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.9,
+     0.4,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.05,
+   "dysts_period": 7.0133,
+   "dysts_recommended_dt": 0.070133,
+   "dysts_params": {
+    "a": 0.9,
+    "b": 0.4
+   },
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.09661415277799693,
+   "source": "dysts 0.96 flows.SprottR (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.4,
+    1.0
+   ],
+   "min_rel_contrib": 0.15885358643326705,
+   "stiff_eig_dt_at_our_dt": 0.12949242795178698,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.06696176103737488,
+   "lyap_per_period_ours": 0.4696229186834212,
+   "verify_relerr": 0.0
+  },
+  "SprottS": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     -1.0,
+     1.0,
+     1.0
+    ],
+    [
+     -4.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.02,
+   "dysts_period": 3.3505,
+   "dysts_recommended_dt": 0.033505,
+   "dysts_params": {},
+   "citation": "Sprott (1994). Some simple chaotic flows. Physical Review E (1994).",
+   "lyap_max_dysts": 0.2737629235389973,
+   "source": "dysts 0.96 flows.SprottS (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    4.0
+   ],
+   "min_rel_contrib": 0.6109681493619443,
+   "stiff_eig_dt_at_our_dt": 0.05489476096926756,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.1905740905272633,
+   "lyap_per_period_ours": 0.6385184903115956,
+   "verify_relerr": 0.0
+  },
+  "SprottTorus": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -2.0,
+     -1.0
+    ],
+    [
+     2.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.2,
+   "dysts_period": 13.607,
+   "dysts_recommended_dt": 0.13607,
+   "dysts_params": {},
+   "citation": "Sprott Physics Letters A 2014",
+   "lyap_max_dysts": 0.1056964344650892,
+   "source": "dysts 0.96 flows.SprottTorus (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    2.0
+   ],
+   "min_rel_contrib": 0.8194900087667408,
+   "stiff_eig_dt_at_our_dt": 1.1035310216203504,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.06278191367986308,
+   "lyap_per_period_ours": 0.8542734994418969,
+   "verify_relerr": 0.0
+  },
+  "Tsucs2": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     -40.0,
+     0.0,
+     0.0
+    ],
+    [
+     40.0,
+     20.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.833
+    ],
+    [
+     0.0,
+     0.0,
+     -0.65
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.5,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.002,
+   "dysts_period": 0.34526,
+   "dysts_recommended_dt": 0.0034526,
+   "dysts_params": {
+    "a": 40,
+    "c": 0.833,
+    "d": 0.5,
+    "eps": 0.65,
+    "f": 20,
+    "k": 0
+   },
+   "citation": "Pan, Zhou, Li (2013). Synchronization of Three-Scroll Unified Chaotic System (TSUCS) and its hyper-chaotic system using active pinning control",
+   "lyap_max_dysts": 0.13621488344499086,
+   "source": "dysts 0.96 flows.Tsucs2 (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.5,
+    40.0
+   ],
+   "min_rel_contrib": 0.08298374318579521,
+   "stiff_eig_dt_at_our_dt": 0.18168237360157075,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.8246469677594223,
+   "lyap_per_period_ours": 0.2847176120886181,
+   "verify_relerr": 2.7409860013108547e-16
+  },
+  "VallisElNino": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    2,
+    3
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     -3.0,
+     0.0,
+     0.0
+    ],
+    [
+     102.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 2.2087,
+   "dysts_recommended_dt": 0.022087,
+   "dysts_params": {
+    "b": 102,
+    "c": 3,
+    "p": 0
+   },
+   "citation": "Vallis GK. Conceptual models of El Nio and the southern oscillation. J Geophys Res 1988",
+   "lyap_max_dysts": 0.5477586276153029,
+   "source": "dysts 0.96 flows.VallisElNino (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    1.0,
+    102.0
+   ],
+   "min_rel_contrib": 0.18803026791328215,
+   "stiff_eig_dt_at_our_dt": 0.12662178577748356,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.5428685810894037,
+   "lyap_per_period_ours": 1.1990338350521659,
+   "verify_relerr": 1.2361909917381236e-16
+  },
+  "WangSun": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    2,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.2,
+     -0.01,
+     0.0
+    ],
+    [
+     0.0,
+     -0.4,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.2,
+   "dysts_period": 26.958,
+   "dysts_recommended_dt": 0.26958,
+   "dysts_params": {
+    "a": 0.2,
+    "b": -0.01,
+    "d": -0.4,
+    "e": -1.0,
+    "f": -1.0,
+    "q": 1.0
+   },
+   "citation": "Wang, Z., Sun, Y., van Wyk, B. J., Qi, G. & van Wyk, M. A (2009). A 3-D four-wing attractor and its analysis. Brazilian J. Phys. 39.",
+   "lyap_max_dysts": 0.06735463002480017,
+   "source": "dysts 0.96 flows.WangSun (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.01,
+    1.0
+   ],
+   "min_rel_contrib": 0.02781108885014415,
+   "stiff_eig_dt_at_our_dt": 0.5732208015143482,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.06386273997995567,
+   "lyap_per_period_ours": 1.721611744379645,
+   "verify_relerr": 4.0570357982188316e-17
+  },
+  "ZhouChen": {
+   "class": "in3",
+   "D": 3,
+   "degree": 2,
+   "n_terms": [
+    3,
+    3,
+    2
+   ],
+   "names": [
+    "1",
+    "x",
+    "y",
+    "z",
+    "x^2",
+    "x*y",
+    "x*z",
+    "y^2",
+    "y*z",
+    "z^2",
+    "x^3",
+    "x^2*y",
+    "x^2*z",
+    "x*y^2",
+    "x*y*z",
+    "x*z^2",
+    "y^3",
+    "y^2*z",
+    "y*z^2",
+    "z^3"
+   ],
+   "xi": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     2.97,
+     0.0,
+     0.0
+    ],
+    [
+     0.15,
+     -3.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -8.78
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "dt": 0.01,
+   "dysts_period": 0.87518,
+   "dysts_recommended_dt": 0.008751799999999999,
+   "dysts_params": {
+    "a": 2.97,
+    "b": 0.15,
+    "c": -3.0,
+    "d": 1,
+    "e": -8.78
+   },
+   "citation": "Zhou, Chen (2004). A simple smooth chaotic system with a 3-layer attractor. Int J Bifurcat Chaos, 2004",
+   "lyap_max_dysts": 0.6828000288089435,
+   "source": "dysts 0.96 flows.ZhouChen (default parameters; raw ODE state, no postprocessing)",
+   "postprocessing_in_dysts": false,
+   "coef_range": [
+    0.15,
+    8.78
+   ],
+   "min_rel_contrib": 0.011247933187141715,
+   "stiff_eig_dt_at_our_dt": 0.6695854143317673,
+   "overlap": null,
+   "overlap_with": null,
+   "same_support_as": null,
+   "discarded": 0,
+   "lyap_ours": 0.538691610590851,
+   "lyap_per_period_ours": 0.471452123756901,
+   "verify_relerr": 7.536773986758503e-18
+  }
+ },
+ "excluded": {
+  "PanXuZhou": "collapses to an equilibrium"
+ }
+}

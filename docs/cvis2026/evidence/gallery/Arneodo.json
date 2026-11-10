@@ -1,0 +1,14 @@
+{
+  "system": "Arneodo",
+  "source": "saved frozen dysts fit",
+  "index": 6,
+  "noise": 0.1,
+  "n_fit": 2000,
+  "dt": 0.02,
+  "exact": true,
+  "coef_err": 0.0014075886121235385,
+  "new_system": true,
+  "integration_complete": true,
+  "integrator_message": "The solver successfully reached the end of the integration interval.",
+  "samples_before_stop": 9000
+}

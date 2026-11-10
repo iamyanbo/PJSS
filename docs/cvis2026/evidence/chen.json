@@ -1,0 +1,21 @@
+{
+  "system": "chen",
+  "seed": 20261105,
+  "dt": 0.005,
+  "method_version": "1.2",
+  "n_train": 2000,
+  "n_forecast": 400,
+  "noise": 0.1,
+  "seconds": 9.950798399979249,
+  "exact": 1.0,
+  "f1": 1.0,
+  "coef_err": 0.019317376758015016,
+  "fp": 0,
+  "fn": 0,
+  "ambiguous": false,
+  "gap": 7.861024907304454,
+  "nrmse_first100": 0.007735157669189072,
+  "nrmse_all400": 0.014569814918210309,
+  "equations": "dx/dt = -35.464*x +35.465*y\ndy/dt = -7.7654*x +28.46*y -0.98566*x*z\ndz/dt = -3.0031*z +0.99918*x*y",
+  "initialization": "states-only fit, final 40 training observations"
+}

@@ -1,0 +1,514 @@
+[
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 768,
+  "system": "DequanLi",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 1348,
+  "system": "HindmarshRose",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 5209,
+  "system": "SprottM",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 173,
+  "system": "Bouali",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 5306,
+  "system": "SprottN",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5086,
+  "system": "SprottK",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 147,
+  "system": "AtmosphericRegime",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 31,
+  "system": "Arneodo",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 5176,
+  "system": "SprottL",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 3292,
+  "system": "NewtonLiepnik",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 5761,
+  "system": "SprottTorus",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5925,
+  "system": "VallisElNino",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 5882,
+  "system": "Tsucs2",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 2462,
+  "system": "KawczynskiStrizhak",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 3515,
+  "system": "PehlivanWei",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 3287,
+  "system": "NewtonLiepnik",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 2392,
+  "system": "IsothermalChemical",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 3268,
+  "system": "MooreSpiegel",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 4065,
+  "system": "Sakarya",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 789,
+  "system": "DequanLi",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 5378,
+  "system": "SprottO",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 878,
+  "system": "Finance",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 5003,
+  "system": "SprottJerk",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 2487,
+  "system": "Laser",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 1000,
+  "system": "GuckenheimerHolmes",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5236,
+  "system": "SprottM",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 313,
+  "system": "Bouali2",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5325,
+  "system": "SprottN",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 6138,
+  "system": "ZhouChen",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 966,
+  "system": "GuckenheimerHolmes",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 3163,
+  "system": "LuChenCheng",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 631,
+  "system": "Coullet",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 5112,
+  "system": "SprottK",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 4036,
+  "system": "Sakarya",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 3489,
+  "system": "PehlivanWei",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 3205,
+  "system": "MooreSpiegel",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 842,
+  "system": "Finance",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5518,
+  "system": "SprottP",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 211,
+  "system": "Bouali",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 2551,
+  "system": "Laser",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 6000,
+  "system": "WangSun",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 4948,
+  "system": "SprottJ",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 4809,
+  "system": "SprottI",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 3565,
+  "system": "QiChen",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 58,
+  "system": "Arneodo",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5678,
+  "system": "SprottR",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 2339,
+  "system": "IsothermalChemical",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 4855,
+  "system": "SprottI",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 5160,
+  "system": "SprottL",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 1316,
+  "system": "HindmarshRose",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 3561,
+  "system": "QiChen",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 4909,
+  "system": "SprottJ",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 5418,
+  "system": "SprottO",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 622,
+  "system": "Coullet",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 5523,
+  "system": "SprottQ",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5759,
+  "system": "SprottS",
+  "noise": 0.2,
+  "n": 2000
+ },
+ {
+  "cond": "e1n500",
+  "data": "data/dysts_test.npz",
+  "index": 5552,
+  "system": "SprottQ",
+  "noise": 0.01,
+  "n": 500
+ },
+ {
+  "cond": "e1n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5636,
+  "system": "SprottR",
+  "noise": 0.01,
+  "n": 2000
+ },
+ {
+  "cond": "e5n500",
+  "data": "data/dysts_test.npz",
+  "index": 121,
+  "system": "AtmosphericRegime",
+  "noise": 0.05,
+  "n": 500
+ },
+ {
+  "cond": "e5n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5517,
+  "system": "SprottP",
+  "noise": 0.05,
+  "n": 2000
+ },
+ {
+  "cond": "e10n500",
+  "data": "data/dysts_test.npz",
+  "index": 2410,
+  "system": "KawczynskiStrizhak",
+  "noise": 0.1,
+  "n": 500
+ },
+ {
+  "cond": "e10n2000",
+  "data": "data/dysts_test.npz",
+  "index": 3198,
+  "system": "LuChenCheng",
+  "noise": 0.1,
+  "n": 2000
+ },
+ {
+  "cond": "e20n500",
+  "data": "data/dysts_test.npz",
+  "index": 315,
+  "system": "Bouali2",
+  "noise": 0.2,
+  "n": 500
+ },
+ {
+  "cond": "e20n2000",
+  "data": "data/dysts_test.npz",
+  "index": 5039,
+  "system": "SprottJerk",
+  "noise": 0.2,
+  "n": 2000
+ }
+]

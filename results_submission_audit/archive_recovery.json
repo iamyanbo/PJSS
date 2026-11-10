@@ -1,0 +1,454 @@
+{
+  "environment": {
+    "python": "3.13.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "numba": "0.65.0"
+  },
+  "original_environment_evidence": "results_precision/pytest.log: Linux Python 3.12.3; full historical dependency lock not located",
+  "files": [
+    {
+      "file": "dev_clean.npz",
+      "expected": "8fb2950912f1a2a3cf23e38d92913b264f44a40581722e4dcaa435cbff94ba06",
+      "actual": "ce1fd1b8d1c04cfb1da8242a2ea929bbb60e1ab1e86171bb5d870a6f84164f00",
+      "match": false,
+      "bytes": 2409652
+    },
+    {
+      "file": "dysts_precdev.npz",
+      "expected": "f02a59aaae545c1311d6907d2cb7c58acebd35b9ca14f8979205679d3bd646ac",
+      "actual": "75e6922f61eb893197a8eed0b2ab84abf7bd7dec98786335c0e68cdaf9db5ca2",
+      "match": false,
+      "bytes": 12773367
+    },
+    {
+      "file": "po_test.npz",
+      "expected": "736677f3b44e1e7b6d16e3cdd2cd59e7adf9597f7bb3a89c8a66c04f72f70d4f",
+      "actual": "797e226145b35b83cdf6e4d28b48ca2e59232afe8f2587957f450fee599e9017",
+      "match": false,
+      "bytes": 4328634
+    },
+    {
+      "file": "sealed_clean.npz",
+      "expected": "5dc1f23afeaa24de9dfa92877922b80fb1efa4fb5728159fb44a8c3e25fb00d1",
+      "actual": "af1edd3f1e4a7b89c5abc599d4fdad424aeba55d7a473c9dc982a6f72ae7231d",
+      "match": false,
+      "bytes": 6022012
+    }
+  ],
+  "dysts_sidecar_differences": [
+    [
+      "Arneodo",
+      "lyap_ours",
+      0.19589655053136243,
+      0.201384714554057
+    ],
+    [
+      "Arneodo",
+      "lyap_per_period_ours",
+      0.6198362755362838,
+      0.6372013753204917
+    ],
+    [
+      "Arneodo",
+      "min_rel_contrib",
+      0.41433474013809435,
+      0.41591521970513323
+    ],
+    [
+      "Arneodo",
+      "stiff_eig_dt_at_our_dt",
+      0.061962708348413366,
+      0.06121129388276564
+    ],
+    [
+      "AtmosphericRegime",
+      "dt",
+      1.0,
+      0.5
+    ],
+    [
+      "AtmosphericRegime",
+      "lyap_ours",
+      0.011593685116449225,
+      0.010774912784183882
+    ],
+    [
+      "AtmosphericRegime",
+      "lyap_per_period_ours",
+      1.0387358419899695,
+      0.965377961435921
+    ],
+    [
+      "AtmosphericRegime",
+      "min_rel_contrib",
+      0.005858642628542058,
+      0.005979352492721234
+    ],
+    [
+      "AtmosphericRegime",
+      "stiff_eig_dt_at_our_dt",
+      5.621063410015281,
+      3.4972264057903133
+    ],
+    [
+      "Bouali",
+      "lyap_ours",
+      0.018429062460176244,
+      0.029662932461815887
+    ],
+    [
+      "Bouali",
+      "lyap_per_period_ours",
+      0.05604462184764198,
+      0.0902079439096283
+    ],
+    [
+      "Bouali",
+      "min_rel_contrib",
+      0.04274982796279612,
+      0.042746337705141094
+    ],
+    [
+      "Bouali",
+      "stiff_eig_dt_at_our_dt",
+      0.12690387124484834,
+      0.12685739003084737
+    ],
+    [
+      "ChenLee",
+      "lyap_ours",
+      0.1460950643925581,
+      0.12234146407524893
+    ],
+    [
+      "ChenLee",
+      "lyap_per_period_ours",
+      0.40969438907605066,
+      0.3430821677062206
+    ],
+    [
+      "ChenLee",
+      "min_rel_contrib",
+      0.3788100074292153,
+      0.37739698888034656
+    ],
+    [
+      "ChenLee",
+      "stiff_eig_dt_at_our_dt",
+      0.6944700575833288,
+      0.6976282219936132
+    ],
+    [
+      "GuckenheimerHolmes",
+      "lyap_ours",
+      0.6850657500178177,
+      0.4461329577165741
+    ],
+    [
+      "GuckenheimerHolmes",
+      "lyap_per_period_ours",
+      0.2107894615439439,
+      0.1372716792974074
+    ],
+    [
+      "GuckenheimerHolmes",
+      "min_rel_contrib",
+      0.020409537191397355,
+      0.020184127596932392
+    ],
+    [
+      "GuckenheimerHolmes",
+      "stiff_eig_dt_at_our_dt",
+      0.04779476962590147,
+      0.047221735868852824
+    ],
+    [
+      "Halvorsen",
+      "lyap_ours",
+      0.6788913091664307,
+      0.7159974339507856
+    ],
+    [
+      "Halvorsen",
+      "lyap_per_period_ours",
+      1.0108012702178986,
+      1.0660485794093246
+    ],
+    [
+      "Halvorsen",
+      "min_rel_contrib",
+      0.29786678250768983,
+      0.300097217701847
+    ],
+    [
+      "Halvorsen",
+      "stiff_eig_dt_at_our_dt",
+      0.1612811366766387,
+      0.1587343012039602
+    ],
+    [
+      "HyperBao",
+      "lyap_ours",
+      0.8974499768659306,
+      0.9213364564629746
+    ],
+    [
+      "HyperBao",
+      "lyap_per_period_ours",
+      0.5233484922642773,
+      0.5372779071674567
+    ],
+    [
+      "HyperBao",
+      "min_rel_contrib",
+      0.10438108926275365,
+      0.1050275387199731
+    ],
+    [
+      "HyperBao",
+      "stiff_eig_dt_at_our_dt",
+      0.16984447409722972,
+      0.17294293019790122
+    ],
+    [
+      "HyperLu",
+      "lyap_ours",
+      0.9098322886526592,
+      0.9789554984074907
+    ],
+    [
+      "HyperLu",
+      "lyap_per_period_ours",
+      0.6516998561221807,
+      0.701211822683223
+    ],
+    [
+      "HyperLu",
+      "min_rel_contrib",
+      0.33157322873371925,
+      0.3285380113747753
+    ],
+    [
+      "HyperLu",
+      "stiff_eig_dt_at_our_dt",
+      0.16394207550739473,
+      0.18189714275434654
+    ],
+    [
+      "HyperQi",
+      "lyap_ours",
+      17.919557006222426,
+      16.502508342640617
+    ],
+    [
+      "HyperQi",
+      "lyap_per_period_ours",
+      1.10851070621718,
+      1.020851529471587
+    ],
+    [
+      "HyperQi",
+      "min_rel_contrib",
+      0.07925560104927964,
+      0.0925127773689426
+    ],
+    [
+      "HyperQi",
+      "stiff_eig_dt_at_our_dt",
+      2.10080205677,
+      1.1955425478852333
+    ],
+    [
+      "HyperYan",
+      "lyap_ours",
+      1.4034457328325893,
+      1.547008048156391
+    ],
+    [
+      "HyperYan",
+      "lyap_per_period_ours",
+      1.280928937995767,
+      1.4119586741671664
+    ],
+    [
+      "HyperYan",
+      "min_rel_contrib",
+      0.017181944931822974,
+      0.017236759487046914
+    ],
+    [
+      "HyperYan",
+      "stiff_eig_dt_at_our_dt",
+      0.09076719490092769,
+      0.07654117237728655
+    ],
+    [
+      "IsothermalChemical",
+      "lyap_ours",
+      0.5028947446111207,
+      0.3055335289082642
+    ],
+    [
+      "IsothermalChemical",
+      "lyap_per_period_ours",
+      0.3672539740946092,
+      0.22312502549112714
+    ],
+    [
+      "IsothermalChemical",
+      "min_rel_contrib",
+      0.6128237815028401,
+      0.6128960673234167
+    ],
+    [
+      "IsothermalChemical",
+      "stiff_eig_dt_at_our_dt",
+      0.2760085394184025,
+      0.27483967413916005
+    ],
+    [
+      "Lorenz",
+      "lyap_ours",
+      0.8918960909079922,
+      0.9085570226594264
+    ],
+    [
+      "Lorenz",
+      "lyap_per_period_ours",
+      1.3385576532347145,
+      1.3635623796072671
+    ],
+    [
+      "Lorenz",
+      "min_rel_contrib",
+      0.13791931126962656,
+      0.14181200417374445
+    ],
+    [
+      "Lorenz",
+      "stiff_eig_dt_at_our_dt",
+      0.11210899782741131,
+      0.1122217517474107
+    ],
+    [
+      "LorenzStenflo",
+      "lyap_ours",
+      0.3921693762597823,
+      0.3787505503328644
+    ],
+    [
+      "LorenzStenflo",
+      "lyap_per_period_ours",
+      1.5246424865048165,
+      1.4724739252512244
+    ],
+    [
+      "LorenzStenflo",
+      "min_rel_contrib",
+      0.2662151140986638,
+      0.26939707310180244
+    ],
+    [
+      "LorenzStenflo",
+      "stiff_eig_dt_at_our_dt",
+      0.08968042882362953,
+      0.10291835739616816
+    ],
+    [
+      "QiChen",
+      "lyap_ours",
+      4.124076422515,
+      4.420007290573402
+    ],
+    [
+      "QiChen",
+      "lyap_per_period_ours",
+      1.6157719015771521,
+      1.731714656373753
+    ],
+    [
+      "QiChen",
+      "min_rel_contrib",
+      0.029009963029849067,
+      0.03196088417750486
+    ],
+    [
+      "QiChen",
+      "stiff_eig_dt_at_our_dt",
+      0.2147661855922252,
+      0.21007012116226176
+    ],
+    [
+      "SprottA",
+      "lyap_ours",
+      0.006593620308425839,
+      0.006355454713482741
+    ],
+    [
+      "SprottA",
+      "lyap_per_period_ours",
+      0.0420201278224735,
+      0.0405023351267619
+    ],
+    [
+      "SprottA",
+      "min_rel_contrib",
+      0.65192192864236,
+      0.6519219378812232
+    ],
+    [
+      "SprottA",
+      "stiff_eig_dt_at_our_dt",
+      0.21237503114015308,
+      0.2123750105252692
+    ],
+    [
+      "ZhouChen",
+      "lyap_ours",
+      0.9091016205949676,
+      0.538691610590851
+    ],
+    [
+      "ZhouChen",
+      "lyap_per_period_ours",
+      0.7956275563123036,
+      0.471452123756901
+    ],
+    [
+      "ZhouChen",
+      "min_rel_contrib",
+      0.01373550820585466,
+      0.011247933187141715
+    ],
+    [
+      "ZhouChen",
+      "stiff_eig_dt_at_our_dt",
+      0.5543750814633971,
+      0.6695854143317673
+    ]
+  ],
+  "commands": {
+    "po_test.npz": "python -m benchmarks.po_generate --seed 20261702 --seeds 10 --output tmp/submission_audit/recovered/po_test.npz",
+    "dev_clean.npz": "python -m benchmarks.gen_variants --kind white --etas 0 --seed 5150001 --seeds 4 --output tmp/submission_audit/recovered/dev_clean.npz",
+    "sealed_clean.npz": "python -m benchmarks.gen_variants --kind white --etas 0 --seed 20261127 --output tmp/submission_audit/recovered/sealed_clean.npz",
+    "dysts_precdev.npz": "python -m benchmarks.dysts_generate --classes data/dysts_classes.json --output tmp/submission_audit/recovered/dysts_precdev.npz --seed 20261777 --seeds 3 --systems AtmosphericRegime HyperYan IsothermalChemical GuckenheimerHolmes QiChen ChenLee ZhouChen HyperQi Bouali HyperBao Arneodo Lorenz SprottA Halvorsen HyperLu LorenzStenflo"
+  },
+  "command_notes": "Initial direct script invocations failed to import the local eqdisc package. Module invocations from the repository root succeeded. No benchmark fits were run.",
+  "promoted_files": [],
+  "interpretation": "All four original archives remain missing. Generated alternatives are scratch artifacts, not verified replacements. The first three byte mismatches have not been diagnosed; do not infer numeric inequality solely from different container hashes. Dysts precision-development sidecar differences demonstrate numerical/protocol output changes, including AtmosphericRegime dt 1.0 versus 0.5. The specific cause is not isolated.",
+  "input_sha256": {
+    "benchmarks/po_generate.py": "5a55ae0938810035f62bbb9933c5f9ff420c55eb7aeb7e81815f2a640a1f6b29",
+    "benchmarks/gen_variants.py": "3656a7958f47e0be481ecc6cd4e5f6145653b841fe3f433fd15ec651126a8d24",
+    "benchmarks/dysts_generate.py": "2d81224bab281e29ec3a4a0d502d8e7531c0b1ad3ef368fbd7a5519a2f661a97",
+    "eqdisc/core.py": "f3fccb4e2cc02c04556cfdbcb9131e812946a5cbb6a09f2ac188998de2116e1e",
+    "eqdisc/joint_nd.py": "a58dfb0d6673706a17ca3e1ea6fb38d9528149743d1854293e1f46eda23d3659",
+    "data/dysts_classes.json": "b1d6696e79ea061951d008a927faee0e23ebffc51a99c78e2524e327d2517590",
+    "data/dysts_precdev.json": "f207b6d12b747bff5b4b3f5a9a8907b44c58ac3d321daf6f00d9b17ba9b0e469",
+    "data/MANIFEST.sha256": "4bfe96c8bb24c44d0febb2cc84d191c2ffc314ed5708d2d531a04c421ed686a2",
+    "results_precision/job_b1.sh": "bf18bd394f0e2616a0337a2d99de06246b1a83203bc3b143294105d10c716972",
+    "results_precision/PREREGISTRATION_v12.md": "e9dd9ca2b00ff638af7a847371f1c61810987ae8829aff073e50a3f367f19403",
+    "results_po/PREREGISTRATION.md": "1ff666344c527ca677b633c9e4496d801cd451ff8bdb3433f87a3d2c1c6b01cb"
+  }
+}

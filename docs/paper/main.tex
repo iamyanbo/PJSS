@@ -1,0 +1,79 @@
+% Build (MiKTeX; installer disabled so missing packages fail fast instead of hanging):
+%   pdflatex --disable-installer main && bibtex main && pdflatex --disable-installer main && pdflatex --disable-installer main
+% Figures: python docs/paper/scripts/make_figures.py ; numbers: python docs/paper/scripts/verify_numbers.py (repo root)
+% Number discrepancies found while drafting (result files used in the text):
+%   * ODR-BINDy cap-1000 Chen: WRITEUP says 7/10; results_odr/hard30_it1000_partial.log has 6/9 finished (run 95 missing).
+%   * WRITEUP "Scope" says "fixed degree-2 library (20 terms per equation)"; the code (core.EXPS) is degree <= 3, 20 terms.
+%   * WRITEUP cites "Bertsimas & Gurney 2023"; the author is Gurnee.
+%   * DEDi runtime: hard-40 median 5,499 s (results_hybrid); hard-120 median 1.36 h (docs/reports/hard120.md). Both quoted with their set.
+%   * DEDi: reduced 2x2-grid numbers kept only as history/sensitivity. The comparison of methods is the pre-registered
+%     80-run head-to-head (docs/reports/h2h.md); the 17-run full-grid check (dedi_fullgrid.md) is kept as the step before it.
+%     The old "more than 5,000x" (13.4 loaded core-h vs 8.6 s) is withdrawn. Cost now: 343x GPU / 3,590x CPU (h2h medians,
+%     loaded machine); same-core idle timing (timing.md) gives 30-100x per setting and ~1,100-1,900x for the full grid,
+%     extrapolated with run 43's full-grid/4-setting ratio 6.7 (timing.md's "3,000-5,000x" used loaded fullgrid times).
+%     Superseded in the text by the measured idle timing of three runs (results_rev, E3; docs/reports/revision.md).
+%   * docs/reports/partial_obs.md lists DAHSI authors as "Ribera, Payne, Ward, Kutz, Brunton & Bramburger"; the Chaos 32,
+%     063101 (2022) paper (doi 10.1063/5.0066066) is by Ribera, Shirman, Nguyen and Mangan. refs.bib uses the latter.
+%   * Partial observation by system: report text and test_tables.md agree (po 146/240; dahsi 21/240, 20 evaluator errors).
+% Main tables report the method as first frozen; the head-to-head, cost and sensitivity sections use the current one
+% (see the 'Changes after the main test pass' paragraph of sections/protocol.tex).
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+
+
+% ---- notation ----
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Sset}{\mathcal{S}}
+\newcommand{\Tset}{\mathcal{T}}
+\newcommand{\Vset}{\mathcal{V}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\argmin}{\operatorname*{arg\,min}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\MAD}{\operatorname{MAD}}
+\newcommand{\WL}[2]{#1/#2}   % paired wins/losses
+
+\newtheorem{remark}{Remark}
+
+\title{PJSS: Profiled Joint Subset Search\\for Sparse Equation Discovery}
+\author{Yanbo Cheng\\[2pt]\small Vision and Image Processing Lab, University of Waterloo}
+\date{Draft, \today}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+\input{sections/intro}
+\input{sections/related}
+\input{sections/method}
+\input{sections/protocol}
+\input{sections/results}
+\input{sections/limitations}
+\input{sections/conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}

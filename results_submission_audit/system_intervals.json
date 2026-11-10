@@ -1,0 +1,1129 @@
+{
+  "audit": "post-hoc system-cluster bootstrap of stored paper results",
+  "generated_at_utc": "2026-11-03T04:58:04.141034+00:00",
+  "script": "benchmarks/audit_system_intervals.py",
+  "script_sha256": "2861dbe5cef0dcb5f5c8cc42503d853d5cd7c924c80c33401e56deca1113bf26",
+  "environment": {
+    "python": "3.13.13",
+    "numpy": "2.4.4"
+  },
+  "inputs": {
+    "dysts_results": {
+      "path": "results_dysts/test_final.json",
+      "sha256": "4fc6ae8f8196108eefa557441fd7dbb53d6a73c2f7af7b50b34cf75db12a75b6",
+      "bytes": 4590307
+    },
+    "dysts_metadata": {
+      "path": "data/dysts_test.json",
+      "sha256": "7901e54ea4ae0ab19464d1ac7b5e826f73fcbcd3ec3bbfd8db26bbdcc60783da",
+      "bytes": 168546
+    },
+    "e2_results": {
+      "path": "results_rev/e2_rows.json",
+      "sha256": "486980adca5fbd2bd0b72d7c6ce33dafe10c81a3da56720f3a9a01d9aeccf00c",
+      "bytes": 30500
+    }
+  },
+  "procedure": {
+    "replicates": 100000,
+    "seed": 20261102,
+    "rng": "numpy.random.default_rng (PCG64)",
+    "seed_convention": "Reset an independent Generator to the same seed for every analysis; E2 rules share identical cluster draws.",
+    "cluster_order": "Lexicographically sorted system labels",
+    "resampling": "Sample G systems uniformly with replacement from the G observed systems; include all runs of each sampled system, including multiplicities.",
+    "statistic": "Sum of exact-recovery indicators, or paired DEDi-minus-PJSS indicators, divided by total resampled run count.",
+    "estimand_note": "Pooled run rate, not mean of per-system rates; total resampled run count can vary for E2.",
+    "interval": "Two-sided 95% percentile interval; numpy.quantile at [0.025,0.975], method='linear'.",
+    "historical_note": "Historical bootstrap seeds and executable procedures were not located; these are newly specified reproducible intervals, not exact replay of historical endpoints."
+  },
+  "intervals": {
+    "dysts_all": {
+      "description": "PJSS exact-support rate",
+      "fields": {
+        "system": "records[*].system",
+        "exact": "records[*].final.exact"
+      },
+      "runs": 6160,
+      "systems": 77,
+      "cluster_size_frequencies": {
+        "80": 77
+      },
+      "numerator": 5481,
+      "denominator": 6160,
+      "estimate": 0.8897727272727273,
+      "ci95": [
+        0.8410714285714286,
+        0.9314935064935065
+      ],
+      "ci95_rounded_3dp": [
+        0.841,
+        0.931
+      ],
+      "clusters": [
+        {
+          "system": "Arneodo",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "AtmosphericRegime",
+          "numerator": 0,
+          "runs": 80
+        },
+        {
+          "system": "Bouali",
+          "numerator": 56,
+          "runs": 80
+        },
+        {
+          "system": "Bouali2",
+          "numerator": 70,
+          "runs": 80
+        },
+        {
+          "system": "BurkeShaw",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "Chen",
+          "numerator": 77,
+          "runs": 80
+        },
+        {
+          "system": "ChenLee",
+          "numerator": 40,
+          "runs": 80
+        },
+        {
+          "system": "Coullet",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "Dadras",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "DequanLi",
+          "numerator": 67,
+          "runs": 80
+        },
+        {
+          "system": "Finance",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "GenesioTesi",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "GuckenheimerHolmes",
+          "numerator": 27,
+          "runs": 80
+        },
+        {
+          "system": "Hadley",
+          "numerator": 74,
+          "runs": 80
+        },
+        {
+          "system": "Halvorsen",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "HenonHeiles",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "HindmarshRose",
+          "numerator": 64,
+          "runs": 80
+        },
+        {
+          "system": "HyperBao",
+          "numerator": 57,
+          "runs": 80
+        },
+        {
+          "system": "HyperCai",
+          "numerator": 61,
+          "runs": 80
+        },
+        {
+          "system": "HyperJha",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "HyperLorenz",
+          "numerator": 75,
+          "runs": 80
+        },
+        {
+          "system": "HyperLu",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "HyperPang",
+          "numerator": 75,
+          "runs": 80
+        },
+        {
+          "system": "HyperQi",
+          "numerator": 50,
+          "runs": 80
+        },
+        {
+          "system": "HyperRossler",
+          "numerator": 65,
+          "runs": 80
+        },
+        {
+          "system": "HyperWang",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "HyperXu",
+          "numerator": 76,
+          "runs": 80
+        },
+        {
+          "system": "HyperYan",
+          "numerator": 14,
+          "runs": 80
+        },
+        {
+          "system": "HyperYangChen",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "IsothermalChemical",
+          "numerator": 18,
+          "runs": 80
+        },
+        {
+          "system": "KawczynskiStrizhak",
+          "numerator": 77,
+          "runs": 80
+        },
+        {
+          "system": "Laser",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "LiuChen",
+          "numerator": 69,
+          "runs": 80
+        },
+        {
+          "system": "Lorenz",
+          "numerator": 69,
+          "runs": 80
+        },
+        {
+          "system": "Lorenz84",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "Lorenz96",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "LorenzCoupled",
+          "numerator": 72,
+          "runs": 80
+        },
+        {
+          "system": "LorenzStenflo",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "LuChen",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "LuChenCheng",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "MooreSpiegel",
+          "numerator": 60,
+          "runs": 80
+        },
+        {
+          "system": "NewtonLiepnik",
+          "numerator": 77,
+          "runs": 80
+        },
+        {
+          "system": "NoseHoover",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "PehlivanWei",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "QiChen",
+          "numerator": 39,
+          "runs": 80
+        },
+        {
+          "system": "RabinovichFabrikant",
+          "numerator": 75,
+          "runs": 80
+        },
+        {
+          "system": "RayleighBenard",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "RikitakeDynamo",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "Rossler",
+          "numerator": 71,
+          "runs": 80
+        },
+        {
+          "system": "Rucklidge",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "Sakarya",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "ShimizuMorioka",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottA",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottB",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottC",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottD",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottE",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottF",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "SprottG",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottH",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottI",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottJ",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottJerk",
+          "numerator": 65,
+          "runs": 80
+        },
+        {
+          "system": "SprottK",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottL",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottM",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottN",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottO",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottP",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottQ",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottR",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottS",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottTorus",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "Tsucs2",
+          "numerator": 65,
+          "runs": 80
+        },
+        {
+          "system": "VallisElNino",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "WangSun",
+          "numerator": 72,
+          "runs": 80
+        },
+        {
+          "system": "ZhouChen",
+          "numerator": 49,
+          "runs": 80
+        }
+      ]
+    },
+    "dysts_new": {
+      "description": "PJSS exact-support rate; metadata overlap is null/absent",
+      "fields": {
+        "system": "records[*].system",
+        "exact": "records[*].final.exact"
+      },
+      "runs": 3920,
+      "systems": 49,
+      "cluster_size_frequencies": {
+        "80": 49
+      },
+      "numerator": 3345,
+      "denominator": 3920,
+      "estimate": 0.8533163265306123,
+      "ci95": [
+        0.7831632653061225,
+        0.9142857142857143
+      ],
+      "ci95_rounded_3dp": [
+        0.783,
+        0.914
+      ],
+      "clusters": [
+        {
+          "system": "Arneodo",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "AtmosphericRegime",
+          "numerator": 0,
+          "runs": 80
+        },
+        {
+          "system": "Bouali",
+          "numerator": 56,
+          "runs": 80
+        },
+        {
+          "system": "Bouali2",
+          "numerator": 70,
+          "runs": 80
+        },
+        {
+          "system": "Coullet",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "DequanLi",
+          "numerator": 67,
+          "runs": 80
+        },
+        {
+          "system": "Finance",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "GuckenheimerHolmes",
+          "numerator": 27,
+          "runs": 80
+        },
+        {
+          "system": "HenonHeiles",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "HindmarshRose",
+          "numerator": 64,
+          "runs": 80
+        },
+        {
+          "system": "HyperBao",
+          "numerator": 57,
+          "runs": 80
+        },
+        {
+          "system": "HyperCai",
+          "numerator": 61,
+          "runs": 80
+        },
+        {
+          "system": "HyperJha",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "HyperLorenz",
+          "numerator": 75,
+          "runs": 80
+        },
+        {
+          "system": "HyperLu",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "HyperPang",
+          "numerator": 75,
+          "runs": 80
+        },
+        {
+          "system": "HyperQi",
+          "numerator": 50,
+          "runs": 80
+        },
+        {
+          "system": "HyperWang",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "HyperXu",
+          "numerator": 76,
+          "runs": 80
+        },
+        {
+          "system": "HyperYan",
+          "numerator": 14,
+          "runs": 80
+        },
+        {
+          "system": "HyperYangChen",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "IsothermalChemical",
+          "numerator": 18,
+          "runs": 80
+        },
+        {
+          "system": "KawczynskiStrizhak",
+          "numerator": 77,
+          "runs": 80
+        },
+        {
+          "system": "Laser",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "LorenzCoupled",
+          "numerator": 72,
+          "runs": 80
+        },
+        {
+          "system": "LorenzStenflo",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "LuChenCheng",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "MooreSpiegel",
+          "numerator": 60,
+          "runs": 80
+        },
+        {
+          "system": "NewtonLiepnik",
+          "numerator": 77,
+          "runs": 80
+        },
+        {
+          "system": "PehlivanWei",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "QiChen",
+          "numerator": 39,
+          "runs": 80
+        },
+        {
+          "system": "Sakarya",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottI",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottJ",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottJerk",
+          "numerator": 65,
+          "runs": 80
+        },
+        {
+          "system": "SprottK",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottL",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottM",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottN",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottO",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottP",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottQ",
+          "numerator": 80,
+          "runs": 80
+        },
+        {
+          "system": "SprottR",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottS",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "SprottTorus",
+          "numerator": 78,
+          "runs": 80
+        },
+        {
+          "system": "Tsucs2",
+          "numerator": 65,
+          "runs": 80
+        },
+        {
+          "system": "VallisElNino",
+          "numerator": 79,
+          "runs": 80
+        },
+        {
+          "system": "WangSun",
+          "numerator": 72,
+          "runs": 80
+        },
+        {
+          "system": "ZhouChen",
+          "numerator": 49,
+          "runs": 80
+        }
+      ]
+    },
+    "e2_validation": {
+      "description": "Paired exact-support rate difference, DEDi minus PJSS",
+      "fields": {
+        "system": "[*].system",
+        "dedi": "full grid|val_error",
+        "pjss": "ours"
+      },
+      "runs": 64,
+      "systems": 35,
+      "cluster_size_frequencies": {
+        "1": 6,
+        "2": 29
+      },
+      "numerator": -17,
+      "denominator": 64,
+      "estimate": -0.265625,
+      "ci95": [
+        -0.4126984126984127,
+        -0.11940298507462686
+      ],
+      "ci95_rounded_3dp": [
+        -0.413,
+        -0.119
+      ],
+      "clusters": [
+        {
+          "system": "Arneodo",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "AtmosphericRegime",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "Bouali",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "Bouali2",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "Coullet",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "DequanLi",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "Finance",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "GuckenheimerHolmes",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "HindmarshRose",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "IsothermalChemical",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "KawczynskiStrizhak",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "Laser",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "LuChenCheng",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "MooreSpiegel",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "NewtonLiepnik",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "PehlivanWei",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "QiChen",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "Sakarya",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottI",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "SprottJ",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottJerk",
+          "numerator": 2,
+          "runs": 2
+        },
+        {
+          "system": "SprottK",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "SprottL",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottM",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "SprottN",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottO",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottP",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottQ",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "SprottR",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottS",
+          "numerator": 0,
+          "runs": 1
+        },
+        {
+          "system": "SprottTorus",
+          "numerator": -1,
+          "runs": 1
+        },
+        {
+          "system": "Tsucs2",
+          "numerator": -1,
+          "runs": 1
+        },
+        {
+          "system": "VallisElNino",
+          "numerator": 0,
+          "runs": 1
+        },
+        {
+          "system": "WangSun",
+          "numerator": -1,
+          "runs": 1
+        },
+        {
+          "system": "ZhouChen",
+          "numerator": 0,
+          "runs": 1
+        }
+      ],
+      "pjss_exact": 53,
+      "dedi_exact": 36
+    },
+    "e2_bic": {
+      "description": "Paired exact-support rate difference, DEDi minus PJSS",
+      "fields": {
+        "system": "[*].system",
+        "dedi": "full grid|bic",
+        "pjss": "ours"
+      },
+      "runs": 64,
+      "systems": 35,
+      "cluster_size_frequencies": {
+        "1": 6,
+        "2": 29
+      },
+      "numerator": -12,
+      "denominator": 64,
+      "estimate": -0.1875,
+      "ci95": [
+        -0.34375,
+        -0.04411764705882353
+      ],
+      "ci95_rounded_3dp": [
+        -0.344,
+        -0.044
+      ],
+      "clusters": [
+        {
+          "system": "Arneodo",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "AtmosphericRegime",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "Bouali",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "Bouali2",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "Coullet",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "DequanLi",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "Finance",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "GuckenheimerHolmes",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "HindmarshRose",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "IsothermalChemical",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "KawczynskiStrizhak",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "Laser",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "LuChenCheng",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "MooreSpiegel",
+          "numerator": -1,
+          "runs": 2
+        },
+        {
+          "system": "NewtonLiepnik",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "PehlivanWei",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "QiChen",
+          "numerator": 1,
+          "runs": 2
+        },
+        {
+          "system": "Sakarya",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottI",
+          "numerator": -2,
+          "runs": 2
+        },
+        {
+          "system": "SprottJ",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottJerk",
+          "numerator": 2,
+          "runs": 2
+        },
+        {
+          "system": "SprottK",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottL",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottM",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottN",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottO",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottP",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottQ",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottR",
+          "numerator": 0,
+          "runs": 2
+        },
+        {
+          "system": "SprottS",
+          "numerator": 0,
+          "runs": 1
+        },
+        {
+          "system": "SprottTorus",
+          "numerator": -1,
+          "runs": 1
+        },
+        {
+          "system": "Tsucs2",
+          "numerator": -1,
+          "runs": 1
+        },
+        {
+          "system": "VallisElNino",
+          "numerator": 0,
+          "runs": 1
+        },
+        {
+          "system": "WangSun",
+          "numerator": -1,
+          "runs": 1
+        },
+        {
+          "system": "ZhouChen",
+          "numerator": 0,
+          "runs": 1
+        }
+      ],
+      "pjss_exact": 53,
+      "dedi_exact": 41
+    }
+  }
+}

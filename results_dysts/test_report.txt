@@ -1,0 +1,267 @@
+
+== results_dysts/test_c.json  (c, 6160 runs, errors 0, median 3.5 s/run)
+  all          exact 0.879 (n=6160)   weak 0.675 (n=6160)
+  new systems  exact 0.840 (n=3920)   weak 0.591 (n=3920)
+  overlap      exact 0.944 (n=1920)   weak 0.806 (n=1920)
+  support twin exact 0.956 (n=320)   weak 0.928 (n=320)
+  D = 3        exact 0.888 (n=4880)   weak 0.815 (n=4880)
+  D >= 4       exact 0.844 (n=1280)   weak 0.142 (n=1280)
+  by cell: N500/0.01: 0.94  N500/0.05: 0.89  N500/0.1: 0.82  N500/0.2: 0.69  N2000/0.01: 0.97  N2000/0.05: 0.94  N2000/0.1: 0.93  N2000/0.2: 0.85
+  system                  D grp       exact    n   weak
+  Arneodo                 3 new       1.000   80  0.988
+  AtmosphericRegime       3 new       0.000   80  0.000
+  Bouali                  3 new       0.650   80  0.550
+  Bouali2                 3 new       0.850   80  0.662
+  BurkeShaw               3 overlap   1.000   80  0.988
+  Chen                    3 overlap   0.963   80  0.575
+  ChenLee                 3 overlap   0.500   80  0.250
+  Coullet                 3 new       1.000   80  1.000
+  Dadras                  3 overlap   0.988   80  0.975
+  DequanLi                3 new       0.750   80  0.675
+  Finance                 3 new       1.000   80  0.988
+  GenesioTesi             3 overlap   1.000   80  1.000
+  GuckenheimerHolmes      3 new       0.388   80  0.275
+  Hadley                  3 overlap   0.887   80  0.762
+  Halvorsen               3 overlap   1.000   80  0.988
+  HindmarshRose           3 new       0.800   80  0.487
+  IsothermalChemical      3 new       0.150   80  0.037
+  KawczynskiStrizhak      3 new       0.950   80  0.400
+  Laser                   3 new       0.963   80  0.963
+  LiuChen                 3 twin      0.863   80  0.787
+  Lorenz                  3 overlap   0.838   80  0.588
+  Lorenz84                3 twin      0.975   80  0.925
+  LuChen                  3 overlap   0.975   80  0.963
+  LuChenCheng             3 new       1.000   80  1.000
+  MooreSpiegel            3 new       0.713   80  0.487
+  NewtonLiepnik           3 new       0.887   80  0.787
+  NoseHoover              3 twin      0.988   80  1.000
+  PehlivanWei             3 new       1.000   80  1.000
+  QiChen                  3 new       0.463   80  0.225
+  RabinovichFabrikant     3 overlap   0.938   80  0.850
+  RayleighBenard          3 twin      1.000   80  1.000
+  RikitakeDynamo          3 overlap   0.988   80  1.000
+  Rossler                 3 overlap   0.800   80  0.375
+  Rucklidge               3 overlap   1.000   80  0.988
+  Sakarya                 3 new       1.000   80  0.950
+  ShimizuMorioka          3 overlap   1.000   80  1.000
+  SprottA                 3 overlap   1.000   80  1.000
+  SprottB                 3 overlap   1.000   80  0.988
+  SprottC                 3 overlap   1.000   80  1.000
+  SprottD                 3 overlap   1.000   80  0.988
+  SprottE                 3 overlap   1.000   80  1.000
+  SprottF                 3 overlap   1.000   80  1.000
+  SprottG                 3 overlap   1.000   80  1.000
+  SprottH                 3 overlap   0.988   80  1.000
+  SprottI                 3 new       0.988   80  1.000
+  SprottJ                 3 new       0.963   80  0.988
+  SprottJerk              3 new       0.800   80  0.787
+  SprottK                 3 new       0.988   80  1.000
+  SprottL                 3 new       0.988   80  1.000
+  SprottM                 3 new       1.000   80  1.000
+  SprottN                 3 new       1.000   80  1.000
+  SprottO                 3 new       1.000   80  0.988
+  SprottP                 3 new       1.000   80  1.000
+  SprottQ                 3 new       1.000   80  1.000
+  SprottR                 3 new       1.000   80  1.000
+  SprottS                 3 new       1.000   80  1.000
+  SprottTorus             3 new       0.963   80  0.925
+  Tsucs2                  3 new       0.762   80  0.700
+  VallisElNino            3 new       0.988   80  1.000
+  WangSun                 3 new       0.887   80  0.487
+  ZhouChen                3 new       0.588   80  0.400
+  HenonHeiles             4 new       1.000   80  0.362
+  HyperBao                4 new       0.775   80  0.125
+  HyperCai                4 new       0.738   80  0.113
+  HyperJha                4 new       0.925   80  0.225
+  HyperLorenz             4 new       0.900   80  0.225
+  HyperLu                 4 new       0.975   80  0.113
+  HyperPang               4 new       0.925   80  0.062
+  HyperQi                 4 new       0.625   80  0.000
+  HyperRossler            4 overlap   0.800   80  0.013
+  HyperWang               4 new       0.988   80  0.125
+  HyperXu                 4 new       0.963   80  0.300
+  HyperYan                4 new       0.175   80  0.025
+  HyperYangChen           4 new       0.975   80  0.013
+  Lorenz96                4 overlap   1.000   80  0.062
+  LorenzStenflo           4 new       0.900   80  0.438
+  LorenzCoupled           6 new       0.838   80  0.075
+
+== results_dysts/test_final.json  (final, 6160 runs, errors 0, median 3.8 s/run)
+  all          exact 0.890 (n=6160)
+  new systems  exact 0.853 (n=3920)
+  overlap      exact 0.952 (n=1920)
+  support twin exact 0.966 (n=320)
+  D = 3        exact 0.898 (n=4880)
+  D >= 4       exact 0.857 (n=1280)
+  by cell: N500/0.01: 0.95  N500/0.05: 0.90  N500/0.1: 0.84  N500/0.2: 0.71  N2000/0.01: 0.97  N2000/0.05: 0.95  N2000/0.1: 0.93  N2000/0.2: 0.86
+  system                  D grp       exact    n   weak
+  Arneodo                 3 new       0.988   80      -
+  AtmosphericRegime       3 new       0.000   80      -
+  Bouali                  3 new       0.700   80      -
+  Bouali2                 3 new       0.875   80      -
+  BurkeShaw               3 overlap   1.000   80      -
+  Chen                    3 overlap   0.963   80      -
+  ChenLee                 3 overlap   0.500   80      -
+  Coullet                 3 new       1.000   80      -
+  Dadras                  3 overlap   0.988   80      -
+  DequanLi                3 new       0.838   80      -
+  Finance                 3 new       1.000   80      -
+  GenesioTesi             3 overlap   1.000   80      -
+  GuckenheimerHolmes      3 new       0.338   80      -
+  Hadley                  3 overlap   0.925   80      -
+  Halvorsen               3 overlap   1.000   80      -
+  HindmarshRose           3 new       0.800   80      -
+  IsothermalChemical      3 new       0.225   80      -
+  KawczynskiStrizhak      3 new       0.963   80      -
+  Laser                   3 new       0.975   80      -
+  LiuChen                 3 twin      0.863   80      -
+  Lorenz                  3 overlap   0.863   80      -
+  Lorenz84                3 twin      1.000   80      -
+  LuChen                  3 overlap   1.000   80      -
+  LuChenCheng             3 new       1.000   80      -
+  MooreSpiegel            3 new       0.750   80      -
+  NewtonLiepnik           3 new       0.963   80      -
+  NoseHoover              3 twin      1.000   80      -
+  PehlivanWei             3 new       0.988   80      -
+  QiChen                  3 new       0.487   80      -
+  RabinovichFabrikant     3 overlap   0.938   80      -
+  RayleighBenard          3 twin      1.000   80      -
+  RikitakeDynamo          3 overlap   1.000   80      -
+  Rossler                 3 overlap   0.887   80      -
+  Rucklidge               3 overlap   1.000   80      -
+  Sakarya                 3 new       0.988   80      -
+  ShimizuMorioka          3 overlap   1.000   80      -
+  SprottA                 3 overlap   1.000   80      -
+  SprottB                 3 overlap   1.000   80      -
+  SprottC                 3 overlap   1.000   80      -
+  SprottD                 3 overlap   1.000   80      -
+  SprottE                 3 overlap   1.000   80      -
+  SprottF                 3 overlap   0.975   80      -
+  SprottG                 3 overlap   1.000   80      -
+  SprottH                 3 overlap   0.988   80      -
+  SprottI                 3 new       0.988   80      -
+  SprottJ                 3 new       0.988   80      -
+  SprottJerk              3 new       0.812   80      -
+  SprottK                 3 new       1.000   80      -
+  SprottL                 3 new       0.988   80      -
+  SprottM                 3 new       1.000   80      -
+  SprottN                 3 new       1.000   80      -
+  SprottO                 3 new       1.000   80      -
+  SprottP                 3 new       1.000   80      -
+  SprottQ                 3 new       1.000   80      -
+  SprottR                 3 new       0.988   80      -
+  SprottS                 3 new       0.988   80      -
+  SprottTorus             3 new       0.975   80      -
+  Tsucs2                  3 new       0.812   80      -
+  VallisElNino            3 new       0.988   80      -
+  WangSun                 3 new       0.900   80      -
+  ZhouChen                3 new       0.613   80      -
+  HenonHeiles             4 new       1.000   80      -
+  HyperBao                4 new       0.713   80      -
+  HyperCai                4 new       0.762   80      -
+  HyperJha                4 new       0.975   80      -
+  HyperLorenz             4 new       0.938   80      -
+  HyperLu                 4 new       0.975   80      -
+  HyperPang               4 new       0.938   80      -
+  HyperQi                 4 new       0.625   80      -
+  HyperRossler            4 overlap   0.812   80      -
+  HyperWang               4 new       0.988   80      -
+  HyperXu                 4 new       0.950   80      -
+  HyperYan                4 new       0.175   80      -
+  HyperYangChen           4 new       0.988   80      -
+  Lorenz96                4 overlap   1.000   80      -
+  LorenzStenflo           4 new       0.975   80      -
+  LorenzCoupled           6 new       0.900   80      -
+
+== results_dysts/test_weak.json  (weak, 6160 runs, errors 0, median 0.1 s/run)
+  all          exact 0.675 (n=6160)   weak 0.142 (n=1280)
+  new systems  exact 0.591 (n=3920)   weak 0.157 (n=1120)
+  overlap      exact 0.806 (n=1920)   weak 0.037 (n=160)
+  support twin exact 0.928 (n=320)
+  D = 3        exact 0.815 (n=4880)
+  D >= 4       exact 0.142 (n=1280)   weak 0.142 (n=1280)
+  by cell: N500/0.01: 0.76  N500/0.05: 0.66  N500/0.1: 0.58  N500/0.2: 0.49  N2000/0.01: 0.82  N2000/0.05: 0.79  N2000/0.1: 0.70  N2000/0.2: 0.61
+  system                  D grp       exact    n   weak
+  Arneodo                 3 new       0.988   80      -
+  AtmosphericRegime       3 new       0.000   80      -
+  Bouali                  3 new       0.550   80      -
+  Bouali2                 3 new       0.662   80      -
+  BurkeShaw               3 overlap   0.988   80      -
+  Chen                    3 overlap   0.575   80      -
+  ChenLee                 3 overlap   0.250   80      -
+  Coullet                 3 new       1.000   80      -
+  Dadras                  3 overlap   0.975   80      -
+  DequanLi                3 new       0.675   80      -
+  Finance                 3 new       0.988   80      -
+  GenesioTesi             3 overlap   1.000   80      -
+  GuckenheimerHolmes      3 new       0.275   80      -
+  Hadley                  3 overlap   0.762   80      -
+  Halvorsen               3 overlap   0.988   80      -
+  HindmarshRose           3 new       0.487   80      -
+  IsothermalChemical      3 new       0.037   80      -
+  KawczynskiStrizhak      3 new       0.400   80      -
+  Laser                   3 new       0.963   80      -
+  LiuChen                 3 twin      0.787   80      -
+  Lorenz                  3 overlap   0.588   80      -
+  Lorenz84                3 twin      0.925   80      -
+  LuChen                  3 overlap   0.963   80      -
+  LuChenCheng             3 new       1.000   80      -
+  MooreSpiegel            3 new       0.487   80      -
+  NewtonLiepnik           3 new       0.787   80      -
+  NoseHoover              3 twin      1.000   80      -
+  PehlivanWei             3 new       1.000   80      -
+  QiChen                  3 new       0.225   80      -
+  RabinovichFabrikant     3 overlap   0.850   80      -
+  RayleighBenard          3 twin      1.000   80      -
+  RikitakeDynamo          3 overlap   1.000   80      -
+  Rossler                 3 overlap   0.375   80      -
+  Rucklidge               3 overlap   0.988   80      -
+  Sakarya                 3 new       0.950   80      -
+  ShimizuMorioka          3 overlap   1.000   80      -
+  SprottA                 3 overlap   1.000   80      -
+  SprottB                 3 overlap   0.988   80      -
+  SprottC                 3 overlap   1.000   80      -
+  SprottD                 3 overlap   0.988   80      -
+  SprottE                 3 overlap   1.000   80      -
+  SprottF                 3 overlap   1.000   80      -
+  SprottG                 3 overlap   1.000   80      -
+  SprottH                 3 overlap   1.000   80      -
+  SprottI                 3 new       1.000   80      -
+  SprottJ                 3 new       0.988   80      -
+  SprottJerk              3 new       0.787   80      -
+  SprottK                 3 new       1.000   80      -
+  SprottL                 3 new       1.000   80      -
+  SprottM                 3 new       1.000   80      -
+  SprottN                 3 new       1.000   80      -
+  SprottO                 3 new       0.988   80      -
+  SprottP                 3 new       1.000   80      -
+  SprottQ                 3 new       1.000   80      -
+  SprottR                 3 new       1.000   80      -
+  SprottS                 3 new       1.000   80      -
+  SprottTorus             3 new       0.925   80      -
+  Tsucs2                  3 new       0.700   80      -
+  VallisElNino            3 new       1.000   80      -
+  WangSun                 3 new       0.487   80      -
+  ZhouChen                3 new       0.400   80      -
+  HenonHeiles             4 new       0.362   80  0.362
+  HyperBao                4 new       0.125   80  0.125
+  HyperCai                4 new       0.113   80  0.113
+  HyperJha                4 new       0.225   80  0.225
+  HyperLorenz             4 new       0.225   80  0.225
+  HyperLu                 4 new       0.113   80  0.113
+  HyperPang               4 new       0.062   80  0.062
+  HyperQi                 4 new       0.000   80  0.000
+  HyperRossler            4 overlap   0.013   80  0.013
+  HyperWang               4 new       0.125   80  0.125
+  HyperXu                 4 new       0.300   80  0.300
+  HyperYan                4 new       0.025   80  0.025
+  HyperYangChen           4 new       0.013   80  0.013
+  Lorenz96                4 overlap   0.062   80  0.062
+  LorenzStenflo           4 new       0.438   80  0.438
+  LorenzCoupled           6 new       0.075   80  0.075
+
+== paired vs c (results_dysts/test_c.json)
+  final      all  n= 6160  c 0.879 -> final 0.890   W/L 101/33  p=3.3e-09
+  final      new  n= 3920  c 0.840 -> final 0.853   W/L 79/28  p=8.4e-07
+  weak       all  n= 6160  c 0.879 -> weak 0.675   W/L 34/1286  p=0
+  weak       new  n= 3920  c 0.840 -> weak 0.591   W/L 25/1003  p=6.8e-260

@@ -1,0 +1,10 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+PJSS combines joint state--coefficient estimation with profiled quadratic subset proposals. Profiling accounts for local trajectory adjustment, subset search explores competing term combinations, and nonlinear refits check the proposed supports. The ablations attribute most of the recovery gain to subset proposals, with a smaller additional gain from profiling. Fixed defaults and data calibration remove the need for a user-specified sparsity threshold on the evaluated benchmarks.
+
+On simulated in-library systems, PJSS improves recovery over the tested sparse-regression baselines and reduces the cost of comparison with full-grid DEDi. The two methods tie on some conditions, while PJSS recovers more runs in the new-system comparison. Real-data and misspecification tests remain negative, so detecting model inadequacy is a priority before broader scientific use.
+
+\paragraph{Reproducibility.} The accompanying code contains benchmark runners, stored results, checksum manifests and executable audits. \path{docs/paper/scripts/verify_numbers.py} recomputes headline summaries; figure generation also reads saved results. The main full-observation archives are available and match their hashes. Four secondary-study originals are missing locally, and regeneration did not reproduce their hashes (\cref{app:data-audit}); those historical results cannot currently be reproduced exactly. A public artifact location and the original benchmark environment remain release requirements. The README documents commands, versions and evidence limitations.
+
+\section*{Declarations}\paragraph{AI use.} Generative AI tools were used in research and experiment design, code development, and manuscript drafting and revision. The author assumes responsibility for all content.

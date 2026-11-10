@@ -1,0 +1,14 @@
+{
+  "system": "DequanLi",
+  "source": "saved frozen dysts fit",
+  "index": 726,
+  "noise": 0.1,
+  "n_fit": 2000,
+  "dt": 0.0005,
+  "exact": true,
+  "coef_err": 0.00538038982543871,
+  "new_system": true,
+  "integration_complete": true,
+  "integrator_message": "The solver successfully reached the end of the integration interval.",
+  "samples_before_stop": 9000
+}

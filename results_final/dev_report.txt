@@ -1,0 +1,200 @@
+
+### dev_white (400 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| C | 0.910 | 12% | 0.980 | 2.0 | 0 |
+| Cp | 0.922 | 9% | 0.986 | 2.0 | 0 |
+| AR | 0.910 | 12% | 0.983 | 2.1 | 0 |
+| ARp | 0.922 | 9% | 0.986 | 2.1 | 0 |
+- Cp vs C: 6/1 (p = 0.12); wins ['lorenz', 'rabinovich', 'rossler', 'sprottD']; losses ['rabinovich']
+- AR vs C: 0/0 (p = 1); wins []; losses []
+- ARp vs Cp: 0/0 (p = 1); wins []; losses []
+- ARp vs AR: 6/1 (p = 0.12); wins ['lorenz', 'rabinovich', 'rossler', 'sprottD']; losses ['rabinovich']
+
+### dev_white_odd (400 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| C | 0.853 | 16% | 0.958 | 2.1 | 0 |
+| Cp | 0.858 | 12% | 0.946 | 2.1 | 0 |
+| AR | 0.853 | 16% | 0.955 | 2.2 | 0 |
+| ARp | 0.860 | 12% | 0.946 | 2.2 | 0 |
+- Cp vs C: 2/0 (p = 0.5); wins ['lorenz']; losses []
+- AR vs C: 0/0 (p = 1); wins []; losses []
+- ARp vs Cp: 1/0 (p = 1); wins ['lorenz']; losses []
+- ARp vs AR: 3/0 (p = 0.25); wins ['lorenz']; losses []
+
+### dev_colored (400 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| C | 0.660 | 8% | 0.715 | 3.9 | 0 |
+| Cp | 0.675 | 4% | 0.696 | 3.8 | 0 |
+| AR | 0.723 | 18% | 0.842 | 4.8 | 0 |
+| ARp | 0.745 | 14% | 0.834 | 4.7 | 0 |
+| ARp_e14 | 0.740 | 14% | 0.839 | 4.7 | 0 |
+| ARp_e12 | 0.745 | 11% | 0.817 | 4.7 | 0 |
+- Cp vs C: 8/2 (p = 0.11); wins ['chen', 'halvorsen', 'lorenz', 'sprottA', 'sprottC', 'sprottD', 'sprottE']; losses ['sprottB', 'sprottD']
+- AR vs C: 35/10 (p = 0.00025); wins ['chen', 'halvorsen', 'lorenz', 'rabinovich', 'rossler', 'sprottA', 'sprottC', 'sprottD', 'sprottE']; losses ['chen', 'halvorsen', 'lorenz', 'rabinovich', 'rossler']
+- ARp vs AR: 9/0 (p = 0.0039); wins ['chen', 'lorenz', 'rossler', 'sprottA']; losses []
+- ARp vs Cp: 36/8 (p = 2.5e-05); wins ['chen', 'halvorsen', 'lorenz', 'rabinovich', 'rossler', 'sprottA', 'sprottB', 'sprottC', 'sprottD', 'sprottE']; losses ['chen', 'halvorsen', 'lorenz', 'rabinovich']
+- ARp_e14 vs AR: 8/1 (p = 0.039); wins ['chen', 'lorenz', 'rossler']; losses ['sprottA']
+- ARp_e12 vs AR: 11/2 (p = 0.022); wins ['chen', 'lorenz', 'rossler', 'sprottA', 'sprottC']; losses ['chen']
+- ARp_e14 vs ARp: 1/3 (p = 0.62); wins ['lorenz']; losses ['lorenz', 'sprottA']
+- ARp_e12 vs ARp: 2/2 (p = 1); wins ['sprottA', 'sprottC']; losses ['chen']
+
+### dev_cmid (320 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| C | 0.812 | 16% | 0.904 | 3.0 | 0 |
+| Cp | 0.841 | 10% | 0.907 | 3.0 | 0 |
+| AR | 0.803 | 16% | 0.892 | 3.2 | 0 |
+| ARp | 0.834 | 13% | 0.913 | 3.2 | 0 |
+- Cp vs C: 11/2 (p = 0.022); wins ['chen', 'halvorsen', 'lorenz', 'rossler', 'sprottA', 'sprottD', 'sprottE']; losses ['halvorsen', 'sprottD']
+- AR vs C: 10/13 (p = 0.68); wins ['chen', 'halvorsen', 'lorenz', 'sprottA', 'sprottD', 'sprottE']; losses ['chen', 'lorenz', 'rabinovich', 'rossler']
+- ARp vs AR: 10/0 (p = 0.002); wins ['chen', 'lorenz', 'rossler']; losses []
+- ARp vs Cp: 9/11 (p = 0.82); wins ['halvorsen', 'lorenz', 'rossler', 'sprottD', 'sprottE']; losses ['chen', 'lorenz', 'rabinovich', 'rossler', 'sprottE']
+  rho 0.3: C 0.819, Cp 0.856, AR 0.825, ARp 0.856; ARp vs Cp 4/4 (p = 1); AR vs C 7/6 (p = 1)
+  rho 0.55: C 0.806, Cp 0.825, AR 0.781, ARp 0.812; ARp vs Cp 5/7 (p = 0.77); AR vs C 3/7 (p = 0.34)
+
+### dev_student (200 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| Cp | 0.920 | 6% | 0.963 | 1.7 | 0 |
+| ARp | 0.925 | 6% | 0.968 | 1.9 | 0 |
+- ARp vs Cp: 1/0 (p = 1); wins ['rabinovich']; losses []
+
+### dev_coarse (200 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| Cp | 0.810 | 12% | 0.897 | 7.2 | 0 |
+| ARp | 0.800 | 12% | 0.886 | 8.6 | 0 |
+- ARp vs Cp: 1/3 (p = 0.62); wins ['lorenz']; losses ['chen', 'lorenz', 'rossler']
+
+### dev_heldout3 (294 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| Cp | 0.952 | 3% | 0.958 | 1.9 | 0 |
+| ARp | 0.949 | 4% | 0.968 | 2.0 | 0 |
+- ARp vs Cp: 0/1 (p = 1); wins []; losses ['chenlee']
+
+### dev_deg4 (400 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| off | 0.845 | 16% | 0.964 | 3.0 | 0 |
+| p15 | 0.868 | 11% | 0.938 | 3.0 | 0 |
+| pmid | 0.863 | 12% | 0.941 | 3.0 | 0 |
+| pmean | 0.845 | 19% | 0.944 | 3.0 | 0 |
+- p15 vs off: 9/0 (p = 0.0039); wins ['halvorsen', 'lorenz', 'rossler', 'sprottC', 'sprottD']; losses []
+- pmid vs off: 9/2 (p = 0.065); wins ['halvorsen', 'lorenz', 'rossler', 'sprottC', 'sprottD']; losses ['lorenz', 'sprottD']
+- pmean vs off: 8/8 (p = 1); wins ['halvorsen', 'lorenz', 'rossler', 'sprottC']; losses ['lorenz', 'sprottA', 'sprottB', 'sprottC', 'sprottD']
+- p15 vs pmid: 2/0 (p = 0.5); wins ['lorenz', 'sprottD']; losses []
+- p15 vs pmean: 9/0 (p = 0.0039); wins ['lorenz', 'sprottA', 'sprottB', 'sprottC', 'sprottD']; losses []
+  rabinovich: off 0/40, p15 0/40, pmid 0/40, pmean 0/40
+
+### dev_deg5 (400 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| off | 0.840 | 17% | 0.964 | 4.4 | 0 |
+| p15 | 0.860 | 8% | 0.910 | 4.4 | 0 |
+| pmid | 0.848 | 11% | 0.905 | 4.4 | 0 |
+| pmean | 0.810 | 26% | 0.869 | 4.4 | 0 |
+- p15 vs off: 9/1 (p = 0.021); wins ['chen', 'halvorsen', 'lorenz', 'rossler', 'sprottB', 'sprottC']; losses ['rossler']
+- pmid vs off: 8/5 (p = 0.58); wins ['halvorsen', 'lorenz', 'rossler', 'sprottB', 'sprottC']; losses ['lorenz', 'rossler', 'sprottA', 'sprottD']
+- pmean vs off: 6/18 (p = 0.023); wins ['lorenz', 'rossler', 'sprottB', 'sprottC']; losses ['halvorsen', 'lorenz', 'rossler', 'sprottA', 'sprottB', 'sprottC', 'sprottD', 'sprottE']
+- p15 vs pmid: 5/0 (p = 0.062); wins ['chen', 'lorenz', 'sprottA', 'sprottD']; losses []
+- p15 vs pmean: 20/0 (p = 1.9e-06); wins ['chen', 'halvorsen', 'lorenz', 'sprottA', 'sprottB', 'sprottC', 'sprottD', 'sprottE']; losses []
+  rabinovich: off 0/40, p15 0/40, pmid 0/40, pmean 0/40
+
+### dev_trig (160 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| off | 0.981 | 8% | 1.000 | 2.0 | 0 |
+| p15 | 0.988 | 4% | 1.000 | 2.0 | 0 |
+- p15 vs off: 1/0 (p = 1); wins ['thomas18']; losses []
+
+### dev_mixedpoly (200 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| off | 0.830 | 20% | 0.931 | 2.1 | 0 |
+| p15 | 0.860 | 17% | 0.958 | 2.0 | 0 |
+- p15 vs off: 7/1 (p = 0.07); wins ['lorenz', 'rabinovich', 'rossler', 'sprottD']; losses ['sprottE']
+
+### dev_nd (200 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| off | 0.890 | 17% | 0.982 | 11.3 | 0 |
+| p15 | 0.915 | 13% | 0.989 | 11.0 | 0 |
+| p10 | 0.915 | 11% | 0.989 | 11.0 | 0 |
+- p15 vs off: 5/0 (p = 0.062); wins ['coupled_lorenz', 'hyper_rossler']; losses []
+- p10 vs off: 5/0 (p = 0.062); wins ['coupled_lorenz', 'hyper_rossler']; losses []
+- p15 vs p10: 0/0 (p = 1); wins []; losses []
+  coupled_lorenz: off 0.550, p15 0.650, p10 0.650
+  hyper_rossler: off 0.900, p15 0.925, p10 0.925
+  l96_10: off 1.000, p15 1.000, p10 1.000
+  l96_5: off 1.000, p15 1.000, p10 1.000
+  l96_6: off 1.000, p15 1.000, p10 1.000
+
+### dev_white, all 800 (800 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| C | 0.881 | 14% | 0.969 | 2.1 | 0 |
+| Cp | 0.890 | 11% | 0.966 | 2.1 | 0 |
+| AR | 0.881 | 14% | 0.969 | 2.1 | 0 |
+| ARp | 0.891 | 11% | 0.966 | 2.1 | 0 |
+- Cp vs C: 8/1 (p = 0.039); wins ['lorenz', 'rabinovich', 'rossler', 'sprottD']; losses ['rabinovich']
+- AR vs C: 0/0 (p = 1); wins []; losses []
+- ARp vs Cp: 1/0 (p = 1); wins ['lorenz']; losses []
+- ARp vs AR: 9/1 (p = 0.021); wins ['lorenz', 'rabinovich', 'rossler', 'sprottD']; losses ['rabinovich']
+
+### coloured pooled (rho 0.8 + 0.55 + 0.3) (720 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| C | 0.728 | 11% | 0.795 | 3.5 | 0 |
+| Cp | 0.749 | 6% | 0.786 | 3.4 | 0 |
+| AR | 0.758 | 17% | 0.865 | 3.8 | 0 |
+| ARp | 0.785 | 14% | 0.869 | 3.9 | 0 |
+- ARp vs AR: 19/0 (p = 3.8e-06); wins ['chen', 'lorenz', 'rossler', 'sprottA']; losses []
+- ARp vs Cp: 45/19 (p = 0.0016); wins ['chen', 'halvorsen', 'lorenz', 'rabinovich', 'rossler', 'sprottA', 'sprottB', 'sprottC', 'sprottD', 'sprottE']; losses ['chen', 'halvorsen', 'lorenz', 'rabinovich', 'rossler', 'sprottE']
+- AR vs C: 45/23 (p = 0.01); wins ['chen', 'halvorsen', 'lorenz', 'rabinovich', 'rossler', 'sprottA', 'sprottC', 'sprottD', 'sprottE']; losses ['chen', 'halvorsen', 'lorenz', 'rabinovich', 'rossler']
+- Cp vs C: 19/4 (p = 0.0026); wins ['chen', 'halvorsen', 'lorenz', 'rossler', 'sprottA', 'sprottC', 'sprottD', 'sprottE']; losses ['halvorsen', 'sprottB', 'sprottD']
+
+### dev_nd2 (second half, extension) (200 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| off | 0.890 | 18% | 0.988 | 12.3 | 0 |
+| p15 | 0.915 | 12% | 0.983 | 12.2 | 0 |
+- p15 vs off: 5/0 (p = 0.062); wins ['coupled_lorenz', 'hyper_rossler', 'l96_5']; losses []
+
+### dev_nd, all 400 (400 runs)
+| arm | exact | flagged | unflagged acc | median s | errors |
+|---|---|---|---|---|---|
+| off | 0.890 | 17% | 0.985 | 11.9 | 0 |
+| p15 | 0.915 | 12% | 0.986 | 11.3 | 0 |
+- p15 vs off: 10/0 (p = 0.002); wins ['coupled_lorenz', 'hyper_rossler', 'l96_5']; losses []
+  coupled_lorenz: off 0.562, p15 0.650
+  hyper_rossler: off 0.912, p15 0.938
+  l96_10: off 0.988, p15 0.988
+  l96_5: off 0.988, p15 1.000
+  l96_6: off 1.000, p15 1.000
+
+### AR(1) pre-estimate a_hat (mean over components)
+| set | runs | median | 95th pct | max | min |
+|---|---|---|---|---|---|
+| dev_white | 400 | 0.000 | 0.021 | 0.048 | 0.000 |
+| dev_white_odd | 400 | 0.001 | 0.021 | 0.135 | 0.000 |
+| dev_student | 200 | 0.003 | 0.025 | 0.047 | 0.000 |
+| dev_coarse | 200 | 0.000 | 0.286 | 0.899 | 0.000 |
+| dev_heldout3 | 294 | 0.000 | 0.122 | 0.781 | 0.000 |
+| dev_cmid rho=0.3 | 160 | 0.269 | 0.295 | 0.324 | 0.196 |
+| dev_cmid rho=0.55 | 160 | 0.508 | 0.534 | 0.576 | 0.455 |
+| dev_colored | 400 | 0.757 | 0.782 | 0.816 | 0.670 |
+
+### Switch: auto = ARp if a_hat > thr else Cp (pooled W/L vs Cp everywhere, and vs ARp on coloured)
+| thr | dev_white | dev_white_odd | dev_student | dev_coarse | dev_heldout3 | dev_cmid | dev_colored | pooled exact |
+| 0.05 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.800 (1/3 vs Cp; 12% AR) | 0.949 (0/1 vs Cp; 5% AR) | 0.834 (9/11 vs Cp; 100% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.858 |
+| 0.1 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.805 (1/2 vs Cp; 11% AR) | 0.949 (0/1 vs Cp; 5% AR) | 0.834 (9/11 vs Cp; 100% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.859 |
+| 0.15 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.800 (0/2 vs Cp; 8% AR) | 0.949 (0/1 vs Cp; 5% AR) | 0.834 (9/11 vs Cp; 100% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.858 |
+| 0.2 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.800 (0/2 vs Cp; 8% AR) | 0.949 (0/1 vs Cp; 5% AR) | 0.834 (9/11 vs Cp; 100% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.858 |
+| 0.3 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.805 (0/1 vs Cp; 4% AR) | 0.949 (0/1 vs Cp; 4% AR) | 0.834 (5/7 vs Cp; 52% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.859 |
+| 0.4 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.805 (0/1 vs Cp; 4% AR) | 0.949 (0/1 vs Cp; 4% AR) | 0.834 (5/7 vs Cp; 50% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.859 |
+| 0.5 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.805 (0/1 vs Cp; 4% AR) | 0.949 (0/1 vs Cp; 4% AR) | 0.834 (4/6 vs Cp; 32% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.859 |
+| 0.6 | 0.922 (0/0 vs Cp; 0% AR) | 0.858 (0/0 vs Cp; 0% AR) | 0.920 (0/0 vs Cp; 0% AR) | 0.805 (0/1 vs Cp; 2% AR) | 0.949 (0/1 vs Cp; 2% AR) | 0.841 (0/0 vs Cp; 0% AR) | 0.745 (36/8 vs Cp; 100% AR) | 0.860 |

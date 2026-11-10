@@ -1,0 +1,17 @@
+\section{Introduction}
+\label{sec:intro}
+
+Sparse identification of nonlinear dynamics (SINDy)~\citep{brunton2016sindy} represents an ODE as a sparse combination of candidate functions. Weak formulations avoid differentiating noisy data~\citep{messenger2021wsindy,schaeffer2017integral}, while sparse optimisers and ensembles improve term selection~\citep{champion2020sr3,bertsimas2023miosr,fasel2022esindy}. Nevertheless, nearly collinear library terms can make the correct support difficult to distinguish, even when the sparsity level is known. Our development experiments illustrate this on Lorenz: at 5\% noise, exhaustive weak-form subset search with the true term count recovers 90\% of runs, whereas sequentially thresholded least squares recovers none under the tested configuration (\cref{sec:diagnosis}). At higher noise, even the weak-form selector fails on trajectories recovered by joint state--coefficient methods.
+
+Joint estimation uses the dynamics to denoise the trajectory while fitting coefficients~\citep{ramsay2007parameter,rudy2019deep,kaheman2022autodiff,meissner2024dedi,fung2025odrbindy}. Its computational challenge is support selection: fitting many nonlinear candidate models is expensive, and local term removal can miss better combinations. We address this with \emph{Profiled Joint Subset Search} (PJSS), which alternates a joint fit with inexpensive subset proposals from a quadratic approximation.
+
+The two parts of the proposal step serve different purposes. \emph{Profiling} eliminates the state increments from the quadratic, accounting for how the estimated trajectory can adjust when coefficients change. \emph{Subset search} then evaluates combinations of terms within each equation, rather than selecting them greedily. Only the most promising supports undergo nonlinear joint refitting. Enumeration is exhaustive within the specified size limit for small libraries; larger libraries use beam search. Neither the quadratic approximation nor this per-equation search guarantees a global optimum of the nonlinear problem.
+
+Our contributions are:
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+\item An iterative support-search procedure that couples profiled quadratic proposals with banded joint refits. The solver is linear in record length for fixed dimension and library size, while subset screening requires no nonlinear fit.
+\item Automatic sparsity selection using a BIC-inspired score, data-calibrated noise estimates and fixed development-selected defaults. Users supply the trajectory, sampling interval and library; internal constants and their sensitivity are documented.
+\item An evaluation separating the effects of joint fitting, subset search and profiling, with external-system comparisons against full-grid DEDi, computational measurements, and explicit tests of failure under real data and library misspecification.
+\end{enumerate}
+
+PJSS recovers 89.0\% of runs on 77 in-library \texttt{dysts} systems and 85.3\% on the 49 systems outside our development benchmarks. Its advantage over DEDi depends on the setting: the methods tie on the first comparison's non-coloured runs under DEDi's BIC selection, while PJSS recovers 53/64 versus 41/64 on new systems. The main evidence concerns fully observed simulated trajectories. Partial observation is an extension (\cref{app:partial}); measured-data tests expose limitations rather than establish practical reliability (\cref{sec:realdata}).

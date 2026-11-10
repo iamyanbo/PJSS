@@ -1,0 +1,15 @@
+{
+  "purpose": "Fixed illustrative cases for the four-page CVIS draft, separate from historical benchmark estimates",
+  "systems_in_order": ["lorenz", "rossler", "chen"],
+  "seed": 20261105,
+  "training_samples": 2000,
+  "forecast_samples": 400,
+  "burn_samples": 1000,
+  "noise_fraction_of_training_coordinate_std": 0.1,
+  "method": "eqdisc.discover with default version 1.2 and no truth-based starts",
+  "forecast_initialization": "fixed-coefficient states-only fit using last 40 training observations; no forecast observations or clean states",
+  "attractor": "8000 samples after a further 1000-sample burn, integrate each learned equation autonomously from estimated training endpoint; truth integrated separately from same point",
+  "selection": "One fixed seed and one run per named system; retain failures; no outcome-based replacement",
+  "metrics": "exact support, relative coefficient error, coordinate-std-normalized RMSE over first 100 and all 400 forecast samples",
+  "interpretation": "Qualitative illustrations and deterministic prediction diagnostics, not a new comparative forecasting benchmark"
+}

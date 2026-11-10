@@ -1,0 +1,33 @@
+{
+  "purpose": "Illustrate breadth and two known support failures, not estimate recovery rates",
+  "systems_in_order": [
+    "Lorenz",
+    "Rossler",
+    "Chen",
+    "Arneodo",
+    "Finance",
+    "HindmarshRose",
+    "DequanLi",
+    "GuckenheimerHolmes",
+    "AtmosphericRegime"
+  ],
+  "fresh": [
+    "Lorenz",
+    "Rossler",
+    "Chen"
+  ],
+  "saved_benchmark_selection": "Lowest-index saved run per named system with n=2000 and noise=0.1",
+  "selection_rationale": "Six additional systems outside development benchmarks, including two known support-failure examples; choices are post-hoc",
+  "historical_models": "Saved frozen-model coefficients in results_dysts/test_final.json; not newly rerun fits",
+  "historical_initial_state": "A common clean reference-attractor point for each reference/learned pair; this is not forecast evaluation",
+  "historical_integrations": {
+    "solver": "DOP853",
+    "rtol": 1e-08,
+    "atol": 1e-10,
+    "samples": 8000,
+    "burn_samples": 1000,
+    "escape_bound": "20 times maximum absolute reference state per coordinate, with floor 1"
+  },
+  "axes": "Reference limits shared by both overlaid paths; out-of-view learned samples masked and labeled",
+  "failure_handling": "Retain incomplete or escaped integrations and label them; never substitute another run"
+}

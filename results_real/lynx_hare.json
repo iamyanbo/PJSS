@@ -1,0 +1,99 @@
+{
+ "names": [
+  "1",
+  "x0",
+  "x1",
+  "x0^2",
+  "x0*x1",
+  "x1^2"
+ ],
+ "reference": {
+  "stan": [
+   0.55,
+   0.028,
+   0.8,
+   0.024
+  ],
+  "howard": [
+   0.55,
+   0.028,
+   0.84,
+   0.026
+  ]
+ },
+ "arms": {
+  "raw": {
+   "n": 21,
+   "dt": 1.0,
+   "error": "IndexError: arrays used as indices must be of integer (or boolean) type",
+   "traceback": "Traceback (most recent call last):\n  File \"/home/iamyanbo/eqdisc_v3/benchmarks/real_lynx.py\", line 81, in main\n    r = discover(y, dt)\n        ^^^^^^^^^^^^^^^\n  File \"/home/iamyanbo/eqdisc_v3/eqdisc/final_model.py\", line 326, in discover\n    return _discover_nd(y, dt, noise, starts, prior, degw, centre, confidence, return_candidates, kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/iamyanbo/eqdisc_v3/eqdisc/final_model.py\", line 409, in _discover_nd\n    xi, inf = jn.discover(y, dt, starts, lib, record=True, **kw)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nIndexError: arrays used as indices must be of integer (or boolean) type\n"
+  },
+  "spline": {
+   "n": 201,
+   "dt": 0.1,
+   "seconds": 0.965396707999389,
+   "equations": "dx0/dt = +0.5036*x0 -9.675e-05*x0^2 -0.02558*x0*x1\ndx1/dt = -0.8918*x1 +0.0269*x0*x1",
+   "xi": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.503613164376188,
+     0.0
+    ],
+    [
+     0.0,
+     -0.8918283255618822
+    ],
+    [
+     -9.675357363717856e-05,
+     0.0
+    ],
+    [
+     -0.025583356034909726,
+     0.026897820746802272
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "support_is_lv": false,
+   "extra_terms": [
+    "x0^2 (eq 0)"
+   ],
+   "missing_terms": [],
+   "lv_coefficients": {
+    "alpha": 0.503613164376188,
+    "beta": 0.025583356034909726,
+    "gamma": 0.8918283255618822,
+    "delta": 0.026897820746802272
+   },
+   "r2_fit_vs_obs": 0.8958306152480373,
+   "ambiguous": false,
+   "gap": 56.999256829833485,
+   "noise_model": "white",
+   "sigma": [
+    2.2133567163058783,
+    2.1922801978058395
+   ],
+   "confidence": {
+    "1|x0": 1.191299720075914e-40,
+    "1|x1": 4.1953542998526966e-13,
+    "x0|x0": 1.0,
+    "x0|x1": 2.278713976593594e-36,
+    "x1|x0": 4.8802007912386155e-17,
+    "x1|x1": 1.0,
+    "x0^2|x0": 1.0,
+    "x0^2|x1": 1.506421712964346e-46,
+    "x0*x1|x0": 1.0,
+    "x0*x1|x1": 1.0,
+    "x1^2|x0": 6.868337482905152e-29,
+    "x1^2|x1": 4.0531995160115116e-74
+   }
+  }
+ },
+ "r2_reference_stan": 0.8494780810623836,
+ "r2_reference_howard": 0.9465435263322806
+}
